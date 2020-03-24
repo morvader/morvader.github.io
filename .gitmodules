@@ -1,0 +1,10 @@
+[submodule "themes/pulp"]
+	path = themes/pulp
+	url = https://github.com/koirand/pulp.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "public"]
+	path = public
+	url = https://github.com/morvader/morvader.github.io.git
+	branch = master
