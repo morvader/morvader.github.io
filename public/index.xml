@@ -1,0 +1,10 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Testing from the trenches</title>
+        <link>http://www.testingfromthetrenches.com/</link>
+        <description>This testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
+            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster>
+            <atom:link href="http://www.testingfromthetrenches.com/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
