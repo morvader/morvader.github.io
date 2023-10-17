@@ -296,7 +296,7 @@ Person person = easyRandom.nextObject(Person.class);
 Existen multitud de parámetros que nos permiten controlar la generación de objetos
 En el este enlace puede consultarse más información
 
-### Qué nos ha parecido
+### Qué me ha parecido
 
 EasyRandom es una librería que debería formar parte de tu mochila si desarrollas pruebas unitarias, ya que ayuda en la mantenibilidad de las pruebas unitarias.
 Además, y aunque pueda resultar extraño, establecer cierta aleatoriedad controlada en las pruebas, puede no ser malo. En cierto modo, es una manera de generar nuevos casos de pruebas de manera automática y aumentará la probabilidad de encontrar errores en código.
