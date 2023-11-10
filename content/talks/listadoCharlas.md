@@ -59,6 +59,9 @@ seo:
 ---
 <!--more-->
 
+## Comunidad NorthemQuality
+* [Canal de Northem Quality](https://www.youtube.com/@northemqualitytestingcommu6421/streams)
+
 ## Mis charlas
 
 * [EDD 2023 - Antipatrones más comunes en la automatización de pruebas](https://www.youtube.com/watch?v=bsdFGKWZHFY)
