@@ -67,6 +67,7 @@ seo:
 
 * [EDD 2023 - Antipatrones más comunes en la automatización de pruebas](https://www.youtube.com/watch?v=bsdFGKWZHFY)
 * [Athlantic Tech Talks 2023 - Agile Testing en Empresas](https://www.youtube.com/watch?v=Q1yzbsfNn8Q&t=3122s)
+* [SNGULAR 2022 - Mejora el desarrollo de microservicios con contract testing](https://www.youtube.com/live/I25DIMLDqMo?si=ldD48OvxyqPMuWVK&t=208)
 * [VLCTesting 2022 - Ya no hay excusas para no usar contract testing](https://www.youtube.com/watch?v=0hq7aBYF3hM)
 * [Liferay: Mes del QA 2022 - The path to automation heaven](https://www.youtube.com/watch?v=8BGfDJ1j5-Q)
 * [Liferay: Mes del QA 2022 - Mesa redonda sobre testing](https://www.youtube.com/watch?v=_Xhu8Bv2qS4)
