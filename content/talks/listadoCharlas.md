@@ -60,6 +60,7 @@ seo:
 <!--more-->
 
 ## Comunidad NorthemQuality
+
 * [Canal de Northem Quality](https://www.youtube.com/@northemqualitytestingcommu6421/streams)
 
 ## Mis charlas
@@ -72,4 +73,4 @@ seo:
 * [Entrevista con Nadia Cavalleri - 2021](https://www.youtube.com/watch?v=lIDXHS857h8)
 * [VLCTesting 2020 - Visual Testing: Los usuarios tienen ojos, haz que tus pruebas puedan ver](https://www.youtube.com/watch?v=fGgBAn953nc)
 * [SNGULAR 2019: Primeros pasos en Contract testing con Pact](https://www.youtube.com/watch?v=-0eHk4fvtb0&t=758s)
-* [Sngular 2018: Kit Selenium + Cucumber + Docker](https://www.youtube.com/watch?v=htL2jD-cwwA)
+* [SNGULAR 2018: Kit Selenium + Cucumber + Docker](https://www.youtube.com/watch?v=htL2jD-cwwA)
