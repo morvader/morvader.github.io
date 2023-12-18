@@ -72,7 +72,6 @@ seo:
 * **Descripción:** Charla con Carlos Blé donde hablo sobre cómo incluir el testing el proyectos, construir en equipo de calidad en una consultora, context-driven-testing, cómo aplicar un enfoque preventivo en las pruebas, etc. También menciono y eventos y personas interesantes a las que seguir.
 * **Enlace:** [Escuchar en Spotify](https://open.spotify.com/episode/6sCVqMi4CGkcfdVWz1Ukyx?si=d57fb2fbbb5e4274)
 
-
 ## Mis charlas
 
 ### Antipatrones más comunes en la automatización de pruebas
