@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Testing from the trenches</title>
+    <link>http://www.testingfromthetrenches.com/talks/</link>
+    <description>Recent content in Talks on Testing from the trenches</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
+    <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster>
+    <lastBuildDate>Fri, 10 Nov 2023 15:58:26 +0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mis charlas</title>
+      <link>http://www.testingfromthetrenches.com/talks/listadocharlas/</link>
+      <pubDate>Fri, 10 Nov 2023 15:58:26 +0800</pubDate>
+      <author>francisco.moreno.sanz@outlook.com (Francisco Moreno)</author>
+      <guid>http://www.testingfromthetrenches.com/talks/listadocharlas/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

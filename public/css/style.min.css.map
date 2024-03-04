@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/franciscomoreno/Projects/personal_website",
+	"sourceRoot": "/Users/franciscomoreno/Projects/GitHubWeb/morvader.github.io",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

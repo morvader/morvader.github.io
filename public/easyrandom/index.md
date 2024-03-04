@@ -1,62 +1,5 @@
----
-title: "Cómo mejorar la mantenibilidad de las pruebas unitarias"
-subtitle: "Primeros pasos con EasyRandom"
-date: 2023-10-17T15:58:26+08:00
-lastmod: 2023-10-17T15:58:26+08:00
-draft: false
-author: "Francisco Moreno"
-authorLink: "https://twitter.com/morvader"
-description: "Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"
-license: ""
-images: []
+# Cómo mejorar la mantenibilidad de las pruebas unitarias
 
-tags: [Unit testing]
-categories: []
-
-featuredImage: ""
-featuredImagePreview: ""
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-twemoji: false
-lightgallery: true
-ruby: true
-fraction: true
-fontawesome: true
-linkToMarkdown: true
-rssFullText: false
-
-toc:
-  enable: true
-  auto: true
-code:
-  copy: true
-  maxShownLines: 50
-math:
-  enable: false
-  # ...
-mapbox:
-  # ...
-share:
-  enable: true
-  # ...
-comment:
-  enable: true
-  # ...
-library:
-  css:
-    # someCSS = "some.css"
-    # located in "assets/"
-    # Or
-    # someCSS = "https://cdn.example.com/some.css"
-  js:
-    # someJS = "some.js"
-    # located in "assets/"
-    # Or
-    # someJS = "https://cdn.example.com/some.js"
-seo:
-  images: []
----
 <!--more-->
 
 ## ¿Qué vamos a ver?
@@ -306,3 +249,4 @@ Además, y aunque pueda resultar extraño, establecer cierta aleatoriedad contro
 * [GitHub - j-easy/easy-random: The simple, stupid random Java beans/records generator](https://github.com/j-easy/easy-random)
 * [Quick Guide to EasyRandom in Java | Baeldung](https://www.baeldung.com/java-easy-random)
 * [GitHub - DiUS/java-faker: Brings the popular ruby faker gem to Java](https://github.com/DiUS/java-faker)
+
