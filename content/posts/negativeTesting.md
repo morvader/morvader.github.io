@@ -126,4 +126,3 @@ Algunas de las técnicas más habituales para realizar testing negativo son:
 * [**Pairwise testing**](https://federico-toledo.com/pairwise-testing): Buscar combinaciones de variables que aumenten la probabilidad de encontrar errores
 * **Pruebas de transición de estados**: Intentar de producir transiciones de estados no permitidas
 * **Análisis de casos límite**
-* **Testing de transición de estados**: Tratar de salirse del flujo definido
