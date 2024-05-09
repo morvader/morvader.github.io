@@ -4,13 +4,25 @@
         <link>http://www.testingfromthetrenches.com/posts/</link>
         <description>All Posts | Testing from the trenches</description>
         <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
-            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Wed, 08 May 2024 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Definiendo un plan de carrera - Parte I</title>
+    <link>http://www.testingfromthetrenches.com/pdp-1/</link>
+    <pubDate>Wed, 08 May 2024 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://www.testingfromthetrenches.com/pdp-1/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/PDP/PDP.png" referrerpolicy="no-referrer">
+            </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundio IT]]></description>
+</item>
+<item>
     <title>Testing defensivo</title>
     <link>http://www.testingfromthetrenches.com/negativetesting/</link>
     <pubDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
     <guid>http://www.testingfromthetrenches.com/negativetesting/</guid>
-    <description><![CDATA[Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/negativeTestingPost/inicial.png" referrerpolicy="no-referrer">
+            </div>Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código]]></description>
 </item>
 <item>
     <title>Cómo mejorar la mantenibilidad de las pruebas unitarias</title>
