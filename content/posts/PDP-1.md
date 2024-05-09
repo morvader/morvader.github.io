@@ -6,7 +6,7 @@ lastmod: 2024-05-08        T15:58:26+08:00
 draft: false
 author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
-description: "Principales aspectos que marcan en desarrollo profesional de una persona en el mundio IT"
+description: "Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT"
 license: ""
 images: []
 
