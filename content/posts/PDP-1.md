@@ -59,7 +59,7 @@ seo:
 ---
 <!--more-->
 
-Hace unos años, tuve que definir las características básicas de cada nivel del equipo de Quality Engineering. Lo usábamos como plan de carrera, pero ya necesitaba una actualización, por lo que este año, me ha tocado actualizarlo.
+Hace unos años, tuve que definir las características básicas de cada nivel del equipo de Quality Engineering. Lo usábamos como plan de carrera, pero ya necesitaba una actualización, por lo que este año, me ha tocado retocarlo.
 
 Con unos años más de experiencia, este proceso me ha vuelto a dar la oportunidad de reflexionar sobre qué debe ser un plan de carrera y qué es lo que marca realmente el desarrollo profesional de una persona dentro de una empresa.
 
@@ -86,7 +86,7 @@ Con esto, iríamos desde una persona sin apenas experiencia laboral que debe ser
 
 ### Impacto y valores
 
-En cualquier organización, a medida que avanzamos, es de esperar que nuestro impacto tanto en las personas que nos rodean como en la propia en organización sea cada vez mayor.
+En cualquier compañía, a medida que avanzamos, es de esperar que nuestro impacto tanto en las personas que nos rodean como en la propia organización sea cada vez mayor.
 
 Nuestro tiempo deberá estar cada vez más centrado en trabajo que genere un alto valor en producto/cliente o en que mejore el rendimiento de las personas al rededor nuestro.
 
