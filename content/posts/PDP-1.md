@@ -59,7 +59,7 @@ seo:
 ---
 <!--more-->
 
-Hace unos años, tuve que definir las características básicas de cada nivel del equipo de Quality Engineering. Lo usábamos como plan de carrera, pero ya necesitaba una actualización, por lo que este año, me ha tocado retocarlo.
+Hace unos años, tuve que definir las características básicas de cada nivel del equipo de Quality Engineering. Lo usábamos como plan de carrera, pero ya necesitaba una actualización, por lo que este año, me ha tocado revisarlo.
 
 Con unos años más de experiencia, este proceso me ha vuelto a dar la oportunidad de reflexionar sobre qué debe ser un plan de carrera y qué es lo que marca realmente el desarrollo profesional de una persona dentro de una empresa.
 
@@ -78,7 +78,7 @@ Sé que este orden, dentro del sector IT, puede resultar extraño o no convencer
 
 Al igual que no medimos el desarrollo vital de un niño por su altura, sino por su nivel de autonomía a la hora de realizar tareas y desenvolverse en el mundo real (situaciones impredecibles) lo mismo deberíamos hacer con las personas que trabajan en IT.
 
-Este el punto fundamental que marca el crecimiento profesional y, por tanto, el que más se debería fomentar.
+Este es el punto fundamental que marca el crecimiento profesional y, por tanto, el que más se debería fomentar.
 
 Por ello, este tendría que ser el aspecto que más peso tenga dentro de un plan de carrera y sobre el que más explícito se deba ser es la descripción. Es decir, que las expectativas sobre autonomía en cada nivel queden reflejadas de la manera más clara posible.
 
