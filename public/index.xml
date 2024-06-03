@@ -4,9 +4,19 @@
         <link>http://www.testingfromthetrenches.com/</link>
         <description>This testing from the trenches</description>
         <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
-            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Wed, 08 May 2024 15:58:26 &#43;0800</lastBuildDate>
+            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</lastBuildDate>
             <atom:link href="http://www.testingfromthetrenches.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Definiendo un plan de carrera - Parte II</title>
+    <link>http://www.testingfromthetrenches.com/pdp-2/</link>
+    <pubDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://www.testingfromthetrenches.com/pdp-2/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/PDP/PDP2.png" referrerpolicy="no-referrer">
+            </div>Cómo poner en práctica un plan de carrera de manera efectiva]]></description>
+</item>
+<item>
     <title>Definiendo un plan de carrera - Parte I</title>
     <link>http://www.testingfromthetrenches.com/pdp-1/</link>
     <pubDate>Wed, 08 May 2024 15:58:26 &#43;0800</pubDate>
@@ -14,7 +24,7 @@
     <guid>http://www.testingfromthetrenches.com/pdp-1/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/PDP/PDP.png" referrerpolicy="no-referrer">
-            </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundio IT]]></description>
+            </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT]]></description>
 </item>
 <item>
     <title>Testing defensivo</title>
