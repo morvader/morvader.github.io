@@ -67,9 +67,9 @@ En este artículo comparto un enfoque práctico, basado en mi experiencia, para 
 
 ## Antes de la entrevista
 
-Normalmente, la persona ya habrá pasado una entrevista previa con RR. HH. En esta, se habrá verificado que la experiencia, aptitudes, conocimientos básicos, soft skills mínimas y pretensiones económicas están alineadas con el puesto que se requiere.
+Normalmente, la persona ya habrá pasado una entrevista previa con RR. HH. En esta, se habrá verificado que la experiencia, aptitudes, conocimientos básicos, soft skills mínimas y pretensiones económicas están alineadas con el puesto vacante.
 
-En mi caso, para no ir condicionado a la entrevista, no me leo el informe de RR. HH. Únicamente abro su CV y pongo especial interés en las siguientes cuestiones
+En mi caso, para no ir condicionado a la entrevista, no me leo el informe de RR. HH. Únicamente abro su CV y pongo especial interés en las siguientes cuestiones:
 
 - Estructura clara y concisa
   - Un CV mal estructurado o confuso me da pistas sobre la capacidad de síntesis y organización de la persona
@@ -88,9 +88,9 @@ Es muy importante tener claras las necesidades y experiencia necesaria para la v
 
 Comienza por presentarte brevemente: Quién eres, cuánto llevas en la empresa y tu cargo.
 
-Después de que la otra persona se presente, haz una par de preguntas para romper el hielo y que la otra persona libere tensión que pueda tener. Puedes aprovechar y preguntarle algo básico sobre su ciudad, si ha pasado un buen día, si ha tenido un buen fin de semana/vacaciones, etc.
+Después de que la otra persona se presente, haz una par de preguntas para romper el hielo orientadas a que la otra persona libere la tensión que pueda tener. Puedes aprovechar para preguntarle por algo básico sobre su ciudad, si ha pasado un buen día, si ha tenido un buen fin de semana/vacaciones, etc.
 
-Después de hacer muchas entrevistas técnicas, he visto que la gente suele saltar inmediatamente a hablar de herramientas, frameworks librerías, etc, y apenas habla de su experiencia y motivaciones. Para que esto no pase, me gusta comentarles la estructura que sigo en las entrevistas:
+Después de hacer muchas entrevistas técnicas, he visto que la gente suele saltar inmediatamente a hablar de herramientas, frameworks, librerías, etc, y apenas habla de su experiencia y motivaciones. Para que esto no pase, me gusta comentarles la estructura que sigo en las entrevistas:
 
 1. Experiencia general
 2. Motivaciones profesionales
