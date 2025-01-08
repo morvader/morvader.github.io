@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Framework para entrevistas técnicas - Testing from the trenches</title><meta name="Description" content="Consejos para preparar y hacer entrevistas técnicas"><meta property="og:title" content="Framework para entrevistas técnicas" />
+<meta property="og:description" content="Consejos para preparar y hacer entrevistas técnicas" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.testingfromthetrenches.com/entrevistas/" /><meta property="og:image" content="http://www.testingfromthetrenches.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-21T15:58:26+08:00" />
+<meta property="article:modified_time" content="2024-11-21T12:24:40+01:00" /><meta property="og:site_name" content="Testing from the trenches" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://www.testingfromthetrenches.com/logo.png"/>
+
+<meta name="twitter:title" content="Framework para entrevistas técnicas"/>
+<meta name="twitter:description" content="Consejos para preparar y hacer entrevistas técnicas"/>
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://www.testingfromthetrenches.com/entrevistas/" /><link rel="prev" href="http://www.testingfromthetrenches.com/pdp-2/" /><link rel="next" href="http://www.testingfromthetrenches.com/comunidades-practica-tecnica/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WPG4T90RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4WPG4T90RQ');
+</script><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Framework para entrevistas técnicas",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/www.testingfromthetrenches.com\/entrevistas\/"
+        },"image": ["http:\/\/www.testingfromthetrenches.com\/images\/entrevistas\/header.png"],"genre": "posts","keywords": "Carrera","wordcount":  1104 ,
+        "url": "http:\/\/www.testingfromthetrenches.com\/entrevistas\/","datePublished": "2024-11-21T15:58:26+08:00","dateModified": "2024-11-21T12:24:40+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "Consejos para preparar y hacer entrevistas técnicas"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles"> Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks"> Talks </a><a class="menu-item" href="/tags/"> Tags </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks">Talks</a><a class="menu-item" href="/tags/" title="">Tags</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Framework para entrevistas técnicas</h1><h2 class="single-subtitle">Consejos para preparar y hacer entrevistas técnicas</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-11-21">2024-11-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1104 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/entrevistas/header.png"
+        data-srcset="/images/entrevistas/header.png, /images/entrevistas/header.png 1.5x, /images/entrevistas/header.png 2x"
+        data-sizes="auto"
+        alt="/images/entrevistas/header.png"
+        title="Consejos para preparar y hacer entrevistas técnicas" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#antes-de-la-entrevista">Antes de la entrevista</a></li>
+    <li><a href="#durante-la-entrevista">Durante la entrevista</a>
+      <ul>
+        <li><a href="#presentaciones-y-estructura">Presentaciones y estructura</a></li>
+        <li><a href="#al-lío">Al lío</a></li>
+      </ul>
+    </li>
+    <li><a href="#consejos">Consejos</a></li>
+    <li><a href="#final-de-la-entrevista">Final de la entrevista</a></li>
+    <li><a href="#conclusiones">Conclusiones</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Después de hacer muchas entrevistas técnicas, lo más importante que he aprendido es que, tienes delante a una persona que probablemente esté nerviosa y que merece que le dediques tiempo y atención de calidad.</p>
+<p>Es una oportunidad para conocer a la persona detrás del CV, identificar sus motivaciones y entender cómo puede aportar al equipo</p>
+<p>En este artículo comparto un enfoque práctico, basado en mi experiencia, para estructurar y conducir entrevistas técnicas que sean claras, eficientes y justas, tanto para el entrevistador como para el candidato.</p>
+<h2 id="antes-de-la-entrevista">Antes de la entrevista</h2>
+<p>Normalmente, la persona ya habrá pasado una entrevista previa con RR. HH. En esta, se habrá verificado que la experiencia, aptitudes, conocimientos básicos, soft skills mínimas y pretensiones económicas están alineadas con el puesto vacante.</p>
+<p>En mi caso, para no ir condicionado a la entrevista, no me leo el informe de RR. HH. Únicamente abro su CV y pongo especial interés en las siguientes cuestiones:</p>
+<ul>
+<li>Estructura clara y concisa
+<ul>
+<li>Un CV mal estructurado o confuso me da pistas sobre la capacidad de síntesis y organización de la persona</li>
+</ul>
+</li>
+<li>Descripción de tareas y objetivos conseguidos
+<ul>
+<li>Una lista de tecnologías utilizadas no me aporta demasiado</li>
+</ul>
+</li>
+<li>Proyectos interesantes o experiencias fuera de lo común
+<ul>
+<li>Pueden salir conversaciones interesantes y ayudan a conocer mejor las motivaciones de la persona</li>
+</ul>
+</li>
+<li>Tiempo que ha pasado en cada empresa
+<ul>
+<li>A priori, ni bueno ni malo. Pero siempre prefiero preguntar tanto por estancias muy largas como por cambios constantes.</li>
+</ul>
+</li>
+</ul>
+<h2 id="durante-la-entrevista">Durante la entrevista</h2>
+<p>Es muy importante tener claras las necesidades y experiencia necesaria para la vacante abierta. Es fundamental que adaptemos tanto el tono como el nivel de detalle de las preguntas que hagamos.</p>
+<h3 id="presentaciones-y-estructura">Presentaciones y estructura</h3>
+<p>Comienza por presentarte brevemente: Quién eres, cuánto llevas en la empresa y tu cargo.</p>
+<p>Después de que la otra persona se presente, haz una par de preguntas para romper el hielo orientadas a que la otra persona libere la tensión que pueda tener. Puedes aprovechar para preguntarle por algo básico sobre su ciudad, si ha pasado un buen día, si ha tenido un buen fin de semana/vacaciones, etc.</p>
+<p>Después de hacer muchas entrevistas técnicas, he visto que la gente suele saltar inmediatamente a hablar de herramientas, frameworks, librerías, etc, y apenas habla de su experiencia y motivaciones. Para que esto no pase, me gusta comentarles la estructura que sigo en las entrevistas:</p>
+<ol>
+<li>Experiencia general</li>
+<li>Motivaciones profesionales</li>
+<li>Parte técnica</li>
+<li>Preguntas situacionales</li>
+</ol>
+<h3 id="al-lío">Al lío</h3>
+<p>Una vez que nos metemos en harina, se trata de establecer una conversación fluida y natural. Siempre de igual a igual.</p>
+<p>En cada parte, me centro en estos aspectos</p>
+<ol>
+<li>Cuéntame tu experiencia y proyectos interesantes
+<ul>
+<li>Aunque me haya leído su CV, prefiero que me lo cuenta para poder evaluar su capacidad de expresión y síntesis</li>
+<li>Recalco que no hacen falta que den demasiados detalles técnicos, ya que profundizaremos en ellos más adelante</li>
+<li>Voy tomando notas sobre experiencia, herramientas utilizadas y dudas</li>
+<li>Me centro en la estrategia de los hitos técnicos más relevantes</li>
+<li>Pregunto por por las causas que hicieron que algunos proyectos no salieran bien</li>
+</ul>
+</li>
+<li>¿Qué motiva en tu carrera profesional?
+<ul>
+<li>Por qué no estás consiguiendo cumplir tus objetivos en la empresa actual</li>
+<li>¿Has hecho algo para intentar mejorar tu situación actual.? ¿Hasta dónde lo has escalado?</li>
+</ul>
+</li>
+<li>Parte técnica
+<ul>
+<li>Preguntas adaptadas a experiencia requerida para el puesto</li>
+<li>Pidiendo nivel de detalle adecuado al nivel que se requiere</li>
+<li>Profundizar en las cuestiones más relevantes para la vacante</li>
+<li>Tratar de detectar puntos flojos o carencias en tecnología relevante para el puesto</li>
+</ul>
+</li>
+<li>Establecer situaciones para conocer el enfoque de la persona
+<ul>
+<li>Conocer estrategias de priorización</li>
+<li>Pensamiento lateral</li>
+<li>Descomposición de problemas en tareas más pequeñas</li>
+<li>Alineamiento con negocio</li>
+</ul>
+</li>
+</ol>
+<p>Para que os hagáis una idea, uso este formato para ir tomando notas a mano.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/entrevistas/entrevista.png"
+        data-srcset="/images/entrevistas/entrevista.png, /images/entrevistas/entrevista.png 1.5x, /images/entrevistas/entrevista.png 2x"
+        data-sizes="auto"
+        alt="/images/entrevistas/entrevista.png"
+        title="Notas" /></p>
+<h2 id="consejos">Consejos</h2>
+<ul>
+<li>Establece en todo momento un tono cordial y cercano</li>
+<li>Debes pasar más tiempo escuchando que hablando</li>
+<li>Haz preguntas claras. Si algo no se entiende, reformula la pregunta</li>
+<li>Si la persona “divaga” o es demasiado generalista, házselo saber y pide que profundice en el detalle</li>
+<li>Usa lenguaje claro y sin tecnicismos constantes</li>
+<li>Si la persona da respuestas muy largas, hazle saber que debe concretar más las respuestas, de lo contrario os quedaréis sin tiempo de entrevista.</li>
+</ul>
+<h2 id="final-de-la-entrevista">Final de la entrevista</h2>
+<p>Siempre dejo un espacio para que la persona pueda preguntarme cualquier duda o contarme algo más haya salido durante la entrevista.</p>
+<p>Si tengo claro que la persona no encaja en el puesto por motivos técnicos, intento hacérselo saber de la manera más suave pero clara posible. Si están abiertas a recibir a feedback, normalmente sí, trato de darles algunos consejos sobre formación, herramientas o plan de carrera en función de los objetivos que persigan.</p>
+<p>En el caso de que todo vaya bien, también les digo que por mi parte se puede avanzar en el proceso y que la persona de RR. HH. contactará con ellos para siguientes pasos.</p>
+<p>Es ahora cuando leo el informe de RR. HH. para comprobar si coincide con mis impresiones. Principalmente en cuánto a motivación de la persona, capacidad de comunicación, gestión de conflictos y liderazgo.</p>
+<p>En cuanto a escribir el informe y dar la “nota” final. Hay muchas opiniones y literatura sobre cuándo es mejor hacerlo. Mi consejo es que seas consciente de tu estado de ánimo, cansancio y sesgos que te puedan afectar en el momento de hacerlo.</p>
+<p>En mi caso, en la medida de lo posible, intento escribir las notas justo al finalizar la entrevista. Me funciona mejor tener la información fresca en la cabeza y, sobre todo, tener en cuenta esa “primera impresión” que me ha causado la persona.</p>
+<p>He comprobado que cuando lo escribo al día siguiente, he dado menos importancia a alguna “red flag” que había detectado durante la entrevista. Esto, a la larga, ha pasado factura en algunos casos.</p>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>Si tuviera que dar algunos consejos, serían:</p>
+<ul>
+<li>Empatiza con la persona que tienes delante y trata de ayudarla</li>
+<li>Favorece una comunicación fluida</li>
+<li>Ten claros los requisitos de la vacante y enfoca tus preguntas a ello</li>
+<li>Si tienes dudas sobre la vacante o tareas a desarrollar pregunta</li>
+<li>Adapta la entrevista a la experiencia requerida para la vacante</li>
+<li>No generes falsas expectativas en el candidato</li>
+<li>Eres la cara de la empresa, vigila la imagen que transmites</li>
+<li>Trata de ser justo y busca el mejor momento para escribir el informe de la entrevista</li>
+</ul>
+<p>Como consejo final, aunque estés haciendo una entrevista técnica, las soft skills son importantes, por tanto:</p>
+<p>No des de paso a ninguna persona con la que no te gustaría trabajar. Aunque no vaya a formar parte de tu equipo.</p>
+<p>Esto es fundamental para mantener la cultura y buen ambiente de trabajo en cualquier empresa.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-11-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/entrevistas/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://www.testingfromthetrenches.com/entrevistas/" data-title="Framework para entrevistas técnicas" data-via="morvader" data-hashtags="Carrera"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://www.testingfromthetrenches.com/entrevistas/" data-hashtag="Carrera"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://www.testingfromthetrenches.com/entrevistas/" data-title="Framework para entrevistas técnicas"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://www.testingfromthetrenches.com/entrevistas/" data-title="Framework para entrevistas técnicas"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://www.testingfromthetrenches.com/entrevistas/" data-title="Framework para entrevistas técnicas" data-image="/images/entrevistas/header.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/carrera/">Carrera</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/pdp-2/" class="prev" rel="prev" title="Definiendo un plan de carrera - Parte II"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Definiendo un plan de carrera - Parte II</a>
+            <a href="/comunidades-practica-tecnica/" class="next" rel="next" title="La Importancia de las Comunidades de Práctica en Organizaciones">La Importancia de las Comunidades de Práctica en Organizaciones<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://twitter.com/morvader" target="_blank">Francisco Moreno</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -4,7 +4,17 @@
         <link>http://www.testingfromthetrenches.com/tags/carrera/</link>
         <description>Carrera - Tag - Testing from the trenches</description>
         <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
-            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/carrera/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/carrera/" rel="self" type="application/rss+xml" /><item>
+    <title>Framework para entrevistas técnicas</title>
+    <link>http://www.testingfromthetrenches.com/entrevistas/</link>
+    <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://www.testingfromthetrenches.com/entrevistas/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/entrevistas/header.png" referrerpolicy="no-referrer">
+            </div>Consejos para preparar y hacer entrevistas técnicas]]></description>
+</item>
+<item>
     <title>Definiendo un plan de carrera - Parte II</title>
     <link>http://www.testingfromthetrenches.com/pdp-2/</link>
     <pubDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</pubDate>
