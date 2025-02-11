@@ -104,7 +104,7 @@ Para un equipo que no tiene nada de testing automatizado, ¿por qué creo que em
   - Manejo adecuado de conjuntos de datos para pruebas
   - Es posible que tengamos que gestionar dependencias externas; iremos aprendiendo cómo lidiar con estos casos
   - Técnicas de reutilización de pruebas y cómo hacerlas más mantenibles
-  - Selección de casos límite y testing negativo
+  - Selección de casos límite y testing [negativo]([https://](https://testingfromthetrenches.com/negativetesting/))
   - Integración de pruebas en pipelines de CI
 
 Una vez que tengamos una buena base de conocimientos de testing, será más sencillo retomar el testing unitario de manera efectiva y adecuada.
