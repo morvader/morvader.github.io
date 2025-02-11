@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia - Testing from the trenches</title><meta name="Description" content="Un Enfoque Pragmático para Iniciar la Automatización de Pruebas"><meta property="og:title" content="Estrategia para introducir Testing Automatizado en equipos sin experiencia" />
+<meta property="og:description" content="Un Enfoque Pragmático para Iniciar la Automatización de Pruebas" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.testingfromthetrenches.com/apitesting/" /><meta property="og:image" content="http://www.testingfromthetrenches.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-02-11T15:58:26+08:00" />
+<meta property="article:modified_time" content="2025-02-11T15:58:26+08:00" /><meta property="og:site_name" content="Testing from the trenches" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://www.testingfromthetrenches.com/logo.png"/>
+
+<meta name="twitter:title" content="Estrategia para introducir Testing Automatizado en equipos sin experiencia"/>
+<meta name="twitter:description" content="Un Enfoque Pragmático para Iniciar la Automatización de Pruebas"/>
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://www.testingfromthetrenches.com/apitesting/" /><link rel="prev" href="http://www.testingfromthetrenches.com/comunidades-practica-tecnica/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WPG4T90RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4WPG4T90RQ');
+</script><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Estrategia para introducir Testing Automatizado en equipos sin experiencia",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/www.testingfromthetrenches.com\/apitesting\/"
+        },"genre": "posts","keywords": "Unit testing","wordcount":  703 ,
+        "url": "http:\/\/www.testingfromthetrenches.com\/apitesting\/","datePublished": "2025-02-11T15:58:26+08:00","dateModified": "2025-02-11T15:58:26+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "Un Enfoque Pragmático para Iniciar la Automatización de Pruebas"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles"> Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks"> Talks </a><a class="menu-item" href="/tags/"> Tags </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks">Talks</a><a class="menu-item" href="/tags/" title="">Tags</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Estrategia para introducir Testing Automatizado en equipos sin experiencia</h1><h2 class="single-subtitle">De APIs a Unitarios: Una Ruta Alternativa para Adoptar Testing Automatizado</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-02-11">2025-02-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;703 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/apiTesting/TestingStrategy.png"
+        data-srcset="/images/apiTesting/TestingStrategy.png, /images/apiTesting/TestingStrategy.png 1.5x, /images/apiTesting/TestingStrategy.png 2x"
+        data-sizes="auto"
+        alt="/images/apiTesting/TestingStrategy.png"
+        title="Un Enfoque Pragmático para Iniciar la Automatización de Pruebas" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#empezar-por-unitarios-es-complicado">Empezar por unitarios es complicado</a></li>
+    <li><a href="#empezar-por-las-apis">Empezar por las APIs</a></li>
+    <li><a href="#conclusión">Conclusión</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="un-enfoque-pragmático-para-empezar-con-la-automatización-de-pruebas">Un enfoque pragmático para empezar con la automatización de pruebas</h1>
+<p>Un tema recurrente que me he encontrado varias veces es la pregunta de cómo introducir la automatización de pruebas en equipos que aún no lo están haciendo.</p>
+<p>Ya he comentado en otras ocasiones que hay <a href="https://medium.com/@morvader/es-el-rol-de-qa-necesario-en-los-equipos-ac6858586c7b" target="_blank" rel="noopener noreffer ">varios</a> factores que influyen.</p>
+<p>El primero de ellos es el <a href="https://medium.com/@morvader/testing-iceberg-2cc7501f4e06" target="_blank" rel="noopener noreffer ">contexto</a>, y otro punto importante puede ser el orden en el que se intente abordar esta tarea. Típicamente, la recomendación casi universal es comenzar por el testing unitario; creo que es aquí donde podemos correr el riesgo de partir de un punto que no sea adecuado para el equipo.</p>
+<p>Tengo una opinión bastante firme sobre que el principal motivo por el que los equipos no hacen testing es porque no tienen los conocimientos suficientes para ello.</p>
+<p>Esto hace que sigan malas prácticas y, por tanto, lleva a la frustración en el medio plazo. Al final, esto termina en un abandono del testing automatizado.</p>
+<p>Voy a explicar un poco más esta idea y por qué creo que puede ser interesante aplicar otro enfoque.</p>
+<h2 id="empezar-por-unitarios-es-complicado">Empezar por unitarios es complicado</h2>
+<p>Seamos claros: escribir un test unitario es técnicamente muy sencillo.</p>
+<p>Lo que no es tan fácil es establecer una estrategia de testing y hacer que una suite de pruebas sea mantenible, eficiente y siga buenas prácticas de programación.</p>
+<p>El error más típico es comenzar con pruebas unitarias, haciéndolas muy acopladas al código. Esto hace que sean muy frágiles y fallen ante cualquier mínimo cambio del código de producción.</p>
+<p>Es normal que, ante esta situación, los equipos sientan que están perdiendo el tiempo, se frustren y sientan que hacer tests les está ralentizando la entrega.</p>
+<p>Otro punto que puede generar fricción a nivel técnico es la gestión de dependencias.</p>
+<p>Es habitual que los equipos no sepan o no sigan las mejores prácticas a la hora de mockear las dependencias externas, con lo que el código se vuelve, de nuevo, muy rígido y difícil de mantener.</p>
+<p>Por eso digo que, aunque la recomendación sea comenzar con pruebas unitarias, si no se tiene una buena base de conocimientos, puede producir frustración, malos resultados y abandono.</p>
+<h2 id="empezar-por-las-apis">Empezar por las APIs</h2>
+<p>Para un equipo que no tiene nada de testing automatizado, ¿por qué creo que empezar con las APIs puede ser la mejor opción?</p>
+<ul>
+<li>Validamos reglas de negocio, es decir, el núcleo de nuestro sistema. Por lo que estas pruebas ya deberían ser útiles como batería de regresión y/o prueba de humo.</li>
+<li>Los tests unitarios pueden ser más abstractos, pero, desde un punto de vista práctico, el primer test de integración ya está validando reglas de negocio.</li>
+<li>Estas pruebas suelen ser más resistentes a los cambios en código. Evitaríamos la frustración generada por refactorizaciones.</li>
+<li>Entendemos mejor el propósito de las pruebas, ya que nos centramos en el comportamiento esperado y no tanto en su implementación: <em><strong>Test behaviour, not implementation</strong></em></li>
+<li>A medida que escribamos más tests, iremos aprendiendo técnicas y estrategias básicas de automatización, como las siguientes:
+<ul>
+<li>Uso de hooks (Before, After, BeforeEach, etc.)</li>
+<li>Elección correcta de aserciones</li>
+<li>Atomicidad de las pruebas, evitando dependencias</li>
+<li>Manejo adecuado de conjuntos de datos para pruebas</li>
+<li>Es posible que tengamos que gestionar dependencias externas; iremos aprendiendo cómo lidiar con estos casos</li>
+<li>Técnicas de reutilización de pruebas y cómo hacerlas más mantenibles</li>
+<li>Selección de casos límite y testing negativo</li>
+<li>Integración de pruebas en pipelines de CI</li>
+</ul>
+</li>
+</ul>
+<p>Una vez que tengamos una buena base de conocimientos de testing, será más sencillo retomar el testing unitario de manera efectiva y adecuada.</p>
+<p>De seguir por esta línea, es probable que lleguemos a un punto donde la pirámide de testing tenga forma de trofeo.</p>
+<p>[Imagen de la pirámide de testing en forma de trofeo]</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/apiTesting/TestingTrophy.png"
+        data-srcset="/images/apiTesting/TestingTrophy.png, /images/apiTesting/TestingTrophy.png 1.5x, /images/apiTesting/TestingTrophy.png 2x"
+        data-sizes="auto"
+        alt="/images/apiTesting/TestingTrophy.png"
+        title="TestingTrophy.png" /></p>
+<h2 id="conclusión">Conclusión</h2>
+<p>En definitiva, comenzar con las pruebas de API puede hacer que tengamos unos &ldquo;quick wins&rdquo; inmediatos y dispongamos rápidamente de una red de seguridad que nos permita validar nuevas versiones. Esto es muy importante para que los equipos comiencen a ver la utilidad y ventajas de tener pruebas automatizadas.</p>
+<p>Además, y también fundamental, el equipo irá adquiriendo técnicas y estrategias de testing básicas. Con ello, introducirse en el testing unitario debería generar menos fricción y sería el siguiente paso para que estos equipos comiencen a tener ciclos de retroalimentación más cortos.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-02-11</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/apitesting/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://www.testingfromthetrenches.com/apitesting/" data-title="Estrategia para introducir Testing Automatizado en equipos sin experiencia" data-via="morvader" data-hashtags="Unit testing"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://www.testingfromthetrenches.com/apitesting/" data-hashtag="Unit testing"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://www.testingfromthetrenches.com/apitesting/" data-title="Estrategia para introducir Testing Automatizado en equipos sin experiencia"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://www.testingfromthetrenches.com/apitesting/" data-title="Estrategia para introducir Testing Automatizado en equipos sin experiencia"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://www.testingfromthetrenches.com/apitesting/" data-title="Estrategia para introducir Testing Automatizado en equipos sin experiencia" data-image="/images/apiTesting/TestingStrategy.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/unit-testing/">Unit testing</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/comunidades-practica-tecnica/" class="prev" rel="prev" title="La Importancia de las Comunidades de Práctica en Organizaciones"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>La Importancia de las Comunidades de Práctica en Organizaciones</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://twitter.com/morvader" target="_blank">Francisco Moreno</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
