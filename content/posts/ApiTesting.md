@@ -14,7 +14,7 @@ tags: [Unit testing]
 categories: []
 
 featuredImage: "/images/apiTesting/TestingStrategy.png"
-featuredImagePreview: "/images/comunidad/TestingStrategy.png"
+featuredImagePreview: "/images/apiTesting/TestingStrategy.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
