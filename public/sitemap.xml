@@ -2,13 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/ofertasqa/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>http://localhost:1313/tags/negocio/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>http://localhost:1313/apitesting/</loc><lastmod>2025-02-11T12:27:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>http://localhost:1313/tags/unit-testing/</loc><lastmod>2025-02-11T12:27:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>http://localhost:1313/ofertasqa/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>http://localhost:1313/tags/negocio/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-02-17T18:33:19&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>http://localhost:1313/apitesting/</loc><lastmod>2025-02-11T12:27:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/unit-testing/</loc><lastmod>2025-02-11T12:27:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/cultura/</loc><lastmod>2025-01-08T12:49:57&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/comunidades-practica-tecnica/</loc><lastmod>2025-01-08T12:49:57&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/carrera/</loc><lastmod>2024-11-21T12:24:40&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
