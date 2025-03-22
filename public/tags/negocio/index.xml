@@ -1,15 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Negocio - Tag - Testing from the trenches</title>
-        <link>http://www.testingfromthetrenches.com/tags/negocio/</link>
+        <link>http://localhost:1313/tags/negocio/</link>
         <description>Negocio - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
-            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/negocio/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/negocio/" rel="self" type="application/rss+xml" /><item>
     <title>Cómo afrontar la venta de proyectos de QA en consultoría</title>
-    <link>http://www.testingfromthetrenches.com/ofertasqa/</link>
+    <link>http://localhost:1313/ofertasqa/</link>
     <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/ofertasqa/</guid>
+    <guid>http://localhost:1313/ofertasqa/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/ofertasQA/techVsNegocio.png" referrerpolicy="no-referrer">
             </div>Artículo, basado en experiencias reales, hablo de las claves para presentar QA como una inversión estratégica que mejora el delivery y reduce costes operativos]]></description>

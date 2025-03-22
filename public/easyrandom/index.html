@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>Cómo mejorar la mantenibilidad de las pruebas unitarias - Testing from the trenches</title><meta name="Description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"><meta property="og:title" content="Cómo mejorar la mantenibilidad de las pruebas unitarias" />
-<meta property="og:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.testingfromthetrenches.com/easyrandom/" /><meta property="og:image" content="http://www.testingfromthetrenches.com/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-10-17T15:58:26+08:00" />
-<meta property="article:modified_time" content="2024-03-04T14:01:28+01:00" /><meta property="og:site_name" content="Testing from the trenches" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://www.testingfromthetrenches.com/logo.png"/>
 
-<meta name="twitter:title" content="Cómo mejorar la mantenibilidad de las pruebas unitarias"/>
-<meta name="twitter:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"/>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Cómo mejorar la mantenibilidad de las pruebas unitarias - Testing from the trenches</title><meta name="Description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"><meta property="og:url" content="http://localhost:1313/easyrandom/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Cómo mejorar la mantenibilidad de las pruebas unitarias">
+  <meta property="og:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-17T15:58:26+08:00">
+    <meta property="article:modified_time" content="2024-03-04T14:01:28+01:00">
+    <meta property="article:tag" content="Unit Testing">
+    <meta property="og:image" content="http://localhost:1313/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/logo.png">
+  <meta name="twitter:title" content="Cómo mejorar la mantenibilidad de las pruebas unitarias">
+  <meta name="twitter:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java">
+      <meta name="twitter:site" content="@morvader">
 <meta name="application-name" content="Testing from the trenches">
 <meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://www.testingfromthetrenches.com/easyrandom/" /><link rel="next" href="http://www.testingfromthetrenches.com/negativetesting/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WPG4T90RQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4WPG4T90RQ');
-</script><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/easyrandom/" /><link rel="next" href="http://localhost:1313/negativetesting/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -36,19 +35,23 @@
         "inLanguage": "es",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/www.testingfromthetrenches.com\/easyrandom\/"
-        },"genre": "posts","keywords": "Unit testing","wordcount":  1977 ,
-        "url": "http:\/\/www.testingfromthetrenches.com\/easyrandom\/","datePublished": "2023-10-17T15:58:26+08:00","dateModified": "2024-03-04T14:01:28+01:00","publisher": {
+            "@id": "http:\/\/localhost:1313\/easyrandom\/"
+        },"genre": "posts","keywords": "Unit testing","wordcount":  1892 ,
+        "url": "http:\/\/localhost:1313\/easyrandom\/","datePublished": "2023-10-17T15:58:26+08:00","dateModified": "2024-03-04T14:01:28+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "Francisco Moreno"
             },"description": "Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"
     }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    </script>
+    
+</head>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<body data-header-desktop="fixed"
+    data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
             <a href="/" title="Testing from the trenches">Testing from the trenches</a>
@@ -106,13 +109,13 @@
     <div class="search-dropdown mobile">
         <div id="search-dropdown-mobile"></div>
     </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
+            <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Cómo mejorar la mantenibilidad de las pruebas unitarias</h1><h2 class="single-subtitle">Primeros pasos con EasyRandom</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-17">2023-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1977 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-17">2023-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1892 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -167,31 +170,21 @@ Veremos cómo, haciendo uso de determinadas librerías, podremos hacer que la ge
 La idea detrás de <code>EasyRandom</code> es proporcionar una manera sencilla de crear objetos con valores aleatorios que puedan ser utilizados en pruebas. En lugar de tener que definir manualmente valores para cada atributo de una clase en cada prueba, <code>EasyRandom</code> automatiza este proceso, generando automáticamente datos aleatorios para cada atributo.</p>
 <p>Esta librería se encarga de manejar tipos de datos primitivos, clases personalizadas, colecciones, y otros tipos de objetos. También puede ser configurada para respetar ciertas reglas y restricciones en la generación de datos, lo que la hace bastante flexible.</p>
 <p>Aquí hay un ejemplo básico de cómo se puede usar <code>EasyRandom</code> para generar un objeto aleatorio:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EasyRandomExample</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">EasyRandom</span> <span class="n">easyRandom</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">Person</span> <span class="n">randomPerson</span> <span class="o">=</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">randomPerson</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>En este ejemplo, <code>Person</code> es una clase ficticia y <code>easyRandom.nextObject(Person.class)</code> genera una instancia de <code>Person</code> con valores aleatorios para sus atributos.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">EasyRandomExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">easyRandom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">randomPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">randomPerson</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div></div>
+<p>En este ejemplo, <code>Person</code> es una clase ficticia y <code>easyRandom.nextObject(Person.class)</code> genera una instancia de <code>Person</code> con valores aleatorios para sus atributos.</p>
 <p>Como puede verse, la generación de estos objetos no depende del constructor de la clase, por lo que, el código de la prueba seguirá compilando, aunque se produzcan cambios en el SUT. Esto solventaría uno de los mayores problemas a la hora de mantener una suite de pruebas automáticas.</p>
 <h2 id="por-qué-es-interesante">¿Por qué es interesante?</h2>
 <p>Utilizar la biblioteca <code>EasyRandom</code> para el testing de tus aplicaciones tiene varias ventajas:</p>
@@ -237,221 +230,138 @@ Entorno utilizado, prerrequisitos</p>
 <h3 id="setup-inicial">Setup inicial</h3>
 <p>Dentro de nuestro proyecto debemos añadir una nueva dependencia
 El fichero pom.xml quedaría de la siguiente manera:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-xml">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.jeasy<span class="nt">&lt;/groupId&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>easy-random-core<span class="nt">&lt;/artifactId&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>5.0.0<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="caso-de-uso-básico">Caso de uso básico</h3>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span></span></span></code></pre></div></div>
+<h3 id="caso-de-uso-básico">Caso de uso básico</h3>
 <p>El caso de uso más básico ya lo hemos visto antes. En ese ejemplo, se asignan valores a los campos de la clase persona de manera totalmente aleatoria. Obviamente, a la hora de hacer pruebas, necesitaremos tener control sobre algunos campos determinados. Vamos a ver esto en un ejemplo.
 Recordemos que easyRandom también puede utilizarse con tipos primitivos. Por tanto, nuestro ejemplo podría quedar así</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PersonServiceTest</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">EasyRandom</span> <span class="n">easyRandom</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">PersonService</span> <span class="n">personService</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PersonService</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testIsAdult</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Genera una persona mayor de edad (edad &gt;= 18)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Person</span> <span class="n">adultPerson</span> <span class="o">=</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">   
-</span></span><span class="line"><span class="cl">   <span class="c1">// Nos aseguramos de que sea mayor de edad 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">adultPerson</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="mi">18</span> <span class="o">+</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="mi">80</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">assertTrue</span><span class="o">(</span><span class="n">personService</span><span class="o">.</span><span class="na">isAdult</span><span class="o">(</span><span class="n">adultPerson</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testIsNotAdult</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Genera una persona menor de edad (edad &lt; 18)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Person</span> <span class="n">minorPerson</span> <span class="o">=</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">   <span class="c1">// Nos aseguramos que sea menor de edad
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">minorPerson</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="n">easyRandom</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="mi">17</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">assertFalse</span><span class="o">(</span><span class="n">personService</span><span class="o">.</span><span class="na">isAdult</span><span class="o">(</span><span class="n">minorPerson</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Como vemos, esta manera de generar los objetos de prueba nos protege ante cambios en la clase “Persona” y nos permite centrarnos únicamente en aquel campo que nos interesa.</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">PersonServiceTest</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">easyRandom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">PersonService</span><span class="w"> </span><span class="n">personService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PersonService</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testIsAdult</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Genera una persona mayor de edad (edad &gt;= 18)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">adultPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="c1">// Nos aseguramos de que sea mayor de edad </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">adultPerson</span><span class="p">.</span><span class="na">setAge</span><span class="p">(</span><span class="n">18</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="n">80</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">assertTrue</span><span class="p">(</span><span class="n">personService</span><span class="p">.</span><span class="na">isAdult</span><span class="p">(</span><span class="n">adultPerson</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testIsNotAdult</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Genera una persona menor de edad (edad &lt; 18)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">minorPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="c1">// Nos aseguramos que sea menor de edad</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">minorPerson</span><span class="p">.</span><span class="na">setAge</span><span class="p">(</span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="n">17</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">assertFalse</span><span class="p">(</span><span class="n">personService</span><span class="p">.</span><span class="na">isAdult</span><span class="p">(</span><span class="n">minorPerson</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div></div>
+<p>Como vemos, esta manera de generar los objetos de prueba nos protege ante cambios en la clase “Persona” y nos permite centrarnos únicamente en aquel campo que nos interesa.</p>
 <p>También podemos utilizar esta librería para generar listas de objetos aleatorios</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Test</span>
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">generateObjectsList</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">EasyRandom</span> <span class="n">generator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">//Generamos una lista de 5 Personas
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">List</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span> <span class="n">persons</span> <span class="o">=</span> <span class="n">generator</span><span class="o">.</span><span class="na">objects</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="mi">5</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">        <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">assertEquals</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="n">persons</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Este test, en sí, no tiene demasiada utilidad, simplemente es para demostrar la capacidad de a la hora de generar listas, las cuales, podrían ser utilizadas para volcar datos a una base de datos, por ejemplo.
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">void</span><span class="w"> </span><span class="nf">generateObjectsList</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">generator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c1">//Generamos una lista de 5 Personas</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span><span class="w"> </span><span class="n">persons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">generator</span><span class="p">.</span><span class="na">objects</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">collect</span><span class="p">(</span><span class="n">Collectors</span><span class="p">.</span><span class="na">toList</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">assertEquals</span><span class="p">(</span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">persons</span><span class="p">.</span><span class="na">size</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div></div>
+<p>Este test, en sí, no tiene demasiada utilidad, simplemente es para demostrar la capacidad de a la hora de generar listas, las cuales, podrían ser utilizadas para volcar datos a una base de datos, por ejemplo.
 Generación de datos parametrizados
 Veamos ahora cómo utilizar esta librería para tener un control más preciso en la misma generación del objeto. Esto podemos hacerlo mediante la parametrización.</p>
 <p>Fijar el valor un campo
 Imaginemos el caso de que para nuestras pruebas queramos mantener ciertos valores constantes (un ID, un nombre, una dirección, etc.) Para conseguirlo, tendríamos que configurar la inicialización de objetos mediante “EasyRandomParameters” y localizar los parámetros por su nombre.</p>
 <p>Veamos cómo:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span> <span class="n">params</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandomParameters</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Asignar un valor al campo por medio de una función lamba
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">params</span><span class="o">.</span><span class="na">randomize</span><span class="o">(</span><span class="n">named</span><span class="o">(</span><span class="s">&#34;age&#34;</span><span class="o">),()-&gt;</span> <span class="mi">5</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">EasyRandom</span> <span class="n">easyRandom</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">(</span><span class="n">params</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// El objeto tendrá siempre una edad de 5
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Por supuesto, lo mismo podría hacer con colecciones u objetos complejos.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span><span class="w"> </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandomParameters</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Asignar un valor al campo por medio de una función lamba</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">params</span><span class="p">.</span><span class="na">randomize</span><span class="p">(</span><span class="n">named</span><span class="p">(</span><span class="s">&#34;age&#34;</span><span class="p">),()</span><span class="o">-&gt;</span><span class="w"> </span><span class="n">5</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">easyRandom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">(</span><span class="n">params</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// El objeto tendrá siempre una edad de 5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">);</span></span></span></code></pre></div></div>
+<p>Por supuesto, lo mismo podría hacer con colecciones u objetos complejos.</p>
 <p>Supongamos que nuestra clase Persona, contiene una clase Dirección en su interior y que, además, deseamos generar una lista de dos personas</p>
 <p>Veamos un ejemplo más completo:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span> <span class="n">parameters</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandomParameters</span><span class="o">()</span>
-</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">randomize</span><span class="o">(</span><span class="n">Address</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s">&#34;Random St.&#34;</span><span class="o">,</span> <span class="s">&#34;Random City&#34;</span><span class="o">))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">EasyRandom</span> <span class="n">easyRandom</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">(</span><span class="n">parameters</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span>
-</span></span><span class="line"><span class="cl">        <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">),</span>
-</span></span><span class="line"><span class="cl">        <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="o">);</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Supongamos ahora que una persona pueda tener varias direcciones. Esto querría decir que el campo “Adress” será una lista dentro de la clase “Person”.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span><span class="w"> </span><span class="n">parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandomParameters</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">.</span><span class="na">randomize</span><span class="p">(</span><span class="n">Address</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Address</span><span class="p">(</span><span class="s">&#34;Random St.&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Random City&#34;</span><span class="p">))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">easyRandom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">(</span><span class="n">parameters</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">return</span><span class="w"> </span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span></span></span></code></pre></div></div>
+<p>Supongamos ahora que una persona pueda tener varias direcciones. Esto querría decir que el campo “Adress” será una lista dentro de la clase “Person”.</p>
 <p>Con esta librería también podemos hacer que nuestras colecciones tengan un tamaño variable. Es algo que también podemos hacer mediante los parámetros.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span> <span class="n">parameters</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandomParameters</span><span class="o">()</span>
-</span></span><span class="line"><span class="cl">               <span class="o">.</span><span class="na">randomize</span><span class="o">(</span><span class="n">Address</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s">&#34;Random St.&#34;</span><span class="o">,</span> <span class="s">&#34;Random City&#34;</span><span class="o">))</span>
-</span></span><span class="line"><span class="cl">	<span class="o">.</span><span class="na">collectionSizeRange</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span> 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">EasyRandom</span> <span class="n">easyRandom</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">(</span><span class="n">parameters</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// El objeto tendrá una lista de entre 2 y 10 direcciones
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="establecer-campos-pseudoaleatorios">Establecer campos pseudoaleatorios</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span><span class="w"> </span><span class="n">parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandomParameters</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">               </span><span class="p">.</span><span class="na">randomize</span><span class="p">(</span><span class="n">Address</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Address</span><span class="p">(</span><span class="s">&#34;Random St.&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Random City&#34;</span><span class="p">))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="na">collectionSizeRange</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">);</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">easyRandom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">(</span><span class="n">parameters</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// El objeto tendrá una lista de entre 2 y 10 direcciones</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">);</span></span></span></code></pre></div></div>
+<h3 id="establecer-campos-pseudoaleatorios">Establecer campos pseudoaleatorios</h3>
 <p>Como hemos visto, fijar valores resulta bastante sencillo y directo. Pero, ¿qué ocurre si queremos controlar la aleatoriedad de los datos?. Es decir, deseamos generar nombres de personas aleatorios, pero que sigan siendo nombres y no únicamente cadenas de caracteres inconexos. Esta misma necesidad, quizá quede más clara cuando nos interese tener aleatoriedad en campos como: email, número de teléfono, DNI, número de tarjeta, nombre de ciudad, etc.</p>
 <p>Para ello, resulta útil a otras librerías de generación de datos. Una de las más conocidas es “Faker”.</p>
 <p>Combinando ambas librerías podríamos llegar a un código como este:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span> <span class="n">params</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandomParameters</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//Generar número entre 0 y 17
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">params</span><span class="o">.</span><span class="na">randomize</span><span class="o">(</span><span class="n">named</span><span class="o">(</span><span class="s">&#34;age&#34;</span><span class="o">),</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">Faker</span><span class="o">.</span><span class="na">instance</span><span class="o">().</span><span class="na">number</span><span class="o">().</span><span class="na">numberBetween</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">17</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Generar nombre &#34;reales&#34; aleatorios
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">params</span><span class="o">.</span><span class="na">randomize</span><span class="o">(</span><span class="n">named</span><span class="o">(</span><span class="s">&#34;name&#34;</span><span class="o">),</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">Faker</span><span class="o">.</span><span class="na">instance</span><span class="o">().</span><span class="na">name</span><span class="o">().</span><span class="na">fullName</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">EasyRandom</span> <span class="n">easyRandom</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EasyRandom</span><span class="o">(</span><span class="n">params</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="n">easyRandom</span><span class="o">.</span><span class="na">nextObject</span><span class="o">(</span><span class="n">Person</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Existen multitud de parámetros que nos permiten controlar la generación de objetos
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-java">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">EasyRandomParameters</span><span class="w"> </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandomParameters</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//Generar número entre 0 y 17</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">params</span><span class="p">.</span><span class="na">randomize</span><span class="p">(</span><span class="n">named</span><span class="p">(</span><span class="s">&#34;age&#34;</span><span class="p">),</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Faker</span><span class="p">.</span><span class="na">instance</span><span class="p">().</span><span class="na">number</span><span class="p">().</span><span class="na">numberBetween</span><span class="p">(</span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="n">17</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Generar nombre &#34;reales&#34; aleatorios</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">params</span><span class="p">.</span><span class="na">randomize</span><span class="p">(</span><span class="n">named</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">),</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Faker</span><span class="p">.</span><span class="na">instance</span><span class="p">().</span><span class="na">name</span><span class="p">().</span><span class="na">fullName</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">EasyRandom</span><span class="w"> </span><span class="n">easyRandom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EasyRandom</span><span class="p">(</span><span class="n">params</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Person</span><span class="w"> </span><span class="n">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">easyRandom</span><span class="p">.</span><span class="na">nextObject</span><span class="p">(</span><span class="n">Person</span><span class="p">.</span><span class="na">class</span><span class="p">);</span></span></span></code></pre></div></div>
+<p>Existen multitud de parámetros que nos permiten controlar la generación de objetos
 En el este enlace puede consultarse más información</p>
 <h3 id="qué-me-ha-parecido">Qué me ha parecido</h3>
 <p>EasyRandom es una librería que debería formar parte de tu mochila si desarrollas pruebas unitarias, ya que ayuda en la mantenibilidad de las pruebas unitarias.
@@ -472,13 +382,13 @@ Además, y aunque pueda resultar extraño, establecer cierta aleatoriedad contro
                             <a class="link-to-markdown" href="/easyrandom/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://www.testingfromthetrenches.com/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias" data-via="morvader" data-hashtags="Unit testing"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://www.testingfromthetrenches.com/easyrandom/" data-hashtag="Unit testing"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://www.testingfromthetrenches.com/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://www.testingfromthetrenches.com/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://www.testingfromthetrenches.com/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias" data-via="morvader" data-hashtags="Unit testing"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/easyrandom/" data-hashtag="Unit testing"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/easyrandom/" data-title="Cómo mejorar la mantenibilidad de las pruebas unitarias" data-description="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2feasyrandom%2f&amp;text=C%c3%b3mo%20mejorar%20la%20mantenibilidad%20de%20las%20pruebas%20unitarias" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/unit-testing/">Unit testing</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/unit-testing/">Unit Testing</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
@@ -487,17 +397,33 @@ Además, y aunque pueda resultar extraño, establecer cierta aleatoriedad contro
     <div class="post-nav">
             <a href="/negativetesting/" class="next" rel="next" title="Testing defensivo">Testing defensivo<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-<div id="comments"></div></article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://twitter.com/morvader" target="_blank">Francisco Moreno</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script><script>
+            var doNotTrack = false;
+            if ( false ) {
+                var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+                var doNotTrack = (dnt == "1" || dnt == "yes");
+            }
+            if (!doNotTrack) {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-4WPG4T90RQ');
+            }
+        </script><script src="https://www.googletagmanager.com/gtag/js?id=G-4WPG4T90RQ" async></script></body>
+
 </html>

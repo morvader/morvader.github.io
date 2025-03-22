@@ -1,33 +1,32 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Unit testing - Tag - Testing from the trenches</title>
-        <link>http://www.testingfromthetrenches.com/tags/unit-testing/</link>
-        <description>Unit testing - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
-            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/unit-testing/" rel="self" type="application/rss+xml" /><item>
+        <title>Unit Testing - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/unit-testing/</link>
+        <description>Unit Testing - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/unit-testing/" rel="self" type="application/rss+xml" /><item>
     <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia</title>
-    <link>http://www.testingfromthetrenches.com/apitesting/</link>
+    <link>http://localhost:1313/apitesting/</link>
     <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/apitesting/</guid>
+    <guid>http://localhost:1313/apitesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/apiTesting/TestingStrategy.png" referrerpolicy="no-referrer">
             </div>Un Enfoque Pragmático para Iniciar la Automatización de Pruebas]]></description>
 </item>
 <item>
     <title>Mis charlas</title>
-    <link>http://www.testingfromthetrenches.com/talks/listadocharlas/</link>
+    <link>http://localhost:1313/talks/listadocharlas/</link>
     <pubDate>Fri, 10 Nov 2023 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/talks/listadocharlas/</guid>
+    <guid>http://localhost:1313/talks/listadocharlas/</guid>
     <description><![CDATA[Recopilación de charlas sobre testing, QA y Test Automation]]></description>
 </item>
 <item>
     <title>Cómo mejorar la mantenibilidad de las pruebas unitarias</title>
-    <link>http://www.testingfromthetrenches.com/easyrandom/</link>
+    <link>http://localhost:1313/easyrandom/</link>
     <pubDate>Tue, 17 Oct 2023 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/easyrandom/</guid>
+    <guid>http://localhost:1313/easyrandom/</guid>
     <description><![CDATA[Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java]]></description>
 </item>
 </channel>

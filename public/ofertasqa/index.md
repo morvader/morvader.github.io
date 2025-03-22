@@ -14,7 +14,7 @@ Durante este tiempo he aprendido que el éxito en la venta de estos servicios ra
 
 A continuación, compartiré algunas ideas claves para facilitar que me han ayudado.
 
-![Diagrama de flujo de QA](/static/images/ofertasQA/ValueQA.png)
+![Diagrama de flujo de QA](/images/ofertasQA/ValueQA.png)
 
 ## Cambio de paradigma: Más allá del testing
 

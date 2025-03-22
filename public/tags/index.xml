@@ -1,47 +1,46 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Testing from the trenches</title>
-        <link>http://www.testingfromthetrenches.com/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><managingEditor>francisco.moreno.sanz@outlook.com (Francisco Moreno)</managingEditor>
-            <webMaster>francisco.moreno.sanz@outlook.com (Francisco Moreno)</webMaster><lastBuildDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Negocio</title>
-    <link>http://www.testingfromthetrenches.com/tags/negocio/</link>
+    <link>http://localhost:1313/tags/negocio/</link>
     <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/tags/negocio/</guid>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/negocio/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Unit testing</title>
-    <link>http://www.testingfromthetrenches.com/tags/unit-testing/</link>
+    <title>Unit Testing</title>
+    <link>http://localhost:1313/tags/unit-testing/</link>
     <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/tags/unit-testing/</guid>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/unit-testing/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Cultura</title>
-    <link>http://www.testingfromthetrenches.com/tags/cultura/</link>
+    <link>http://localhost:1313/tags/cultura/</link>
     <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/tags/cultura/</guid>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/cultura/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Carrera</title>
-    <link>http://www.testingfromthetrenches.com/tags/carrera/</link>
+    <link>http://localhost:1313/tags/carrera/</link>
     <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/tags/carrera/</guid>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/carrera/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Quality Assurance</title>
-    <link>http://www.testingfromthetrenches.com/tags/quality-assurance/</link>
+    <link>http://localhost:1313/tags/quality-assurance/</link>
     <pubDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/tags/quality-assurance/</guid>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/quality-assurance/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
