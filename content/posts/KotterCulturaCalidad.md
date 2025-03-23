@@ -14,7 +14,7 @@ tags: [Cultura]
 categories: []
 
 featuredImage: "/images/CalidadKotter/resumenReglas.png"
-featuredImagePreview: "images/CalidadKotter/ResumenReglas.png"
+featuredImagePreview: "images/CalidadKotter/resumenReglas.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -226,4 +226,4 @@ El objetivo último es “**hacer que la calidad sea un hábito**”
 
 Establecer una cultura de QA no ocurre de la noche a la mañana. Es un viaje que requiere planificación estratégica y persistencia. Las 8 reglas de Kotter nos proporcionan un mapa para esta transformación, pero como con cualquier mapa, tú debes adaptarlo a tu contexto.
 
-{{< figure src="/images/CalidadKotter/ResumenReglas.png" width="600" alt="Resumen reglas" class="center" >}}
+{{< figure src="/images/CalidadKotter/resumenReglas.png" width="600" alt="Resumen reglas" class="center" >}}
