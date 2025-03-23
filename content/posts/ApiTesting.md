@@ -113,7 +113,7 @@ De seguir por esta línea, es probable que lleguemos a un punto donde la pirámi
 
 [Imagen de la pirámide de testing en forma de trofeo]
 
-![TestingTrophy.png](/images/apiTesting/TestingTrophy.png)
+{{< figure src="/images/apiTesting/TestingTrophy.png" width="600" alt="Trofeo testing" class="center" >}}
 
 ## Conclusión
 

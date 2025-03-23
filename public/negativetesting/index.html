@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title>Testing defensivo - Testing from the trenches</title><meta name="Description" content="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código"><meta property="og:url" content="http://localhost:1313/negativetesting/">
+    <title>Testing defensivo - Testing from the trenches</title><meta name="Description" content="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código"><meta property="og:url" content="http://www.testingfromthetrenches.com/negativetesting/">
   <meta property="og:site_name" content="Testing from the trenches">
   <meta property="og:title" content="Testing defensivo">
   <meta property="og:description" content="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código">
@@ -15,17 +15,17 @@
     <meta property="article:published_time" content="2024-02-05T12:00:00+08:00">
     <meta property="article:modified_time" content="2024-03-04T16:37:57+01:00">
     <meta property="article:tag" content="Quality Assurance">
-    <meta property="og:image" content="http://localhost:1313/logo.png">
+    <meta property="og:image" content="http://www.testingfromthetrenches.com/logo.png">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/logo.png">
+  <meta name="twitter:image" content="http://www.testingfromthetrenches.com/logo.png">
   <meta name="twitter:title" content="Testing defensivo">
   <meta name="twitter:description" content="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código">
       <meta name="twitter:site" content="@morvader">
 <meta name="application-name" content="Testing from the trenches">
 <meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/negativetesting/" /><link rel="prev" href="http://localhost:1313/easyrandom/" /><link rel="next" href="http://localhost:1313/pdp-1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://www.testingfromthetrenches.com/negativetesting/" /><link rel="prev" href="http://www.testingfromthetrenches.com/easyrandom/" /><link rel="next" href="http://www.testingfromthetrenches.com/pdp-1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WPG4T90RQ"></script>
@@ -43,9 +43,9 @@
         "inLanguage": "es",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/localhost:1313\/negativetesting\/"
-        },"image": ["http:\/\/localhost:1313\/images\/negativeTestingPost\/inicial.png"],"genre": "posts","keywords": "Quality Assurance","wordcount":  647 ,
-        "url": "http:\/\/localhost:1313\/negativetesting\/","datePublished": "2024-02-05T12:00:00+08:00","dateModified": "2024-03-04T16:37:57+01:00","publisher": {
+            "@id": "http:\/\/www.testingfromthetrenches.com\/negativetesting\/"
+        },"image": ["http:\/\/www.testingfromthetrenches.com\/images\/negativeTestingPost\/inicial.png"],"genre": "posts","keywords": "Quality Assurance","wordcount":  647 ,
+        "url": "http:\/\/www.testingfromthetrenches.com\/negativetesting\/","datePublished": "2024-02-05T12:00:00+08:00","dateModified": "2024-03-04T16:37:57+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -167,14 +167,10 @@
 <h2 id="origen-de-los-errores">Origen de los errores</h2>
 <p>El código, siempre es el código.</p>
 <p>Idealmente, no debería haber diferencia entre el el comportamiento esperado y el código implementado. Pero sabemos que, por muchos factores, eso es prácticamente imposible.</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/images/negativeTestingPost/inicial.png"
-        data-srcset="/images/negativeTestingPost/inicial.png, /images/negativeTestingPost/inicial.png 1.5x, /images/negativeTestingPost/inicial.png 2x"
-        data-sizes="auto"
-        alt="/images/negativeTestingPost/inicial.png"
-        title="targets" /></p>
+<figure class="center"><img src="/images/negativeTestingPost/inicial.png"
+    alt="Situación inicial" width="600">
+</figure>
+
 <p>Ahora, como puede verse en el diagrama, básicamente pueden darse dos situaciones de error:</p>
 <ul>
 <li>El comportamiento deseado no está implementado</li>
@@ -192,14 +188,10 @@
 <li>Conocimientos en herramientas específicas de estrés de sistemas (performance, fuzzy testing, seguridad, etc.)</li>
 <li>Experiencias previas en testing de sistemas similares</li>
 </ul>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/images/negativeTestingPost/completo.png"
-        data-srcset="/images/negativeTestingPost/completo.png, /images/negativeTestingPost/completo.png 1.5x, /images/negativeTestingPost/completo.png 2x"
-        data-sizes="auto"
-        alt="/images/negativeTestingPost/completo.png"
-        title="targets" /></p>
+<figure class="center"><img src="/images/negativeTestingPost/completo.png"
+    alt="Situación final" width="600">
+</figure>
+
 <h2 id="técnicas-para-hacer-testing-negativo">Técnicas para hacer testing negativo</h2>
 <p>Algunas de las técnicas más habituales para realizar testing negativo son:</p>
 <ul>
@@ -221,7 +213,7 @@
                             <a class="link-to-markdown" href="/negativetesting/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/negativetesting/" data-title="Testing defensivo" data-via="morvader" data-hashtags="Quality Assurance"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/negativetesting/" data-title="Testing defensivo"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/negativetesting/" data-hashtag="Quality Assurance"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/negativetesting/" data-title="Testing defensivo"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/negativetesting/" data-title="Testing defensivo"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/negativetesting/" data-title="Testing defensivo" data-image="/images/negativeTestingPost/inicial.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/negativetesting/" data-title="Testing defensivo" data-description="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fnegativetesting%2f&amp;text=Testing%20defensivo" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-title="Testing defensivo" data-via="morvader" data-hashtags="Quality Assurance"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-title="Testing defensivo"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-hashtag="Quality Assurance"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-title="Testing defensivo"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-title="Testing defensivo"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-title="Testing defensivo" data-image="/images/negativeTestingPost/inicial.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://www.testingfromthetrenches.com/negativetesting/" data-title="Testing defensivo" data-description="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2fwww.testingfromthetrenches.com%2fnegativetesting%2f&amp;text=Testing%20defensivo" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -236,7 +228,7 @@
     <div class="post-nav"><a href="/easyrandom/" class="prev" rel="prev" title="Cómo mejorar la mantenibilidad de las pruebas unitarias"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Cómo mejorar la mantenibilidad de las pruebas unitarias</a>
             <a href="/pdp-1/" class="next" rel="next" title="Definiendo un plan de carrera - Parte I">Definiendo un plan de carrera - Parte I<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
+<div id="comments"></div></article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>

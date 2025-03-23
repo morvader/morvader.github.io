@@ -125,7 +125,7 @@ En cada parte, me centro en estos aspectos
 
 Para que os hagáis una idea, uso este formato para ir tomando notas a mano.
 
-![Notas](/images/entrevistas/entrevista.png)
+{{< figure src="/images/entrevistas/entrevista.png" width="600" alt="Notas entrevistas" class="center" >}}
 
 ## Consejos
 

@@ -89,7 +89,7 @@ El código, siempre es el código.
 
 Idealmente, no debería haber diferencia entre el el comportamiento esperado y el código implementado. Pero sabemos que, por muchos factores, eso es prácticamente imposible.
 
-![targets](/images/negativeTestingPost/inicial.png)
+{{< figure src="/images/negativeTestingPost/inicial.png" width="600" alt="Situación inicial" class="center" >}}
 
 Ahora, como puede verse en el diagrama, básicamente pueden darse dos situaciones de error:
 
@@ -113,7 +113,7 @@ Es en este punto donde sí que creo que un perfil de testing puede aportar un pl
 * Conocimientos en herramientas específicas de estrés de sistemas (performance, fuzzy testing, seguridad, etc.)
 * Experiencias previas en testing de sistemas similares
 
-![targets](/images/negativeTestingPost/completo.png)
+{{< figure src="/images/negativeTestingPost/completo.png" width="600" alt="Situación final" class="center" >}}
 
 ## Técnicas para hacer testing negativo
 
