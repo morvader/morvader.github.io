@@ -1,4 +1,4 @@
-FROM hugomods/hugo
+FROM hugomods/hugo:0.145.0
 
 # Exponer el puerto 1313
 EXPOSE 1313

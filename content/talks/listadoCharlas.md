@@ -65,6 +65,20 @@ seo:
 
 ## Entrevistas
 
+### Fran Moreno sobre IA y el futuro del QA
+
+* **Evento:** Señoras que a veces... - Almudena Vivanco
+* **Año:** 2025
+* **Descripción:** Charlo con Almude sobre cómo afecta la IA a la porfesión del QA y de qué estrategias se pueden seguir para testear LLMs.
+* **Enlace:** [Escuchar en Spotify](hhttps://open.spotify.com/episode/5uQ3LQ6A2n1l4Ty6zMuvtg?si=0b310ef6ed5345cd)
+
+### Cambiando el paradigma con Francisco Moreno - MAD Podcast #04
+
+* **Evento:** QEvolution - Más allá del bug
+* **Año:** 2025
+* **Descripción:** Charla con QEvolution sobre retos de la profesión y evolución del puesto de QA en las empresas. Además, también hablamos sobre buenas prácticas, Agile Testing y la visión holística de las pruebas.
+* **Enlace:** [Escuchar en Spotify](https://open.spotify.com/episode/1YXJ4KOSUGxbUK9YOAlsmq?si=0f22256605ba4e2b)
+  
 ### Ni cero, ni uno: QA, QE, Agile Testing - Entrevista con Fran Moreno
 
 * **Evento:** Podcast de Carlos Blé - Ni Cero, Ni Uno

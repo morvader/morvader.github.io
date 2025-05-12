@@ -1,24 +1,34 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cultura - Tag - Testing from the trenches</title>
-        <link>http://www.testingfromthetrenches.com/tags/cultura/</link>
+        <link>http://localhost:1313/tags/cultura/</link>
         <description>Cultura - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 12 May 2025 08:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+    <title>Modelos de madurez y mejora continua en organizaciones</title>
+    <link>http://localhost:1313/modelosmadurez/</link>
+    <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/modelosmadurez/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
+            </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
+</item>
+<item>
     <title>Creando una cultura de calidad en organizaciones</title>
-    <link>http://www.testingfromthetrenches.com/kotterculturacalidad/</link>
+    <link>http://localhost:1313/kotterculturacalidad/</link>
     <pubDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/kotterculturacalidad/</guid>
+    <guid>http://localhost:1313/kotterculturacalidad/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
             </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
 </item>
 <item>
     <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
-    <link>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</link>
+    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
     <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</guid>
+    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/comunidad/comunidad.png" referrerpolicy="no-referrer">
             </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>
