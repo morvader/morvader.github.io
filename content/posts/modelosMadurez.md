@@ -117,7 +117,7 @@ En lugar de imponer una evaluación desde arriba, organiza workshops donde los p
 
 {{< figure src="/images/modelosMadurez/balanza.png" width="500" alt="Pros y contras" class="center" >}}
 
-Aquí os dejo el [cuestionario](https://docs.google.com/spreadsheets/d/10UXwXRUx0g-1ILqQFZ-9awiD161ub2-Omm_fgrNauBA/edit?usp=sharing) que estamos intentando seguir en Technosylva
+Aquí os dejo el [cuestionario](https://docs.google.com/spreadsheets/d/10UXwXRUx0g-1ILqQFZ-9awiD161ub2-Omm_fgrNauBA/edit?usp=sharing) que puede servirte como punto de partida y que estamos intentando seguir en Technosylva.
 
 ## Workshops
 
