@@ -67,7 +67,7 @@ En este artículo exploraré cómo definir un modelo de madurez que sirva como h
 
 Un modelo de madurez es, en esencia, un mapa que nos permite evaluar de manera objetiva dónde nos encontramos en relación a las mejores prácticas de nuestra industria. Funciona como un marco de referencia y se estructuran en diferentes niveles, cada uno representando un grado de madurez en la implementación de prácticas y procesos específicos. 
 
-Existen diversos modelos de madurez ampliamente reconocidos en la industria del software, [TMMi](https://www.tmmi.org/), [DevOps Maturity Model,](https://www.linkedin.com/pulse/devops-crossroads-devop-maturity-models-gods-must-crazy-prince-riley/) [FinOps Capability Model](https://www.finops.org/framework/maturity-model/),  [Continuous Delivery Maturity Model](https://www.infoq.com/articles/Continuous-Delivery-Maturity-Model/)**,** etc**.** 
+Existen diversos modelos de madurez ampliamente reconocidos en la industria del software, [TMMi](https://www.tmmi.org/), [DevOps Maturity Model,](https://www.linkedin.com/pulse/devops-crossroads-devop-maturity-models-gods-must-crazy-prince-riley/) [FinOps Capability Model](https://www.finops.org/framework/maturity-model/),  [Continuous Delivery Maturity Model](https://www.infoq.com/articles/Continuous-Delivery-Maturity-Model/), etc. 
 
 No obstante, a pesar de la existencia de estos modelos estandarizados, es importante recordar que "**no existen mejores prácticas , solo buenas prácticas en contexto**". En la mayoría de los casos, se  obtienen mejores resultados adaptando o creando modelos específicos que reflejen la realidad de la organización.
 
