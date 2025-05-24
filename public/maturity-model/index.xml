@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maturity-Models on Testing from the trenches</title>
+    <link>http://www.testingfromthetrenches.com/maturity-model/</link>
+    <description>Recent content in Maturity-Models on Testing from the trenches</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.testingfromthetrenches.com/maturity-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maturity Model</title>
+      <link>http://www.testingfromthetrenches.com/maturity-model/maturitymodel/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://www.testingfromthetrenches.com/maturity-model/maturitymodel/</guid>
+      <description>&lt;h2 id=&#34;-delivery-maturity-model&#34;&gt;📈 Delivery Maturity Model&lt;/h2&gt;&#xA;&lt;p&gt;Un modelo para evaluar y mejorar la madurez de las prácticas de ingeniería en las organizaciones.&lt;/p&gt;&#xA;&lt;p&gt;📚 &lt;a href=&#34;https://testingfromthetrenches.com/modelosmadurez/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Articulo completo&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;📝 &lt;a href=&#34;https://docs.google.com/spreadsheets/d/10UXwXRUx0g-1ILqQFZ-9awiD161ub2-Omm_fgrNauBA/edit?gid=0#gid=0&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Ver cuestionario&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

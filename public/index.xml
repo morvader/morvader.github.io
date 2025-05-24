@@ -1,107 +1,111 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Testing from the trenches</title>
-        <link>http://localhost:1313/</link>
-        <description>This testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 12 May 2025 08:00:00 &#43;0000</lastBuildDate>
-            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <link>http://www.testingfromthetrenches.com/</link>
+        <description>Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 22 May 2025 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="http://www.testingfromthetrenches.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Construyendo un equipo de QA desde cero en una consultora</title>
+    <link>http://www.testingfromthetrenches.com/equipoqaconsultoria/</link>
+    <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://www.testingfromthetrenches.com/equipoqaconsultoria/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
+            </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
+<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
+<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
+</item>
+<item>
     <title>Modelos de madurez y mejora continua en organizaciones</title>
-    <link>http://localhost:1313/modelosmadurez/</link>
+    <link>http://www.testingfromthetrenches.com/modelosmadurez/</link>
     <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/modelosmadurez/</guid>
+    <guid>http://www.testingfromthetrenches.com/modelosmadurez/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
             </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
 </item>
 <item>
     <title>Creando una cultura de calidad en organizaciones</title>
-    <link>http://localhost:1313/kotterculturacalidad/</link>
+    <link>http://www.testingfromthetrenches.com/kotterculturacalidad/</link>
     <pubDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/kotterculturacalidad/</guid>
+    <guid>http://www.testingfromthetrenches.com/kotterculturacalidad/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
             </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
 </item>
 <item>
     <title>Cómo afrontar la venta de proyectos de QA en consultoría</title>
-    <link>http://localhost:1313/ofertasqa/</link>
+    <link>http://www.testingfromthetrenches.com/ofertasqa/</link>
     <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/ofertasqa/</guid>
+    <guid>http://www.testingfromthetrenches.com/ofertasqa/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/ofertasQA/techVsNegocio.png" referrerpolicy="no-referrer">
             </div>Artículo, basado en experiencias reales, hablo de las claves para presentar QA como una inversión estratégica que mejora el delivery y reduce costes operativos]]></description>
 </item>
 <item>
     <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia</title>
-    <link>http://localhost:1313/apitesting/</link>
+    <link>http://www.testingfromthetrenches.com/apitesting/</link>
     <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/apitesting/</guid>
+    <guid>http://www.testingfromthetrenches.com/apitesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/apiTesting/TestingStrategy.png" referrerpolicy="no-referrer">
             </div>Un Enfoque Pragmático para Iniciar la Automatización de Pruebas]]></description>
 </item>
 <item>
     <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
-    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
+    <link>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</link>
     <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
+    <guid>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/comunidad/comunidad.png" referrerpolicy="no-referrer">
             </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>
 </item>
 <item>
     <title>Framework para entrevistas técnicas</title>
-    <link>http://localhost:1313/entrevistas/</link>
+    <link>http://www.testingfromthetrenches.com/entrevistas/</link>
     <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/entrevistas/</guid>
+    <guid>http://www.testingfromthetrenches.com/entrevistas/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/entrevistas/header.png" referrerpolicy="no-referrer">
             </div>Consejos para preparar y hacer entrevistas técnicas]]></description>
 </item>
 <item>
     <title>Definiendo un plan de carrera - Parte II</title>
-    <link>http://localhost:1313/pdp-2/</link>
+    <link>http://www.testingfromthetrenches.com/pdp-2/</link>
     <pubDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pdp-2/</guid>
+    <guid>http://www.testingfromthetrenches.com/pdp-2/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/PDP/PDP2.png" referrerpolicy="no-referrer">
             </div>Cómo poner en práctica un plan de carrera de manera efectiva]]></description>
 </item>
 <item>
     <title>Definiendo un plan de carrera - Parte I</title>
-    <link>http://localhost:1313/pdp-1/</link>
+    <link>http://www.testingfromthetrenches.com/pdp-1/</link>
     <pubDate>Wed, 08 May 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pdp-1/</guid>
+    <guid>http://www.testingfromthetrenches.com/pdp-1/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/PDP/PDP.png" referrerpolicy="no-referrer">
             </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT]]></description>
 </item>
 <item>
     <title>Testing defensivo</title>
-    <link>http://localhost:1313/negativetesting/</link>
+    <link>http://www.testingfromthetrenches.com/negativetesting/</link>
     <pubDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/negativetesting/</guid>
+    <guid>http://www.testingfromthetrenches.com/negativetesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/negativeTestingPost/inicial.png" referrerpolicy="no-referrer">
             </div>Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código]]></description>
-</item>
-<item>
-    <title>Cómo mejorar la mantenibilidad de las pruebas unitarias</title>
-    <link>http://localhost:1313/easyrandom/</link>
-    <pubDate>Tue, 17 Oct 2023 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/easyrandom/</guid>
-    <description><![CDATA[Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java]]></description>
 </item>
 </channel>
 </rss>

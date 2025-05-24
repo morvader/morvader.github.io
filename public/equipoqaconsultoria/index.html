@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Construyendo un equipo de QA desde cero en una consultora - Testing from the trenches</title><meta name="Description" content="Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas"><meta property="og:url" content="http://www.testingfromthetrenches.com/equipoqaconsultoria/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Construyendo un equipo de QA desde cero en una consultora">
+  <meta property="og:description" content="Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-21T08:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-21T08:00:00+00:00">
+    <meta property="article:tag" content="Cultura">
+    <meta property="og:image" content="http://www.testingfromthetrenches.com/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://www.testingfromthetrenches.com/logo.png">
+  <meta name="twitter:title" content="Construyendo un equipo de QA desde cero en una consultora">
+  <meta name="twitter:description" content="Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas">
+      <meta name="twitter:site" content="@morvader">
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://www.testingfromthetrenches.com/equipoqaconsultoria/" /><link rel="prev" href="http://www.testingfromthetrenches.com/modelosmadurez/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Construyendo un equipo de QA desde cero en una consultora",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/www.testingfromthetrenches.com\/equipoqaconsultoria\/"
+        },"image": ["http:\/\/www.testingfromthetrenches.com\/images\/avatar.png"],"genre": "posts","keywords": "Cultura","wordcount":  2081 ,
+        "url": "http:\/\/www.testingfromthetrenches.com\/equipoqaconsultoria\/","datePublished": "2025-05-21T08:00:00+00:00","dateModified": "2025-05-21T08:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Francisco Moreno","logo": "http:\/\/www.testingfromthetrenches.com\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles">📝  Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤  Talks </a><a class="menu-item" href="/tags/" title="Tags">🏷️  Tags </a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈  Maturity Model </a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍  Exploratory Testing Extension </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">📝 Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤 Talks</a><a class="menu-item" href="/tags/" title="Tags">🏷️ Tags</a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈 Maturity Model</a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍 Exploratory Testing Extension</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Construyendo un equipo de QA desde cero en una consultora</h1><h2 class="single-subtitle">Estrategia y aprendizajes en Sngular</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-05-21">2025-05-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2081 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/equipoQaConsultora/equipoQa.png"
+        data-srcset="/images/equipoQaConsultora/equipoQa.png, /images/equipoQaConsultora/equipoQa.png 1.5x, /images/equipoQaConsultora/equipoQa.png 2x"
+        data-sizes="auto"
+        alt="/images/equipoQaConsultora/equipoQa.png"
+        title="Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#el-adn-de-la-consultoría-beneficio-costes-y-la-justificación-de-la-inversión">El ADN de la consultoría: beneficio, costes y la justificación de la inversión</a></li>
+    <li><a href="#estrategia-hazlo-inevitable">Estrategia: Hazlo inevitable</a></li>
+    <li><a href="#redefinir-el-valor-del-testing">Redefinir el valor del testing</a></li>
+    <li><a href="#de-la-obligación-comercial-a-la-cultura-de-calidad">De la obligación comercial a la cultura de calidad</a></li>
+    <li><a href="#la-calidad-como-sello-de-identidad">La calidad como sello de identidad</a></li>
+    <li><a href="#resultados-obtenidos">Resultados obtenidos</a></li>
+    <li><a href="#consejos-fallos-y-aprendizajes-en-el-camino">Consejos, fallos y aprendizajes en el camino</a>
+      <ul>
+        <li><a href="#-qué-funcionó">✅ Qué funcionó</a></li>
+        <li><a href="#-qué-no-funcionó">❌ Qué no funcionó</a></li>
+        <li><a href="#-aprendizajes-clave">🧭 Aprendizajes clave</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusión">Conclusión</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
+<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
+<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>
+<p>Cuando me uní a Sngular, venía de montar un equipo de QA de 3 personas en una pequeña empresa de producto Asturiana. Sería el año 2010 y en aquella época era cuando se estaba empezando a conocer, al menos en España, todo el tema del Agile Testing y filosofía DevOps. Eso hizo que ya me interesase por salirme del testing más tradicional y enfocarlo desde una perspectiva mucho más pragmática y enfocada en el aporte de valor.</p>
+<p>En mis primeros días en Sngular, recuerdo claramente una conversación con el director de operaciones, le planteé si veía factible construir un equipo de QA estando yo en Asturias, mientras la empresa se dirigía desde Madrid. Su respuesta fue contundente: &ldquo;Por supuesto que sí, si el negocio lo justifica&rdquo;. Esta frase, aunque sencilla, estableció la premisa fundamental que guiaría todo mi camino. Lo que realmente me estaba diciendo es que, si lograba demostrar que el testing generaba negocio, todo lo demás vendría solo.</p>
+<p>Hay que entender el punto de partida. Sngular, entonces como ahora, es una consultora tecnológica dedicada al desarrollo de proyectos y ejecución de servicios. El testing, en aquel momento, no figuraba en el catálogo ni era algo que los clientes demandaran activamente. No éramos, ni es hoy, una empresa con un posicionamiento de mercado específico en testing. Esto, se convirtió en un reto adicional: ¿cómo vender algo para lo que no tienes una imagen de marca consolidada?</p>
+<h2 id="el-adn-de-la-consultoría-beneficio-costes-y-la-justificación-de-la-inversión">El ADN de la consultoría: beneficio, costes y la justificación de la inversión</h2>
+<p>Para entender el contexto completo, es importante comprender cómo funciona una consultora. A diferencia de una empresa de producto, donde las inversiones en calidad tienen un retorno directo sobre el propio producto, el negocio de las consultoras se justifica por su beneficio y la reducción de costes.</p>
+<p>El modelo de negocio se basa fundamentalmente en la venta de horas. Todo lo que no sea venta de horas o facturación directa se considera un gasto. En este entorno, cualquier decisión debe estar justificada en base al aumento de facturación o la reducción de costes; es decir, el incremento de la rentabilidad.</p>
+<p>Esto hacía que comenzar con el testing fuera particularmente complicado. Tradicionalmente, el testing es visto por muchos clientes como un gasto, algo por lo que nadie quiere pagar explícitamente, pues se asume que debería estar incluido en el precio base del desarrollo.</p>
+<p>En este contexto, la pregunta no era solo cómo implementar buenas prácticas de testing, sino cómo hacerlo de manera que generara valor de negocio visible y cuantificable, tanto para Sngular como para sus clientes.</p>
+<h2 id="estrategia-hazlo-inevitable">Estrategia: Hazlo inevitable</h2>
+<p>Muchos podrían esperar que mi estrategia inicial fuera ir equipo por equipo técnico, introduciendo técnicas de testing, testing unitario, pruebas de interacción y buenas prácticas de calidad. Este habría sido el camino lógico, pero estoy seguro de que me habría llevado muchísimo tiempo y recursos sin garantías de éxito.</p>
+<p>Así que opté por la ruta contraria: <strong>asegurarme de que los proyectos se vendieran con el testing ya incluido</strong>. De esta manera, los equipos se verían &ldquo;obligados&rdquo; a hacerlo, y la contratación de perfiles específicos de testing estaría justificada desde el inicio.</p>
+<p>Esta aproximación significaba trabajar primero la parte comercial antes que centrarme en la parte técnica.</p>
+<p>¿La clave? <strong>Convertir a los Business Managers en aliados</strong>. Un comercial quiere, como es natural, vender más. Si les proporcionas las herramientas, el discurso y la confianza para ofrecer algo nuevo y de valor para los clientes, estarán encantados de hacerlo. Era un win-win claro.</p>
+<p>Mi foco inicial, además de mi trabajo en proyectos, fue crear un discurso comercial sólido, preparar materiales de apoyo y generar una nueva forma de enfocar el testing: moderna, ágil y, fundamentalmente, que nos distinguiera de la competencia. El posicionamiento de Sngular como consultora de valor, y no de bajo coste, nos ayudó enormemente. Esto nos permitió construir una oferta de valor en torno al QA sin necesidad de entrar en una guerra de precios con empresas nacionales o internacionales, especialmente aquellas de países con costes más bajos donde el testing a menudo se percibe como una commodity.</p>
+<h2 id="redefinir-el-valor-del-testing">Redefinir el valor del testing</h2>
+<p>Era fundamental cambiar la percepción del testing. En lugar de presentarlo como una forma de &ldquo;encontrar errores&rdquo;, lo posicioné como un elemento que:</p>
+<ul>
+<li><strong>Mejora el <em>delivery</em></strong> continuo y la velocidad de entrega.</li>
+<li>Está <strong>orientado al negocio</strong>, alineando la calidad con los objetivos del cliente.</li>
+<li><strong>Aporta eficiencia</strong> al ciclo de vida del desarrollo, reduciendo costes.</li>
+<li><strong>Maximiza el valor entregado</strong> al cliente final, asegurando que el producto cumple sus expectativas y necesidades.</li>
+</ul>
+<p>Buscamos estar siempre cerca tanto de la parte técnica como de la de negocio, generando impacto tangible para que desde mandos intermedios hasta CTOs y la alta dirección (nivel C) entendieran el valor que aportábamos, un valor que trascendía el simple reporte de bugs. Si no puedes competir en precio, busca un valor diferencial. En consultoría es difícil encontrar &ldquo;océanos azules&rdquo;, pero siempre hay espacio para la diferenciación.</p>
+<h2 id="de-la-obligación-comercial-a-la-cultura-de-calidad">De la obligación comercial a la cultura de calidad</h2>
+<p>Con los proyectos ya vendidos incluyendo QA, los equipos técnicos se encontraron con una nueva realidad: tenían que integrar prácticas de testing en su día a día. Lo que comenzó como una imposición contractual pronto reveló su verdadero valor.</p>
+<p>En las primeras reuniones con los equipos, pude percibir cierta resistencia inicial. &ldquo;Ya tenemos suficiente con cumplir los plazos, ¿y ahora esto?&rdquo;, parecían pensar algunos. Sin embargo, esta actitud cambió rápidamente cuando empezaron a experimentar los beneficios de contar con QA desde el principio:</p>
+<ul>
+<li>Los requisitos se clarificaban mejor antes de comenzar a desarrollar</li>
+<li>Las incidencias se detectaban más temprano, cuando son menos costosas de corregir</li>
+<li>Los clientes estaban más satisfechos con la calidad de las entregas</li>
+<li>Se reducía notablemente el trabajo de soporte post-entrega</li>
+</ul>
+<p>Este cambio de mentalidad comenzó a propagarse orgánicamente por la organización. Los equipos que habían trabajado con QA hablaban positivamente de la experiencia, y otros equipos empezaban a solicitarlo incluso en proyectos donde inicialmente no estaba contemplado.</p>
+<h2 id="la-calidad-como-sello-de-identidad">La calidad como sello de identidad</h2>
+<p>Cuando más proyectos comenzaron a incorporar prácticas de QA y los resultados se hacían evidentes, la calidad empezó a convertirse en parte de la identidad de Sngular.</p>
+<p>En las reuniones con clientes, el equipo de negocio destacaba nuestro enfoque de calidad como algo diferencial de nuestra propuesta de valor. Gracias a ese enfoque se ganaron algunos proyectos importantes.</p>
+<p>En las entrevistas de contratación, los candidatos mencionaban que querían unirse a Sngular porque habían oído hablar de nuestro enfoque de calidad. No estábamos solo atrayendo testers, sino desarrolladores que valoraban trabajar en un entorno donde la calidad formaba parte del día a día.</p>
+<h2 id="resultados-obtenidos">Resultados obtenidos</h2>
+<p>En 6 años pasamos de ser una única persona dedicada al testing a un equipo internacional de cincuenta personas.</p>
+<p>Este crecimiento no fue solo cuantitativo sino también cualitativo:</p>
+<ul>
+<li>Desarrollamos una <strong>metodología propia de testing</strong>, adaptada a la agilidad y a las necesidades de nuestros clientes.</li>
+<li>Creamos <strong>herramientas y servicios específicos</strong> que nos aportaban un valor diferencial.</li>
+<li>Ganamos <strong>visibilidad en el mercado</strong> como referentes en QA, participando en comunidades y eventos.</li>
+<li>Establecimos <strong>planes de carrera y formación continua</strong> para nuestros profesionales, fomentando su crecimiento.</li>
+<li>Logramos que los equipos de desarrollo <strong>integraran naturalmente las prácticas de testing</strong> como parte esencial de su flujo de trabajo.</li>
+</ul>
+<p>Quizás lo más importante es que conseguimos cambiar la percepción del testing tanto internamente como en nuestros clientes, pasando de ser visto como un coste necesario a ser valorado como una inversión que optimiza el proceso completo de entrega de software.</p>
+<h2 id="consejos-fallos-y-aprendizajes-en-el-camino">Consejos, fallos y aprendizajes en el camino</h2>
+<p>Si tuviera que destilar la experiencia en consejos prácticos, serían estos:</p>
+<h3 id="-qué-funcionó">✅ Qué funcionó</h3>
+<ol>
+<li>
+<p><strong>Posiciónate y diferénciate:</strong> No vendas pruebas, vende soluciones y valor. Encuentra tu mensaje único. En un mundo globalizado, siempre habrá alguien más barato. Si no te diferencias, competirás en precio, y esa es una batalla difícil de ganar a largo plazo.</p>
+<ul>
+<li>Llegamos a cambiar el nombre de QA a QE (Quality Engineering) para que se entendiera mejor lo que hacíamos y centrar el aporte de valor, no tanto en las prubas, sino en la mejora de todo el proceso de delivery.</li>
+</ul>
+</li>
+<li>
+<p><strong>Los comerciales son tus aliados:</strong> Ellos eran el canal real de expansión. Dales un buen discurso, prepárales material y déjales hacer su trabajo.</p>
+</li>
+<li>
+<p><strong>Crea comunidad y comparte conocimiento:</strong> Genera conocimiento tanto interno como externo. Da charlas, asiste a eventos, escribe artículos. Monta una comunidad alrededor del conocimiento de la empresa. Esto no solo atrae talento, sino que también posiciona a tu equipo como referente.</p>
+<ul>
+<li>Hicimos público nuestro <a href="https://gitlab.sngular.com/sngulartech/itinerario-formativo-qa" target="_blank" rel="noopener noreffer ">itinerario formativo</a></li>
+<li>Publicamos numerosos artículos técnicos en el blog de Sngular de manera regular</li>
+</ul>
+</li>
+<li>
+<p><strong>Fomenta la innovación:</strong> Explora nuevas soluciones, herramientas y servicios propios que aporten un valor de negocio añadido a los clientes. Esto te mantendrá relevante y por delante de la competencia.</p>
+<ul>
+<li>Focalizamos la investigación y desarrollo de herramientas propias en Contract Testing.</li>
+<li>Establecimos un partnership con <a href="https://pactflow.io/" target="_blank" rel="noopener noreffer ">Pactflow</a> (Smartbear)</li>
+<li>Desarrollamos herramienta de testing automátio de diseños en Figma</li>
+</ul>
+</li>
+<li>
+<p><strong>Invierte en talento y cultura:</strong> Necesitas gente de buen nivel, concienciada y alineada con tu visión de la calidad. Desarrolla planes de formación y carrera que permitan a las personas evolucionar y evangelizar, tanto internamente como en los clientes.</p>
+<ul>
+<li>Elaboramos un plan de desarrollo de carrera escífico para el área de testing. Evaluando tanto la parte técnica, cultural, estratégica como de manager.</li>
+</ul>
+</li>
+<li>
+<p><strong>La estrategia comercial primero:</strong> Generar la necesidad en los clientes primero puede ser más efectivo que intentar un cambio cultural interno desde la base técnica sin un mandato claro o proyectos que lo demanden.</p>
+<ul>
+<li>Acompañamos en todo momento a los comerciales en las reuniones con clientes. Aportando ideas y estrategia de negocio desde el primer momento.</li>
+</ul>
+</li>
+</ol>
+<h3 id="-qué-no-funcionó">❌ Qué no funcionó</h3>
+<ul>
+<li><strong>Empezar desde lo técnico sin apoyo comercial ni de dirección:</strong> Intentar impulsar un cambio cultural profundo en los equipos de desarrollo sin tener proyectos que demanden QA o sin el respaldo explícito de la dirección es una tarea titánica y a menudo frustrante.</li>
+<li><strong>Pensar que el valor del QA se entiende por sí solo:</strong> No podemos asumir que todo el mundo (clientes, comerciales, e incluso otros técnicos) comprende intrínsecamente el valor estratégico del testing. Hay que explicarlo, demostrarlo y, sobre todo, traducirlo a beneficios tangibles.</li>
+<li><strong>Querer cambiar la cultura sin una estrategia de negocio clara detrás:</strong> Los cambios culturales son más efectivos cuando están alineados y soportados por una estrategia de negocio que los justifica y les da un propósito.</li>
+</ul>
+<h3 id="-aprendizajes-clave">🧭 Aprendizajes clave</h3>
+<ul>
+<li><strong>No vendas pruebas. Vende confianza, entrega de valor e impacto en el negocio.</strong> Los clientes no compran &ldquo;testing&rdquo;; compran la tranquilidad de que su producto funcionará, la eficiencia en sus entregas, la mejora de sus resultados y reducir costes.</li>
+<li><strong>En consultoría, el valor debe ser tangible y demostrable.</strong> Las métricas, los casos de éxito y las oportunidades de negocio son fundamentales para justificar la inversión en QA.</li>
+<li><strong>La perfección es enemiga de lo bueno:</strong> Es mejor ser valiente, confiar en el instinto y dar pasos hacia adelante. En muchas ocasiones, avanzar es fundamental para conseguir resultados, aunque no sea con la solución ideal. Iterar, entregar valor incrementalmente y mejorar de forma continua siempre será más efectivo que quedarse paralizado buscando la perfección.</li>
+<li><strong>Cuidado con el &ldquo;síndrome del experto solitario&rdquo; al inicio:</strong> Intentar hacerlo todo tú mismo, especialmente en las primeras etapas, no es escalable ni sostenible. Empoderar a otros, delegar y construir un equipo sólido es crucial para el crecimiento.</li>
+</ul>
+<h2 id="conclusión">Conclusión</h2>
+<p>Montar un área de QA en una empresa donde no se esperaba fue un reto enorme. Pero también fue una oportunidad.</p>
+<p>No lo conseguí con herramientas, ni con procesos, ni con normas. Lo conseguí <strong>entendiendo el negocio</strong>, <strong>alineándome con quienes realmente podían generar cambio</strong> (comerciales, clientes, dirección), y <strong>reposicionando el testing como una palanca de valor, no como un centro de costes.</strong></p>
+<p>Mi consejo final es claro:</p>
+<blockquote>
+<p>Si quieres impulsar el QA en una consultora, deja de vender pruebas. Vende impacto.</p></blockquote>
+<p>Espero que esta historia y estos aprendizajes te sirvan de inspiración.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-05-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/equipoqaconsultoria/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://www.testingfromthetrenches.com/equipoqaconsultoria/" data-title="Construyendo un equipo de QA desde cero en una consultora" data-via="morvader" data-hashtags="Cultura"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://www.testingfromthetrenches.com/equipoqaconsultoria/" data-title="Construyendo un equipo de QA desde cero en una consultora"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://www.testingfromthetrenches.com/equipoqaconsultoria/" data-title="Construyendo un equipo de QA desde cero en una consultora" data-description="Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2fwww.testingfromthetrenches.com%2fequipoqaconsultoria%2f&amp;text=Construyendo%20un%20equipo%20de%20QA%20desde%20cero%20en%20una%20consultora" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cultura/">Cultura</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/modelosmadurez/" class="prev" rel="prev" title="Modelos de madurez y mejora continua en organizaciones"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Modelos de madurez y mejora continua en organizaciones</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script><script>
+            var doNotTrack = false;
+            if ( false ) {
+                var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+                var doNotTrack = (dnt == "1" || dnt == "yes");
+            }
+            if (!doNotTrack) {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-4WPG4T90RQ');
+            }
+        </script><script src="https://www.googletagmanager.com/gtag/js?id=G-4WPG4T90RQ" async></script></body>
+</html>

@@ -1,34 +1,46 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cultura - Tag - Testing from the trenches</title>
-        <link>http://localhost:1313/tags/cultura/</link>
+        <link>http://www.testingfromthetrenches.com/tags/cultura/</link>
         <description>Cultura - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 12 May 2025 08:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 21 May 2025 08:00:00 &#43;0000</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+    <title>Construyendo un equipo de QA desde cero en una consultora</title>
+    <link>http://www.testingfromthetrenches.com/equipoqaconsultoria/</link>
+    <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://www.testingfromthetrenches.com/equipoqaconsultoria/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
+            </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
+<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
+<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
+</item>
+<item>
     <title>Modelos de madurez y mejora continua en organizaciones</title>
-    <link>http://localhost:1313/modelosmadurez/</link>
+    <link>http://www.testingfromthetrenches.com/modelosmadurez/</link>
     <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/modelosmadurez/</guid>
+    <guid>http://www.testingfromthetrenches.com/modelosmadurez/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
             </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
 </item>
 <item>
     <title>Creando una cultura de calidad en organizaciones</title>
-    <link>http://localhost:1313/kotterculturacalidad/</link>
+    <link>http://www.testingfromthetrenches.com/kotterculturacalidad/</link>
     <pubDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/kotterculturacalidad/</guid>
+    <guid>http://www.testingfromthetrenches.com/kotterculturacalidad/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
             </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
 </item>
 <item>
     <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
-    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
+    <link>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</link>
     <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
+    <guid>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/comunidad/comunidad.png" referrerpolicy="no-referrer">
             </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>

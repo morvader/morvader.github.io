@@ -34,16 +34,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [author]
   name = "Francisco Moreno"
   email = "francisco.moreno.sanz@outlook.com"
-  link = "https://twitter.com/morvader"
+  link = "https://www.linkedin.com/in/franciscomorenosanz/"
 
 # Menu config
 [menu]
   [[menu.main]]
     weight = 1
     identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
+    pre = "📝 "
     post = ""
     name = "Posts"
     url = "/posts/"
@@ -52,19 +50,35 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [[menu.main]]
     weight = 2
     identifier = "Talks"
-    pre = ""
+    pre = "🎤 "
     post = ""
     name = "Talks"
     url = "/talks/listadocharlas/"
-    title = "My testing talks"
-  [[menu.main]]
+    title = "My testing talks and podcast"
+    [[menu.main]]
     weight = 3
     identifier = "tags"
-    pre = ""
+    pre = "🏷️ "
     post = ""
     name = "Tags"
     url = "/tags/"
-    title = ""
+    title = "Tags"
+    [[menu.main]]
+    weight = 4
+    identifier = "maturity-model"
+    pre = "📈 "
+    post = ""
+    name = "Maturity Model"
+    url = "/maturity-model/maturitymodel"
+    title = "Cuestionario de niveles de madurez"
+     [[menu.main]]
+    weight = 5
+    identifier = "exploratory-extension"
+    pre = "🔍 "
+    post = ""
+    name = "Exploratory Testing Extension"
+    url = "/exploratory-extension/testingextension"
+    title = "Exploratory Testing Chrome Extension"
 
 
 [params]
@@ -80,7 +94,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website title for Open Graph and Twitter Cards
   title = "Testing from the trenches"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "This testing from the trenches"
+  description = "Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
@@ -351,21 +365,21 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = true
+      Facebook = false
       Linkedin = false
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Blogger = false
       Baidu = false
       Odnoklassniki = false
@@ -474,11 +488,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  Page SEO config
     [params.page.seo]
       # image URL
-      images = []
+      images = ["/images/avatar.png"]
       # Publisher info
       [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
+        name = "Francisco Moreno"
+        logoUrl = "/images/avatar.png"
 
   #  TypeIt config
   [params.typeit]
@@ -493,7 +507,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
+    google = "i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0"
     bing = ""
     yandex = ""
     pinterest = ""
@@ -502,9 +516,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  Site SEO config
   [params.seo]
     # image URL
-    image = ""
+    image = "/images/avatar.png"
     # thumbnail URL
-    thumbnailUrl = ""
+    thumbnailUrl = "/images/avatar.png"
 
   #  Analytics config
   [params.analytics]

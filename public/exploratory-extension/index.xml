@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exploratory-Extensions on Testing from the trenches</title>
+    <link>http://www.testingfromthetrenches.com/exploratory-extension/</link>
+    <description>Recent content in Exploratory-Extensions on Testing from the trenches</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.testingfromthetrenches.com/exploratory-extension/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploratory Testing Chrome Extension</title>
+      <link>http://www.testingfromthetrenches.com/exploratory-extension/testingextension/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://www.testingfromthetrenches.com/exploratory-extension/testingextension/</guid>
+      <description>&lt;h2 id=&#34;-exploratory-testing-chrome-extension&#34;&gt;🔍 Exploratory Testing Chrome Extension&lt;/h2&gt;&#xA;&lt;p&gt;A Chrome extension designed for making web exploratory testing easier&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;🐛 Report bugs, ideas, notes and questions easily&lt;br&gt;&#xA;📸 Take screenshots during the session. Keep focused&lt;br&gt;&#xA;🔗 URL will be tracked automatically&lt;br&gt;&#xA;📊 See session results in a report&lt;br&gt;&#xA;💾 Export and import sessions&lt;br&gt;&#xA;📤 Export session to JSON, CSV or HTML&lt;/p&gt;&#xA;&lt;p&gt;⬇️ &lt;a href=&#34;https://chromewebstore.google.com/detail/exploratory-testing/khigmghadjljgjpamimgjjmpmlbgmekj&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Install&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;💻 &lt;a href=&#34;https://github.com/morvader/ExploratoryTestingChromeExtension&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Github repository&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

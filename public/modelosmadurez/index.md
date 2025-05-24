@@ -11,7 +11,7 @@ En este artículo exploraré cómo definir un modelo de madurez que sirva como h
 
 Un modelo de madurez es, en esencia, un mapa que nos permite evaluar de manera objetiva dónde nos encontramos en relación a las mejores prácticas de nuestra industria. Funciona como un marco de referencia y se estructuran en diferentes niveles, cada uno representando un grado de madurez en la implementación de prácticas y procesos específicos. 
 
-Existen diversos modelos de madurez ampliamente reconocidos en la industria del software, [TMMi](https://www.tmmi.org/), [DevOps Maturity Model,](https://www.linkedin.com/pulse/devops-crossroads-devop-maturity-models-gods-must-crazy-prince-riley/) [FinOps Capability Model](https://www.finops.org/framework/maturity-model/),  [Continuous Delivery Maturity Model](https://www.infoq.com/articles/Continuous-Delivery-Maturity-Model/)**,** etc**.** 
+Existen diversos modelos de madurez ampliamente reconocidos en la industria del software, [TMMi](https://www.tmmi.org/), [DevOps Maturity Model,](https://www.linkedin.com/pulse/devops-crossroads-devop-maturity-models-gods-must-crazy-prince-riley/) [FinOps Capability Model](https://www.finops.org/framework/maturity-model/),  [Continuous Delivery Maturity Model](https://www.infoq.com/articles/Continuous-Delivery-Maturity-Model/), etc. 
 
 No obstante, a pesar de la existencia de estos modelos estandarizados, es importante recordar que "**no existen mejores prácticas , solo buenas prácticas en contexto**". En la mayoría de los casos, se  obtienen mejores resultados adaptando o creando modelos específicos que reflejen la realidad de la organización.
 
@@ -27,7 +27,7 @@ Al establecer un punto de referencia, los equipos pueden:
 - **Establecer metas realistas**: Definir objetivos alcanzables y medibles que fomenten el crecimiento.
 - **Facilitar la comunicación**: Proporcionar un lenguaje común que permita a todos los miembros del equipo entender el proceso de mejora.
 
-{{< figure src="/images/modelosMadurez/flujo.png" width="600" alt="Flujo de implementación" class="center" >}}
+{{< figure src="/images/modelosMadurez/flujo.png" width="800" alt="Flujo de implementación" class="center" >}}
 
 ## Estado de situación: Gap hasta el siguiente nivel
 
@@ -59,9 +59,9 @@ Basado en mi experiencia, estas son algunas de las aproximaciones más efectivas
 
 En lugar de imponer una evaluación desde arriba, organiza workshops donde los propios equipos puedan autoevaluarse utilizando el modelo como guía. Esta aproximación no solo genera datos más precisos (nadie conoce mejor los procesos que quienes los ejecutan diariamente), sino que también crea un sentido de propiedad sobre el proceso de mejora.
 
-{{< figure src="/images/modelosMadurez/balanza.png" width="800" alt="Niveles de madurez" class="center" >}}
+{{< figure src="/images/modelosMadurez/balanza.png" width="500" alt="Pros y contras" class="center" >}}
 
-Aquí os dejo el [cuestionario](https://docs.google.com/spreadsheets/d/10UXwXRUx0g-1ILqQFZ-9awiD161ub2-Omm_fgrNauBA/edit?usp=sharing) que estamos intentando seguir en Technosylva
+Aquí os dejo el [cuestionario](https://docs.google.com/spreadsheets/d/10UXwXRUx0g-1ILqQFZ-9awiD161ub2-Omm_fgrNauBA/edit?usp=sharing) que puede servirte como punto de partida y que estamos intentando seguir en Technosylva.
 
 ## Workshops
 
@@ -97,5 +97,3 @@ Los modelos de madurez no son fórmulas mágicas ni recetas infalibles, sino her
 **¿Por dónde empezar?** El primer paso es identificar con los equipos 2-3 áreas prioritarias de mejora. Realiza una autoevaluación honesta, y selecciona aquellas capacidades que mayor impacto tendrían en vuestros objetivos de negocio. Recuerda que es mejor hacer pocas cosas bien que muchas a medias.
 
 De todas formas, como ya comenté en [post](https://www.notion.so/Modelos-de-madurez-y-mejora-continua-en-organizaciones-1f040b3b91d180ec92afda0d04a68a2a?pvs=21) anterior, es fundamental facilitar un contexto que posibilite los cambios necesarios. No se podrá implementar un modelo de madurez de manera efectiva si no se cuenta con el tiempo, recursos, compromiso y conocimientos necesarios.
-
-{{< figure src="/images/CalidadKotter/madurez.png" width="800" alt="Niveles de madurez" class="center" >}}
