@@ -6,14 +6,14 @@
     <description>Recent content in Exploratory-Extensions on Testing from the trenches</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 May 2025 11:29:53 +0000</lastBuildDate>
     <atom:link href="http://www.testingfromthetrenches.com/exploratory-extension/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploratory Testing Chrome Extension</title>
       <link>http://www.testingfromthetrenches.com/exploratory-extension/testingextension/</link>
       <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
       <guid>http://www.testingfromthetrenches.com/exploratory-extension/testingextension/</guid>
-      <description>&lt;h2 id=&#34;-exploratory-testing-chrome-extension&#34;&gt;🔍 Exploratory Testing Chrome Extension&lt;/h2&gt;&#xA;&lt;p&gt;A Chrome extension designed for making web exploratory testing easier&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;🐛 Report bugs, ideas, notes and questions easily&lt;br&gt;&#xA;📸 Take screenshots during the session. Keep focused&lt;br&gt;&#xA;🔗 URL will be tracked automatically&lt;br&gt;&#xA;📊 See session results in a report&lt;br&gt;&#xA;💾 Export and import sessions&lt;br&gt;&#xA;📤 Export session to JSON, CSV or HTML&lt;/p&gt;&#xA;&lt;p&gt;⬇️ &lt;a href=&#34;https://chromewebstore.google.com/detail/exploratory-testing/khigmghadjljgjpamimgjjmpmlbgmekj&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Install&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;💻 &lt;a href=&#34;https://github.com/morvader/ExploratoryTestingChromeExtension&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Github repository&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;-exploratory-testing-chrome-extension&#34;&gt;🔍 Exploratory Testing Chrome Extension&lt;/h2&gt;&#xA;&lt;p&gt;A Chrome extension designed for making web exploratory testing easier&lt;/p&gt;&#xA;&lt;figure class=&#34;center&#34;&gt;&lt;img src=&#34;http://www.testingfromthetrenches.com/images/testingextension/info.png&#34;&#xA;    alt=&#34;Main&#34; width=&#34;700&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🐛 Quickly create and track bugs, notes, ideas and questions&lt;/li&gt;&#xA;&lt;li&gt;📸 Capture full page or custom cropped screenshots&lt;/li&gt;&#xA;&lt;li&gt;🔗 Automatically track URLs for each annotation created&lt;/li&gt;&#xA;&lt;li&gt;🔍 Advanced filtering of annotations by type in reports&lt;/li&gt;&#xA;&lt;li&gt;📊 Visualize testing data through interactive charts&lt;/li&gt;&#xA;&lt;li&gt;👁️ View screenshot previews instantly on hover&lt;/li&gt;&#xA;&lt;li&gt;💾 Export testing sessions to JSON, CSV or HTML formats&lt;/li&gt;&#xA;&lt;li&gt;🤝 Share and collaborate by importing/exporting sessions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Screenshots&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
