@@ -3,7 +3,17 @@
         <title>Cultura - Tag - Testing from the trenches</title>
         <link>http://www.testingfromthetrenches.com/tags/cultura/</link>
         <description>Cultura - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 21 May 2025 08:00:00 &#43;0000</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+    <title>Testing y gorilas</title>
+    <link>http://www.testingfromthetrenches.com/testinggorillaillusion/</link>
+    <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://www.testingfromthetrenches.com/testinggorillaillusion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/gorillaTesting/gorillaTesting.png" referrerpolicy="no-referrer">
+            </div>Estrategias para evitar visión de túnel en las pruebas]]></description>
+</item>
+<item>
     <title>Construyendo un equipo de QA desde cero en una consultora</title>
     <link>http://www.testingfromthetrenches.com/equipoqaconsultoria/</link>
     <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
