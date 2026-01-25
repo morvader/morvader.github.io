@@ -8,7 +8,7 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Un Enfoque Pragmático para Iniciar la Automatización de Pruebas"
 license: ""
-images: []
+images: ["/images/apiTesting/TestingStrategy.png"]
 
 tags: [Unit testing]
 categories: []
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/apiTesting/TestingStrategy.png"]
 ---
 <!--more-->
 

@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Estrategias para evitar visión de túnel en las pruebas"
 license: ""
-images: []
+images: ["/images/gorillaTesting/gorillaTesting.jpg"]
 
 tags: [Cultura]
 categories: []
 
-featuredImage: "/images/gorillaTesting/gorillaTesting.png"
-featuredImagePreview: "images/gorillaTesting/gorillaTesting.png"
+featuredImage: "/images/gorillaTesting/gorillaTesting.jpg"
+featuredImagePreview: "/images/gorillaTesting/gorillaTesting.jpg"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/gorillaTesting/gorillaTesting.jpg"]
 ---
 <!--more-->
 Imagina por un momento que estás viendo un video donde seis personas se pasan pelotas de baloncesto. Tu tarea es sencilla: contar cuántas veces se pasan la pelota las personas vestidas de blanco. Te concentras, sigues cada movimiento con atención... 15, 16, 17... Al final del video te preguntan: "¿Cuántos pases contaste?" Perfecto, tienes la respuesta exacta.

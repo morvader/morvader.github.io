@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Estrategia para el crear cultura de calidad en organizaciones"
 license: ""
-images: []
+images: ["/images/CalidadKotter/resumenReglas.png"]
 
 tags: [Cultura]
 categories: []
 
 featuredImage: "/images/CalidadKotter/resumenReglas.png"
-featuredImagePreview: "images/CalidadKotter/resumenReglas.png"
+featuredImagePreview: "/images/CalidadKotter/resumenReglas.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/CalidadKotter/resumenReglas.png"]
 ---
 <!--more-->
 # Cómo crear una cultura de calidad con las reglas de Kotter

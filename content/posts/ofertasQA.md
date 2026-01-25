@@ -8,7 +8,7 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Artículo, basado en experiencias reales, hablo de las claves para presentar QA como una inversión estratégica que mejora el delivery y reduce costes operativos"
 license: ""
-images: []
+images: ["/images/ofertasQA/techVsNegocio.png"]
 
 tags: [Negocio]
 categories: []
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/ofertasQA/techVsNegocio.png"]
 ---
 <!--more-->
 

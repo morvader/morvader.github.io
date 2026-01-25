@@ -7,13 +7,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones"
 license: ""
-images: []
+images: ["/images/CalidadKotter/madurez.png"]
 
 tags: [Cultura]
 categories: []
 
 featuredImage: "/images/CalidadKotter/madurez.png"
-featuredImagePreview: "images/CalidadKotter/madurez.png"
+featuredImagePreview: "/images/CalidadKotter/madurez.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -54,7 +54,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/CalidadKotter/madurez.png"]
 ---
 <!--more-->
 # Modelos de madurez y mejora continua en organizaciones

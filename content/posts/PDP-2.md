@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Cómo poner en práctica un plan de carrera de manera efectiva"
 license: ""
-images: []
+images: ["/images/PDP/PDP2.jpg"]
 
 tags: [Carrera]
 categories: []
 
-featuredImage: "/images/PDP/PDP2.png"
-featuredImagePreview: "/images/PDP/PDP2.png"
+featuredImage: "/images/PDP/PDP2.jpg"
+featuredImagePreview: "/images/PDP/PDP2.jpg"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/PDP/PDP2.jpg"]
 ---
 <!--more-->
 

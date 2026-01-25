@@ -7,13 +7,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Experiencia personal de como pasé de ser el único tester de Sngular a formar un equipo internacional de 50 personas"
 license: ""
-images: []
+images: ["/images/equipoQaConsultora/equipoQa.png"]
 
 tags: [Cultura]
 categories: []
 
 featuredImage: "/images/equipoQaConsultora/equipoQa.png"
-featuredImagePreview: "images/equipoQaConsultora/equipoQa.png"
+featuredImagePreview: "/images/equipoQaConsultora/equipoQa.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -54,7 +54,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/equipoQaConsultora/equipoQa.png"]
 ---
 
 # Construyendo un equipo de QA desde cero en una consultora

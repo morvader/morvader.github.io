@@ -1,0 +1,227 @@
+{{- $params := .Scratch.Get "params" -}}
+
+{{- with .Site.Params.verification.google -}}
+    <meta name="google-site-verification" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Params.verification.bing -}}
+    <meta name="msvalidate.01" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Params.verification.yandex -}}
+    <meta name="yandex-verification" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Params.verification.pinterest -}}
+    <meta name="p:domain_verify" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Params.verification.baidu -}}
+    <meta name="baidu-site-verification" content="{{ . }}" />
+{{- end -}}
+
+{{- /* Open Graph and Twitter Card tags */ -}}
+{{- if .IsPage -}}
+    {{- $title := .Title | plainify -}}
+    {{- $description := .Description | default .Summary | plainify | truncate 160 -}}
+    {{- $image := $params.featuredImagePreview | default $params.featuredImage | default .Site.Params.seo.image | absURL -}}
+    {{- $siteName := .Site.Title -}}
+
+    {{- /* Open Graph */ -}}
+    <meta property="og:title" content="{{ $title }}" />
+    <meta property="og:description" content="{{ $description }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ $siteName }}" />
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    {{- with $image -}}
+        <meta property="og:image" content="{{ . }}" />
+        <meta property="og:image:secure_url" content="{{ . }}" />
+    {{- end -}}
+    {{- if not .PublishDate.IsZero -}}
+        <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}" />
+    {{- else if not .Date.IsZero -}}
+        <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
+    {{- end -}}
+    {{- with .Lastmod -}}
+        <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}" />
+    {{- end -}}
+    {{- with .Params.author | default .Site.Params.Author.name -}}
+        <meta property="article:author" content="{{ . }}" />
+    {{- end -}}
+    {{- with .Params.tags -}}
+        {{- range . -}}
+            <meta property="article:tag" content="{{ . }}" />
+        {{- end -}}
+    {{- end -}}
+
+    {{- /* Twitter Card */ -}}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $title }}" />
+    <meta name="twitter:description" content="{{ $description }}" />
+    {{- with $image -}}
+        <meta name="twitter:image" content="{{ . }}" />
+    {{- end -}}
+    {{- with .Site.Params.social.Twitter -}}
+        <meta name="twitter:site" content="@{{ . }}" />
+        <meta name="twitter:creator" content="@{{ . }}" />
+    {{- end -}}
+{{- else -}}
+    {{- /* Open Graph for home page */ -}}
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    {{- with .Site.Params.seo.image | absURL -}}
+        <meta property="og:image" content="{{ . }}" />
+    {{- end -}}
+
+    {{- /* Twitter Card for home page */ -}}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+    {{- with .Site.Params.seo.image | absURL -}}
+        <meta name="twitter:image" content="{{ . }}" />
+    {{- end -}}
+    {{- with .Site.Params.social.Twitter -}}
+        <meta name="twitter:site" content="@{{ . }}" />
+    {{- end -}}
+{{- end -}}
+
+{{- /* Home SEO */ -}}
+{{- if .IsHome -}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "{{ .Permalink }}",
+        {{- with .Site.LanguageCode -}}
+            "inLanguage": "{{ . }}",
+        {{- end -}}
+        {{- with .Site.Params.Author.name -}}
+            "author": {
+                "@type": "Person",
+                "name": {{ . | safeHTML }}
+            },
+        {{- end -}}
+        {{- with .Site.Params.description -}}
+            "description": {{ . | safeHTML }},
+        {{- end -}}
+        {{- $image := .Site.Params.seo.image -}}
+        {{- with dict "Path" $image "Resources" .Resources | partial "function/resource.html" -}}
+            "image": {
+                "@type": "ImageObject",
+                "url": "{{ .Permalink }}",
+                "width": {{ .Width }},
+                "height": {{ .Height }}
+            },
+        {{- else -}}
+            {{- with $image -}}
+                "image": "{{ . | absURL }}",
+            {{- end -}}
+        {{- end -}}
+        {{- with .Site.Params.seo.thumbnailUrl -}}
+            {{- with dict "Path" . "Resources" $.Resources | partial "function/resource.html" -}}
+                "thumbnailUrl": "{{ .Permalink }}",
+            {{- else -}}
+                "thumbnailUrl": "{{ . | absURL }}",
+            {{- end -}}
+        {{- end -}}
+        {{- with .Site.Copyright -}}
+            "license": "{{ . | safeHTML }}",
+        {{- end -}}
+        "name": {{ .Site.Title | safeHTML }}
+    }
+    </script>
+
+{{- /* Page SEO */ -}}
+{{- else if .IsPage -}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ .Title | safeHTML }},
+        "inLanguage": "{{ .Site.LanguageCode }}",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Permalink }}"
+        },
+        {{- $images := $params.seo.images | default slice -}}
+        {{- if not $images -}}
+            {{- $featuredImage := $params.featuredImagePreview | default $params.featuredImage -}}
+            {{- if $featuredImage -}}
+                {{- $images = slice $featuredImage -}}
+            {{- end -}}
+            {{- with .Resources.GetMatch "featured-image-preview" -}}
+                {{- $images = slice "featured-image-preview" -}}
+            {{- end -}}
+            {{- with .Resources.GetMatch "featured-image" -}}
+                {{- $images = slice "featured-image" -}}
+            {{- end -}}
+        {{- end -}}
+        {{- with .Site.Params.seo.image -}}
+            {{- $images = $images | default (slice .) -}}
+        {{- end -}}
+        {{- with $images -}}
+            "image": [
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},{{ end -}}
+                    {{- with dict "Path" $value "Resources" $.Resources | partial "function/resource.html" -}}
+                        {
+                            "@type": "ImageObject",
+                            "url": "{{ .Permalink }}",
+                            "width": {{ .Width }},
+                            "height": {{ .Height }}
+                        }
+                    {{- else -}}
+                        {{- with $value -}}
+                            "{{ . | absURL }}"
+                        {{- end -}}
+                    {{- end -}}
+                {{- end -}}
+            ],
+        {{- end -}}
+        "genre": "{{ .Type }}",
+        {{- with .Params.tags -}}
+            "keywords": "{{ delimit . ", " }}",
+        {{- end -}}
+        "wordcount": {{ .WordCount }},
+        "url": "{{ .Permalink }}",
+        {{- if not .PublishDate.IsZero -}}
+            "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+        {{- else if not .Date.IsZero -}}
+            "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+        {{- end -}}
+        {{- with .Lastmod -}}
+            "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+        {{- end -}}
+        {{- with .Site.Copyright -}}
+            "license": {{ . | safeHTML }},
+        {{- end -}}
+        {{- $publisher := .Params.author | default .Site.Params.Author.name | default (T "author") | dict "name" -}}
+        {{- $publisher = $params.seo.publisher | default dict | merge $publisher -}}
+        "publisher": {
+            "@type": "Organization",
+            "name": {{ $publisher.name | safeHTML }}
+            {{- $logo := $publisher.logoUrl -}}
+            {{- with dict "Path" $logo "Resources" .Resources | partial "function/resource.html" -}}
+                ,"logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ .Permalink }}",
+                    "width": {{ .Width }},
+                    "height": {{ .Height }}
+                }
+            {{- else -}}
+                {{- with $logo -}}
+                    ,"logo": "{{ . | absURL }}"
+                {{- end -}}
+            {{- end -}}
+        },
+        {{- with .Params.author | default .Site.Params.Author.name | default (T "author") -}}
+            "author": {
+                "@type": "Person",
+                "name": {{ . | safeHTML }}
+            },
+        {{- end -}}
+        "description": {{ .Description | safeHTML }}
+    }
+    </script>
+{{- end -}}

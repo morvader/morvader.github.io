@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>IA - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/ia/</link>
+        <description>IA - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/ia/" rel="self" type="application/rss+xml" /><item>
+    <title>Path Formativo para el QA del Futuro</title>
+    <link>http://localhost:1313/path-formativo-qa-futuro/</link>
+    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/path-formativo-qa-futuro/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/path-formativo/path-formativo.jpg" referrerpolicy="no-referrer">
+            </div>Ruta de aprendizaje actualizada para QA: de fundamentos orientados al impacto hasta especialización en IA o plataformas]]></description>
+</item>
+<item>
+    <title>My two cents: El futuro del QA en la era de la IA</title>
+    <link>http://localhost:1313/futuro-qa-era-ia/</link>
+    <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/futuro-qa-era-ia/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/futuro-qa/futuro-qa.jpg" referrerpolicy="no-referrer">
+            </div>El rol tradicional de QA evoluciona ante la IA. De ejecutor de tests a orquestador estratégico de sistemas de calidad.]]></description>
+</item>
+</channel>
+</rss>

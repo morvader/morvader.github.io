@@ -8,7 +8,7 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código"
 license: ""
-images: []
+images: ["/images/negativeTestingPost/inicial.png"]
 
 tags: [Quality Assurance]
 categories: []
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: [/images/negativeTestingPost/inicial.png]
+  images: ["/images/negativeTestingPost/inicial.png"]
 ---
 <!--more-->
 

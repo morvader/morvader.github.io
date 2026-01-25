@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental"
 license: ""
-images: []
+images: ["/images/comunidad/comunidad.jpg"]
 
 tags: [Cultura]
 categories: []
 
-featuredImage: "/images/comunidad/comunidad.png"
-featuredImagePreview: "/images/comunidad/comunidad.png"
+featuredImage: "/images/comunidad/comunidad.jpg"
+featuredImagePreview: "/images/comunidad/comunidad.jpg"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/comunidad/comunidad.jpg"]
 ---
 <!--more-->
 # Las Comunidades de Práctica Técnica: Catalizadores del Aprendizaje Organizacional

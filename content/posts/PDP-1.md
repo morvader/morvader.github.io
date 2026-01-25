@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT"
 license: ""
-images: []
+images: ["/images/PDP/PDP.jpg"]
 
 tags: [Carrera]
 categories: []
 
-featuredImage: "/images/PDP/PDP.png"
-featuredImagePreview: "/images/PDP/PDP.png"
+featuredImage: "/images/PDP/PDP.jpg"
+featuredImagePreview: "/images/PDP/PDP.jpg"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/PDP/PDP.jpg"]
 ---
 <!--more-->
 

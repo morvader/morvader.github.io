@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Testing from the trenches</title><meta name="Description" content="Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer"><meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Testing from the trenches">
+  <meta property="og:description" content="Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+  <meta name="twitter:title" content="Testing from the trenches">
+  <meta name="twitter:description" content="Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer">
+      <meta name="twitter:site" content="@morvader">
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="Testing from the trenches">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title="Testing from the trenches"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0" /><meta property="og:title" content="Testing from the trenches" />
+    <meta property="og:description" content="Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:1313/" />
+    <meta property="og:site_name" content="Testing from the trenches" />
+    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/avatar.jpg" /><meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Testing from the trenches" />
+    <meta name="twitter:description" content="Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer" /><meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg" /><meta name="twitter:site" content="@morvader" /><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "http:\/\/localhost:1313\/","inLanguage": "es","author": {
+                "@type": "Person",
+                "name": "xxxx"
+            },"description": "Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer","image": "http:\/\/localhost:1313\/images\/avatar.jpg","thumbnailUrl": "http:\/\/localhost:1313\/images\/avatar.jpg","name": "Testing from the trenches"
+    }
+    </script>
+    
+</head>
+
+<body data-header-desktop="fixed"
+    data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles">📝  Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤  Talks </a><a class="menu-item" href="/tags/" title="Tags">🏷️  Tags </a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈  Maturity Model </a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍  Exploratory Testing Extension </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">📝 Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤 Talks</a><a class="menu-item" href="/tags/" title="Tags">🏷️ Tags</a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈 Maturity Model</a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍 Exploratory Testing Extension</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+            <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-avatar"><a href="/posts/" title="Testing articles"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/avatar.jpg"
+        data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+        data-sizes="auto"
+        alt="/images/avatar.jpg"
+        title="/images/avatar.jpg" /></a></div><h1 class="home-title">Testing from the trenches</h1><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/morvader" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="https://linkedin.com/in/franciscomorenosanz" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="https://x.com/morvader" title="X" target="_blank" rel="noopener noreffer me"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="https://medium.com/@@morvader" title="Medium" target="_blank" rel="noopener noreffer me"><i class="fab fa-medium fa-fw" aria-hidden="true"></i></a><a href="https://stackoverflow.com/users/435693/morvader" title="Stack Overflow" target="_blank" rel="noopener noreffer me"><i class="fab fa-stack-overflow fa-fw" aria-hidden="true"></i></a><a href="mailto:francisco.moreno.sanz@outlook.com" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a></div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/comunidades-practica-tecnica/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/comunidad/comunidad.jpg"
+        data-srcset="/images/comunidad/comunidad.jpg, /images/comunidad/comunidad.jpg 1.5x, /images/comunidad/comunidad.jpg 2x"
+        data-sizes="auto"
+        alt="/images/comunidad/comunidad.jpg"
+        title="Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/comunidades-practica-tecnica/">La Importancia de las Comunidades de Práctica en Organizaciones</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span>&nbsp;<span class="post-publish">published on <time datetime="2025-01-08">2025-01-08</time></span></div><div class="content">Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental</div><div class="post-footer">
+        <a href="/comunidades-practica-tecnica/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cultura/">Cultura</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/entrevistas/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/entrevistas/header.jpg"
+        data-srcset="/images/entrevistas/header.jpg, /images/entrevistas/header.jpg 1.5x, /images/entrevistas/header.jpg 2x"
+        data-sizes="auto"
+        alt="/images/entrevistas/header.jpg"
+        title="Consejos para preparar y hacer entrevistas técnicas" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/entrevistas/">Framework para entrevistas técnicas</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-11-21">2024-11-21</time></span></div><div class="content">Consejos para preparar y hacer entrevistas técnicas</div><div class="post-footer">
+        <a href="/entrevistas/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/carrera/">Carrera</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/pdp-2/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/PDP/PDP2.jpg"
+        data-srcset="/images/PDP/PDP2.jpg, /images/PDP/PDP2.jpg 1.5x, /images/PDP/PDP2.jpg 2x"
+        data-sizes="auto"
+        alt="/images/PDP/PDP2.jpg"
+        title="Cómo poner en práctica un plan de carrera de manera efectiva" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/pdp-2/">Definiendo un plan de carrera - Parte II</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-06-03">2024-06-03</time></span></div><div class="content">Cómo poner en práctica un plan de carrera de manera efectiva</div><div class="post-footer">
+        <a href="/pdp-2/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/carrera/">Carrera</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/pdp-1/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/PDP/PDP.jpg"
+        data-srcset="/images/PDP/PDP.jpg, /images/PDP/PDP.jpg 1.5x, /images/PDP/PDP.jpg 2x"
+        data-sizes="auto"
+        alt="/images/PDP/PDP.jpg"
+        title="Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/pdp-1/">Definiendo un plan de carrera - Parte I</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-05-08">2024-05-08</time></span></div><div class="content">Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT</div><div class="post-footer">
+        <a href="/pdp-1/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/carrera/">Carrera</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/negativetesting/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/negativeTestingPost/inicial.png"
+        data-srcset="/images/negativeTestingPost/inicial.png, /images/negativeTestingPost/inicial.png 1.5x, /images/negativeTestingPost/inicial.png 2x"
+        data-sizes="auto"
+        alt="/images/negativeTestingPost/inicial.png"
+        title="Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/negativetesting/">Testing defensivo</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-05">2024-02-05</time></span></div><div class="content">Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código</div><div class="post-footer">
+        <a href="/negativetesting/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/quality-assurance/">Quality Assurance</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/easyrandom/">Cómo mejorar la mantenibilidad de las pruebas unitarias</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-17">2023-10-17</time></span></div><div class="content">Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java</div><div class="post-footer">
+        <a href="/easyrandom/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/unit-testing/">Unit Testing</a></div></div>
+</article><ul class="pagination"><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/2/">2</a>
+                    </span>
+                </li><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/page/3/">3</a>
+                    </span>
+                </li></ul></div></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/typeit/index.umd.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/contrib/auto-render.min.js"></script><script src="/lib/katex/contrib/copy-tex.min.js"></script><script src="/lib/katex/contrib/mhchem.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"id-1":"Experiences of a Quality Engineer"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script src="/js/theme.min.js"></script></body>
+
+</html>

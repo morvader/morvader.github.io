@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Consejos para preparar y hacer entrevistas técnicas"
 license: ""
-images: []
+images: ["/images/entrevistas/header.jpg"]
 
 tags: [Carrera]
 categories: []
 
-featuredImage: "/images/entrevistas/header.png"
-featuredImagePreview: "/images/entrevistas/header.png"
+featuredImage: "/images/entrevistas/header.jpg"
+featuredImagePreview: "/images/entrevistas/header.jpg"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: ["/images/entrevistas/header.png"]
+  images: ["/images/entrevistas/header.jpg"]
 ---
 <!--more-->
 

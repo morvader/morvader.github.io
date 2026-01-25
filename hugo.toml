@@ -1,4 +1,4 @@
-baseURL = "http://www.testingfromthetrenches.com"
+baseURL = "https://www.testingfromthetrenches.com"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -14,9 +14,9 @@ languageName = "Spanish"
 hasCJKLanguage = false
 
 # default amount of posts in each pages
-pagination.pagerSize = 20   
-# google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = "G-4WPG4T90RQ"
+pagination.pagerSize = 20
+# google analytics code (moved to params.analytics section below)
+# googleAnalytics is deprecated, use params.analytics.google instead
 # copyright description used only for seo schema
 copyright = ""
 
@@ -96,7 +96,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer"
   # website images for Open Graph and Twitter Cards
-  images = ["/logo.png"]
+  images = ["/images/avatar.jpg"]
+  # website keywords for SEO
+  keywords = ["testing", "QA", "quality assurance", "automatización", "software testing", "quality engineering", "pruebas de software", "test automation"]
 
   # Header config
   [params.header]
@@ -200,7 +202,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
+      avatarURL = "/images/avatar.jpg"
       #  title shown in home page (HTML format is supported)
       title = "Testing from the trenches"
       # subtitle shown in home page (HTML format is supported)
@@ -492,7 +494,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Publisher info
       [params.page.seo.publisher]
         name = "Francisco Moreno"
-        logoUrl = "/images/avatar.png"
+        logoUrl = "/images/avatar.jpg"
 
   #  TypeIt config
   [params.typeit]
@@ -516,16 +518,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  Site SEO config
   [params.seo]
     # image URL
-    image = "/images/avatar.png"
+    image = "/images/avatar.jpg"
     # thumbnail URL
-    thumbnailUrl = "/images/avatar.png"
+    thumbnailUrl = "/images/avatar.jpg"
 
   #  Analytics config
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-4WPG4T90RQ"
       # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics

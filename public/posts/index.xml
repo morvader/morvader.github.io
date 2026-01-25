@@ -1,24 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - Testing from the trenches</title>
-        <link>http://www.testingfromthetrenches.com/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>All Posts | Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://www.testingfromthetrenches.com/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Testing y gorilas</title>
-    <link>http://www.testingfromthetrenches.com/testinggorillaillusion/</link>
+    <link>http://localhost:1313/testinggorillaillusion/</link>
     <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/testinggorillaillusion/</guid>
+    <guid>http://localhost:1313/testinggorillaillusion/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/gorillaTesting/gorillaTesting.png" referrerpolicy="no-referrer">
+                <img src="/images/gorillaTesting/gorillaTesting.jpg" referrerpolicy="no-referrer">
             </div>Estrategias para evitar visión de túnel en las pruebas]]></description>
 </item>
 <item>
     <title>Construyendo un equipo de QA desde cero en una consultora</title>
-    <link>http://www.testingfromthetrenches.com/equipoqaconsultoria/</link>
+    <link>http://localhost:1313/equipoqaconsultoria/</link>
     <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/equipoqaconsultoria/</guid>
+    <guid>http://localhost:1313/equipoqaconsultoria/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
             </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
@@ -27,82 +27,82 @@
 </item>
 <item>
     <title>Modelos de madurez y mejora continua en organizaciones</title>
-    <link>http://www.testingfromthetrenches.com/modelosmadurez/</link>
+    <link>http://localhost:1313/modelosmadurez/</link>
     <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/modelosmadurez/</guid>
+    <guid>http://localhost:1313/modelosmadurez/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
             </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
 </item>
 <item>
     <title>Creando una cultura de calidad en organizaciones</title>
-    <link>http://www.testingfromthetrenches.com/kotterculturacalidad/</link>
+    <link>http://localhost:1313/kotterculturacalidad/</link>
     <pubDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/kotterculturacalidad/</guid>
+    <guid>http://localhost:1313/kotterculturacalidad/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
             </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
 </item>
 <item>
     <title>Cómo afrontar la venta de proyectos de QA en consultoría</title>
-    <link>http://www.testingfromthetrenches.com/ofertasqa/</link>
+    <link>http://localhost:1313/ofertasqa/</link>
     <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/ofertasqa/</guid>
+    <guid>http://localhost:1313/ofertasqa/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/ofertasQA/techVsNegocio.png" referrerpolicy="no-referrer">
             </div>Artículo, basado en experiencias reales, hablo de las claves para presentar QA como una inversión estratégica que mejora el delivery y reduce costes operativos]]></description>
 </item>
 <item>
     <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia</title>
-    <link>http://www.testingfromthetrenches.com/apitesting/</link>
+    <link>http://localhost:1313/apitesting/</link>
     <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/apitesting/</guid>
+    <guid>http://localhost:1313/apitesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/apiTesting/TestingStrategy.png" referrerpolicy="no-referrer">
             </div>Un Enfoque Pragmático para Iniciar la Automatización de Pruebas]]></description>
 </item>
 <item>
     <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
-    <link>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</link>
+    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
     <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/comunidades-practica-tecnica/</guid>
+    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/comunidad/comunidad.png" referrerpolicy="no-referrer">
+                <img src="/images/comunidad/comunidad.jpg" referrerpolicy="no-referrer">
             </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>
 </item>
 <item>
     <title>Framework para entrevistas técnicas</title>
-    <link>http://www.testingfromthetrenches.com/entrevistas/</link>
+    <link>http://localhost:1313/entrevistas/</link>
     <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/entrevistas/</guid>
+    <guid>http://localhost:1313/entrevistas/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/entrevistas/header.png" referrerpolicy="no-referrer">
+                <img src="/images/entrevistas/header.jpg" referrerpolicy="no-referrer">
             </div>Consejos para preparar y hacer entrevistas técnicas]]></description>
 </item>
 <item>
     <title>Definiendo un plan de carrera - Parte II</title>
-    <link>http://www.testingfromthetrenches.com/pdp-2/</link>
+    <link>http://localhost:1313/pdp-2/</link>
     <pubDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/pdp-2/</guid>
+    <guid>http://localhost:1313/pdp-2/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/PDP/PDP2.png" referrerpolicy="no-referrer">
+                <img src="/images/PDP/PDP2.jpg" referrerpolicy="no-referrer">
             </div>Cómo poner en práctica un plan de carrera de manera efectiva]]></description>
 </item>
 <item>
     <title>Definiendo un plan de carrera - Parte I</title>
-    <link>http://www.testingfromthetrenches.com/pdp-1/</link>
+    <link>http://localhost:1313/pdp-1/</link>
     <pubDate>Wed, 08 May 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://www.testingfromthetrenches.com/pdp-1/</guid>
+    <guid>http://localhost:1313/pdp-1/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/PDP/PDP.png" referrerpolicy="no-referrer">
+                <img src="/images/PDP/PDP.jpg" referrerpolicy="no-referrer">
             </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT]]></description>
 </item>
 </channel>
