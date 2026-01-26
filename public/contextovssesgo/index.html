@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing - Testing from the trenches</title><meta name="Description" content="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor"><meta property="og:url" content="http://localhost:1313/contextovssesgo/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing">
+  <meta property="og:description" content="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-06T10:00:00+01:00">
+    <meta property="article:modified_time" content="2025-10-06T10:00:00+01:00">
+    <meta property="article:tag" content="Cultura">
+    <meta property="article:tag" content="Testing Exploratorio">
+    <meta property="og:image" content="http://localhost:1313/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg">
+  <meta name="twitter:title" content="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing">
+  <meta name="twitter:description" content="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor">
+      <meta name="twitter:site" content="@morvader">
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/contextovssesgo/" /><link rel="prev" href="http://localhost:1313/liderazgocambio/" /><link rel="next" href="http://localhost:1313/brunoapitesting/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0" /><meta property="og:title" content="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing" />
+    <meta property="og:description" content="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/contextovssesgo/" />
+    <meta property="og:site_name" content="Testing from the trenches" />
+    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" />
+        <meta property="og:image:secure_url" content="http://localhost:1313/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" /><meta property="article:published_time" content="2025-10-06T10:00:00&#43;01:00" /><meta property="article:modified_time" content="2025-10-06T10:00:00&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Cultura" /><meta property="article:tag" content="Testing Exploratorio" /><meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing" />
+    <meta name="twitter:description" content="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor" /><meta name="twitter:image" content="http://localhost:1313/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" /><meta name="twitter:site" content="@morvader" />
+        <meta name="twitter:creator" content="@morvader" /><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/contextovssesgo\/"
+        },"image": ["http:\/\/localhost:1313\/images\/substack\/contexto-sesgo\/contexto-sesgo-1.jpeg"],"genre": "posts","keywords": "Cultura, Testing Exploratorio","wordcount":  771 ,
+        "url": "http:\/\/localhost:1313\/contextovssesgo\/","datePublished": "2025-10-06T10:00:00+01:00","dateModified": "2025-10-06T10:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Francisco Moreno","logo": "http:\/\/localhost:1313\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "Ante una misma situación el contexto marca la diferencia entre bug o detalle menor"
+    }
+    </script>
+    
+</head>
+
+<body data-header-desktop="fixed"
+    data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles">📝  Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤  Talks </a><a class="menu-item" href="/tags/" title="Tags">🏷️  Tags </a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈  Maturity Model </a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍  Exploratory Testing Extension </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">📝 Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤 Talks</a><a class="menu-item" href="/tags/" title="Tags">🏷️ Tags</a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈 Maturity Model</a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍 Exploratory Testing Extension</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</h1><h2 class="single-subtitle">Ante una misma situación, el contexto marca la diferencia entre bug o detalle menor</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-10-06">2025-10-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;771 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg"
+        data-srcset="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg, /images/substack/contexto-sesgo/contexto-sesgo-1.jpeg 1.5x, /images/substack/contexto-sesgo/contexto-sesgo-1.jpeg 2x"
+        data-sizes="auto"
+        alt="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg"
+        title="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</a></li>
+    <li><a href="#el-contexto-lo-es-todo">El contexto lo es todo</a></li>
+    <li><a href="#mi-proceso-mental-de-análisis">Mi proceso mental de análisis</a>
+      <ul>
+        <li><a href="#posible-problema">Posible problema</a></li>
+        <li><a href="#análisis-de-contexto">Análisis de contexto</a></li>
+        <li><a href="#opinión-personal">Opinión personal</a></li>
+        <li><a href="#riesgos-asociados">Riesgos asociados</a></li>
+        <li><a href="#conclusión-y-acciones">Conclusión y acciones</a></li>
+      </ul>
+    </li>
+    <li><a href="#recomendaciones-para-evitar-sesgos-en-testing">Recomendaciones para evitar sesgos en testing</a></li>
+    <li><a href="#conclusión">Conclusión</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</h2>
+<p>Te encuentras testeando un e-commerce y te encuentras con esta situación. ¿Abrirías un ticket en Jira?</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg"
+        data-srcset="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg, /images/substack/contexto-sesgo/contexto-sesgo-1.jpeg 1.5x, /images/substack/contexto-sesgo/contexto-sesgo-1.jpeg 2x"
+        data-sizes="auto"
+        alt="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg"
+        title="Ejemplo Bug Crítico" /></p>
+<p>Antes de responder, déjame contarte por qué esta pregunta es más compleja de lo que parece&hellip;</p>
+<h2 id="el-contexto-lo-es-todo">El contexto lo es todo</h2>
+<p>En casi todo lo que hacemos en la vida, el contexto es fundamental. Una misma acción puede tener diferentes efectos en función de las circunstancias en las que se produce. Esto, que parece lógico y de sentido común, no siempre se tiene en cuenta a la hora de hacer testing.</p>
+<p>En el caso concreto del ejemplo se trata de un producto que se vende en Amazon, es decir, para un público general. Pero ¿cambiaría tu respuesta si se tratase de un e-commerce de una marca comprometida con el movimiento LGTBI? ¿Y si esa marca hubiera lanzado campañas con el claim &ldquo;La ropa no tiene género&rdquo;? En cualquier caso, ¿Mi opinión personal sobre el asunto sería relevante?</p>
+<p>Siempre digo que el testing debe centrarse en reducir riesgos para el negocio y, por tanto, reportar problemas. Es decir, un bug es una parte de los problemas que pueden tener un impacto negativo sobre nuestros usuarios. Pero hay más: mala UX, complejidad de uso, problemas de performance, falta de accesibilidad, mal diseño, falta de consistencia, etc.</p>
+<p>El ejemplo que os muestro, ¿podría suponer algún problema o poner en riesgo el negocio? Pues depende del contexto.</p>
+<h2 id="mi-proceso-mental-de-análisis">Mi proceso mental de análisis</h2>
+<p>En este caso concreto voy a explicar el proceso mental que seguiría:</p>
+<h3 id="posible-problema">Posible problema</h3>
+<p>Los usuarios podrían percibir que la manera de seleccionar el corte de la camiseta no se corresponde con el mensaje de la misma.</p>
+<h3 id="análisis-de-contexto">Análisis de contexto</h3>
+<p>Todo el mundo tiene asumido que &ldquo;mujer&rdquo; se refiere a corte ajustado y corto y &ldquo;hombre&rdquo; a corte recto. Seguramente los usuarios no tendrían dificultad en escoger la prenda adecuada a sus gustos. Además, se trata de Amazon, por lo que esta selección podría resultar adecuada. ¿En otro tipo de e-commerce podría no serlo?</p>
+<h3 id="opinión-personal">Opinión personal</h3>
+<p>Las prendas de vestir no tienen género. Ese campo se refiere al tipo de corte de la prenda. En este caso podría resultar más correcto: &ldquo;recto&rdquo; y &ldquo;ajustado&rdquo;.</p>
+<h3 id="riesgos-asociados">Riesgos asociados</h3>
+<p>Aquí es donde debemos ser específicos y pensar como el negocio:</p>
+<p><strong>Riesgo reputacional:</strong> Puede haber colectivos a los que este tipo de clasificación de prendas no les resulte adecuado y deriven en quejas a la página o en redes sociales. Especialmente crítico si la marca se posiciona como inclusiva.</p>
+<p><strong>Riesgo de conversión:</strong> ¿Podría haber usuarios que no encuentren su &ldquo;fit&rdquo; y abandonen la compra? En Amazon, probablemente no. En un e-commerce especializado, quizás sí.</p>
+<p><strong>Impacto en imagen de marca:</strong> Para un marketplace genérico como Amazon, el impacto sería bajo. Para una marca con posicionamiento específico en diversidad, podría ser crítico.</p>
+<h3 id="conclusión-y-acciones">Conclusión y acciones</h3>
+<p>Comentaría esta situación con los responsables de producto para llamar su atención y ponerles en conocimiento del posible riesgo asociado y si podría afectar a las ventas o imagen de la marca. Conocer la postura de la empresa ante estas cuestiones facilitaría la labor de testing y futuros reportes de problemas.</p>
+<h2 id="recomendaciones-para-evitar-sesgos-en-testing">Recomendaciones para evitar sesgos en testing</h2>
+<p>Somos humanos, es inevitable tener sesgos. Por eso, lo más importante es tomar consciencia de esta situación y actuar en consecuencia y de manera profesional.</p>
+<p>Aquí te doy algunas recomendaciones que me ayudan en este proceso:</p>
+<ol>
+<li>
+<p><strong>Antes de reportar, pregúntate:</strong> &ldquo;¿Esto afecta a los objetivos de negocio o solo me incomoda a mí?&rdquo;</p>
+</li>
+<li>
+<p><strong>Investiga el contexto:</strong> ¿Quién es el público objetivo? ¿Cuál es el posicionamiento de marca? ¿Qué valores comunica la empresa?</p>
+</li>
+<li>
+<p><strong>Repórtalo siempre que tengas dudas:</strong> Comunícalo como &ldquo;observación de riesgo&rdquo; o &ldquo;punto de mejora&rdquo;, no necesariamente como bug crítico.</p>
+</li>
+<li>
+<p><strong>Sé proactivo y genera conversaciones:</strong> &ldquo;He visto esto, ¿conocéis el posicionamiento de la empresa al respecto?&rdquo; Esta pregunta abre el diálogo sin imponer tu criterio.</p>
+</li>
+<li>
+<p><strong>Documenta el razonamiento:</strong> No reportes solo &ldquo;esto está mal&rdquo;, explica el contexto, los riesgos potenciales y deja que el equipo de producto decida con toda la información.</p>
+</li>
+<li>
+<p><strong>Favorece la diversidad y mob testing:</strong> No es solo que 4 ojos vean más que 2, es que contar con personas con diferentes puntos de vista y experiencias vitales enriquecerá enormemente las conversaciones y el proceso de testing.</p>
+</li>
+</ol>
+<h2 id="conclusión">Conclusión</h2>
+<p>El contexto importa, SIEMPRE, marca la diferencia entre lo que puede ser un problema importante o un simple detalle. Ten siempre una visión crítica cuando estés testeando, sé práctico, pregunta e intenta evitar tus propios sesgos. Para ello alinea siempre tus pruebas con los objetivos de negocio de la empresa.</p>
+<p>¿Y tú? ¿Lo habrías reportado como bug? Me gustaría conocer tu proceso de análisis.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-10-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/contextovssesgo/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/contextovssesgo/" data-title="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing" data-via="morvader" data-hashtags="Cultura,Testing Exploratorio"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/contextovssesgo/" data-title="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/contextovssesgo/" data-title="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing" data-description="Ante una misma situación el contexto marca la diferencia entre bug o detalle menor"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fcontextovssesgo%2f&amp;text=Contexto%20vs.%20Sesgo%3a%20Por%20qu%c3%a9%20tu%20opini%c3%b3n%20personal%20no%20deber%c3%ada%20guiar%20tu%20testing" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cultura/">Cultura</a>,&nbsp;<a href="/tags/testing-exploratorio/">Testing Exploratorio</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/liderazgocambio/" class="prev" rel="prev" title="Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión</a>
+            <a href="/brunoapitesting/" class="next" rel="next" title="Bruno: Guía práctica para pruebas de API">Bruno: Guía práctica para pruebas de API<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body>
+
+</html>

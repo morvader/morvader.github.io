@@ -3,7 +3,30 @@
         <title>Carrera - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/carrera/</link>
         <description>Carrera - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/carrera/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/carrera/" rel="self" type="application/rss+xml" /><item>
+    <title>Path formativo para el QA del futuro</title>
+    <link>http://localhost:1313/pathformativoqa/</link>
+    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/pathformativoqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/path-formativo/path-formativo-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace años diseñé un <a href="https://www.testingfromthetrenches.com/posts/pdp-1/" target="_blank" rel="noopener noreffer ">itinerario formativo</a> por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.</p>
+<p>Creo que está bien estructurado y sigue siendo muy útil. No obstante, el contexto ha cambiado radicalmente y no le vendría mal una actualización.</p>
+<p>Cualquier itinerario debería seguir manteniendo una base sólida de testing. Porque no se trata de abandonar los fundamentos, sino de construir sobre ellos de forma diferente.</p>]]></description>
+</item>
+<item>
+    <title>My two cents: El futuro del QA en la era de la IA</title>
+    <link>http://localhost:1313/futuroqaeraia/</link>
+    <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/futuroqaeraia/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>
+<p>Esa era la idea principal de mi artículo, pero David me retó a añadir cómo veo el futuro del QA con la evolución de las IAs. Entonces dejé algunas ideas básicas que ahora quiero ampliar.</p>]]></description>
+</item>
+<item>
     <title>Framework para entrevistas técnicas</title>
     <link>http://localhost:1313/entrevistas/</link>
     <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>

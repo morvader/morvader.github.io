@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos - Testing from the trenches</title><meta name="Description" content="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo"><meta property="og:url" content="http://localhost:1313/antipatronesautomatizacion/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos">
+  <meta property="og:description" content="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-15T10:00:00+01:00">
+    <meta property="article:modified_time" content="2025-09-15T10:00:00+01:00">
+    <meta property="article:tag" content="Automatización">
+    <meta property="article:tag" content="Estrategia">
+    <meta property="og:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png">
+  <meta name="twitter:title" content="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos">
+  <meta name="twitter:description" content="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo">
+      <meta name="twitter:site" content="@morvader">
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/antipatronesautomatizacion/" /><link rel="prev" href="http://localhost:1313/testinggorillaillusion/" /><link rel="next" href="http://localhost:1313/liderazgocambio/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0" /><meta property="og:title" content="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos" />
+    <meta property="og:description" content="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/antipatronesautomatizacion/" />
+    <meta property="og:site_name" content="Testing from the trenches" />
+    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" />
+        <meta property="og:image:secure_url" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" /><meta property="article:published_time" content="2025-09-15T10:00:00&#43;01:00" /><meta property="article:modified_time" content="2025-09-15T10:00:00&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Automatización" /><meta property="article:tag" content="Estrategia" /><meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos" />
+    <meta name="twitter:description" content="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo" /><meta name="twitter:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" /><meta name="twitter:site" content="@morvader" />
+        <meta name="twitter:creator" content="@morvader" /><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/antipatronesautomatizacion\/"
+        },"image": ["http:\/\/localhost:1313\/images\/substack\/antipatrones\/antipatrones-1.png"],"genre": "posts","keywords": "Automatización, Estrategia","wordcount":  2113 ,
+        "url": "http:\/\/localhost:1313\/antipatronesautomatizacion\/","datePublished": "2025-09-15T10:00:00+01:00","dateModified": "2025-09-15T10:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Francisco Moreno","logo": "http:\/\/localhost:1313\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo"
+    }
+    </script>
+    
+</head>
+
+<body data-header-desktop="fixed"
+    data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles">📝  Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤  Talks </a><a class="menu-item" href="/tags/" title="Tags">🏷️  Tags </a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈  Maturity Model </a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍  Exploratory Testing Extension </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">📝 Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤 Talks</a><a class="menu-item" href="/tags/" title="Tags">🏷️ Tags</a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈 Maturity Model</a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍 Exploratory Testing Extension</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</h1><h2 class="single-subtitle">6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-09-15">2025-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2113 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/antipatrones/antipatrones-1.png"
+        data-srcset="/images/substack/antipatrones/antipatrones-1.png, /images/substack/antipatrones/antipatrones-1.png 1.5x, /images/substack/antipatrones/antipatrones-1.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/antipatrones/antipatrones-1.png"
+        title="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-un-antipatrón">¿Qué es un Antipatrón?</a></li>
+    <li><a href="#1-la-pirámide-de-testing-como-dogma">1. La Pirámide de testing como dogma</a>
+      <ul>
+        <li><a href="#por-qué-es-un-antipatrón">¿Por qué es un antipatrón?</a></li>
+        <li><a href="#problemas-a-largo-plazo">Problemas a largo plazo</a></li>
+        <li><a href="#cómo-solucionarlo">Cómo solucionarlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-la-ejecución-local-de-las-pruebas">2. La ejecución local de las pruebas</a>
+      <ul>
+        <li><a href="#por-qué-es-un-antipatrón-1">¿Por qué es un antipatrón?</a></li>
+        <li><a href="#problemas-a-largo-plazo-1">Problemas a largo plazo</a></li>
+        <li><a href="#cómo-solucionarlo-1">Cómo solucionarlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-cucumber-mal-entendido-y-mal-utilizado">3. Cucumber: Mal entendido y Mal utilizado</a>
+      <ul>
+        <li><a href="#por-qué-es-un-antipatrón-2">¿Por qué es un antipatrón?</a></li>
+        <li><a href="#problemas-a-largo-plazo-2">Problemas a largo plazo</a></li>
+        <li><a href="#cómo-solucionarlo-2">Cómo solucionarlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-probar-a-través-de-la-interfaz-vs-probar-la-interfaz">4. Probar A Través de la Interfaz vs. Probar la Interfaz</a>
+      <ul>
+        <li><a href="#por-qué-es-un-antipatrón-3">¿Por qué es un antipatrón?</a></li>
+        <li><a href="#problemas-a-largo-plazo-3">Problemas a largo plazo</a></li>
+        <li><a href="#cómo-solucionarlo-3">Cómo solucionarlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-el-peligro-de-los-reintentos-en-los-flaky-tests">5. El peligro de los reintentos en los flaky tests</a>
+      <ul>
+        <li><a href="#por-qué-es-un-antipatrón-4">¿Por qué es un antipatrón?</a></li>
+        <li><a href="#problemas-a-largo-plazo-4">Problemas a largo plazo</a></li>
+        <li><a href="#cómo-solucionarlo-4">Cómo solucionarlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-la-ilusión-del-testing-orientado-a-la-cobertura">6. La Ilusión del testing orientado a la cobertura</a>
+      <ul>
+        <li><a href="#por-qué-es-un-antipatrón-5">¿Por qué es un antipatrón?</a></li>
+        <li><a href="#problemas-a-largo-plazo-5">Problemas a largo plazo</a></li>
+        <li><a href="#cómo-solucionarlo-5">Cómo solucionarlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusiones-estrategia-contexto-y-colaboración">Conclusiones: Estrategia, Contexto y Colaboración</a>
+      <ul>
+        <li><a href="#1-define-tu-estrategia-círculo-dorado">1. Define tu estrategia (Círculo Dorado)</a></li>
+        <li><a href="#2-el-contexto-determina-la-validez">2. El contexto determina la validez</a></li>
+        <li><a href="#3-colaboración-y-consenso">3. Colaboración y consenso</a></li>
+        <li><a href="#4-invierte-en-los-fundamentos">4. Invierte en los fundamentos</a></li>
+        <li><a href="#5-aprendizaje-continuo">5. Aprendizaje continuo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>📺 Este artículo es el resumen de una charla que di en la VLCTesting en 2023. <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+<p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
+<h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
+<p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>
+<ul>
+<li>Ofrecer un beneficio inmediato e intuitivo</li>
+<li>Parecer la solución correcta en el momento</li>
+<li>Conllevar consecuencias negativas con el tiempo</li>
+</ul>
+<p>Comprenderlos e identificarlos es importante para evitar la degradación de las suites de pruebas, la lentitud, los fallos inexplicables y, en última instancia, el abandono del esfuerzo de automatización.</p>
+<p>Veamos algunos ejemplos que me he ido encontrando de manera recurrente en equipos y testers.</p>
+<h2 id="1-la-pirámide-de-testing-como-dogma">1. La Pirámide de testing como dogma</h2>
+<p>La pirámide de testing sugiere una distribución específica: muchas pruebas unitarias en la base, algunas de integración en el medio, y pocas pruebas end-to-end en la cima. El problema surge cuando se aplica como regla universal sin considerar el contexto específico del proyecto.</p>
+<h3 id="por-qué-es-un-antipatrón">¿Por qué es un antipatrón?</h3>
+<p>La pirámide de testing se convierte en antipatrón por los siguientes beneficios aparentes a corto plazo:</p>
+<ul>
+<li><strong>Modelo intuitivo y visual:</strong> Es fácil de entender y explicar a stakeholders</li>
+<li><strong>Popularidad extendida:</strong> &ldquo;Cargo cult&rdquo; - si Martin Fowler lo dice, debe estar bien</li>
+<li><strong>Sensación de hacer lo correcto:</strong> Seguir un modelo reconocido da confianza inmediata</li>
+<li><strong>Simplifica decisiones:</strong> No hay que pensar en estrategia, solo seguir la distribución</li>
+</ul>
+<p><strong>Por qué ocurre:</strong> Es mucho más fácil seguir un modelo establecido que analizar el contexto específico de cada proyecto. Además, cuestionar la pirámide puede parecer que estás cuestionando una &ldquo;verdad universal&rdquo; del testing.</p>
+<h3 id="problemas-a-largo-plazo">Problemas a largo plazo</h3>
+<ul>
+<li><strong>Desalineación con objetivos de negocio:</strong> Debemos centrar el esfuerzo en testing en lo que da sentido a nuestra aplicación y los clientes valoran</li>
+<li><strong>Pruebas de poco valor:</strong> Añadir test unitarios de poco valor solo para &ldquo;cumplir&rdquo; con la base de la pirámide</li>
+<li><strong>Rigidez estratégica:</strong> Aplicar la distribución sin considerar que en proyectos frontend-heavy otros modelos pueden ser más apropiados</li>
+<li><strong>Desperdicio de recursos:</strong> Tiempo invertido en tests que no aportan valor real al negocio</li>
+</ul>
+<h3 id="cómo-solucionarlo">Cómo solucionarlo</h3>
+<ul>
+<li><strong>Identifica tu core de negocio:</strong> ¿Es performance? ¿Experiencia visual? ¿Lógica compleja de APIs?</li>
+<li><strong>Análisis de riesgos:</strong> ¿Dónde están los mayores puntos de fallo de tu aplicación específica?</li>
+<li><strong>Considera alternativas:</strong> Modelo &ldquo;trofeo&rdquo; para SPAs, &ldquo;diamante&rdquo; para aplicaciones híbridas</li>
+<li><strong>Recuerda el iceberg:</strong> La pirámide es el resultado visible, pero necesita una base sólida de cultura, conocimiento y estrategia del equipo</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/antipatrones/antipatrones-1.png"
+        data-srcset="/images/substack/antipatrones/antipatrones-1.png, /images/substack/antipatrones/antipatrones-1.png 1.5x, /images/substack/antipatrones/antipatrones-1.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/antipatrones/antipatrones-1.png"
+        title="Iceberg de testing" /></p>
+<h2 id="2-la-ejecución-local-de-las-pruebas">2. La ejecución local de las pruebas</h2>
+<p>Este antipatrón ocurre cuando las pruebas automatizadas solo pueden ejecutarse en el equipo local de una persona específica, generalmente el tester, quien debe lanzarlas manualmente en lugar de estar integradas en un sistema de CI/CD.</p>
+<h3 id="por-qué-es-un-antipatrón-1">¿Por qué es un antipatrón?</h3>
+<p>La ejecución exclusiva en local ofrece estos beneficios inmediatos irresistibles:</p>
+<ul>
+<li><strong>Velocidad de desarrollo:</strong> No dependes de configuraciones complejas de CI/CD</li>
+<li><strong>Control total:</strong> Tienes dominio absoluto sobre el entorno de ejecución</li>
+<li><strong>Sin bloqueos:</strong> No necesitas esperar a que otros configuren pipelines o entornos</li>
+<li><strong>Facilidad inicial:</strong> Es la manera más rápida de empezar con automatización</li>
+<li><strong>Sin dependencias:</strong> No necesitas coordinarte con DevOps o administradores de sistema</li>
+<li><strong>Feedback inmediato:</strong> Ves los resultados al instante sin colas de CI</li>
+</ul>
+<p><strong>Por qué ocurre:</strong> Es más sencillo tener control total y ver resultados inmediatos. Además, configurar CI/CD puede parecer complejo y &ldquo;no urgente&rdquo; cuando las pruebas funcionan en local.</p>
+<h3 id="problemas-a-largo-plazo-1">Problemas a largo plazo</h3>
+<ul>
+<li><strong>Silos de conocimiento:</strong> Solo una persona puede ejecutar las pruebas</li>
+<li><strong>Feedback lento para el equipo:</strong> El resto no recibe información inmediata sobre el estado del código</li>
+<li><strong>Dependencia crítica:</strong> Si esa persona no está disponible, las pruebas no se ejecutan</li>
+<li><strong>Imposible integración continua:</strong> No hay automatización real en el pipeline de desarrollo</li>
+<li><strong>Pérdida de inversión:</strong> Cuando la persona se va, toda la automatización se pierde</li>
+</ul>
+<h3 id="cómo-solucionarlo-1">Cómo solucionarlo</h3>
+<ul>
+<li><strong>CI/CD desde el día uno:</strong> Toda prueba debe poder ejecutarse de forma desatendida</li>
+<li><strong>Dockerización:</strong> Usar contenedores para garantizar consistencia entre entornos</li>
+<li><strong>Repositorios compartidos:</strong> El código de pruebas debe estar versionado y accesible para todo el equipo</li>
+<li><strong>Documentación clara:</strong> Procedimientos para que cualquiera pueda ejecutar las pruebas</li>
+<li><strong>Inversión en configuración:</strong> Dedica tiempo inicial a configurar correctamente los entornos</li>
+</ul>
+<h2 id="3-cucumber-mal-entendido-y-mal-utilizado">3. Cucumber: Mal entendido y Mal utilizado</h2>
+<p>Cucumber permite escribir pruebas en lenguaje natural (Gherkin) que luego se vinculan a código técnico. Se convierte en antipatrón cuando se adopta esperando que automáticamente mejore la colaboración con negocio o que simplifique el testing, sin una estrategia clara de BDD detrás.</p>
+<h3 id="por-qué-es-un-antipatrón-2">¿Por qué es un antipatrón?</h3>
+<p>Cucumber ofrece beneficios muy llamativos:</p>
+<ul>
+<li><strong>&ldquo;Efecto wow&rdquo;:</strong> Traducir lenguaje natural a código ejecutable parece magia</li>
+<li><strong>Promesa de colaboración:</strong> &ldquo;Ahora negocio podrá escribir pruebas&rdquo;</li>
+<li><strong>Lenguaje ubicuo:</strong> Todos entenderán los tests, técnicos y no técnicos</li>
+<li><strong>Documentación viva:</strong> Los escenarios sirven como especificación ejecutable</li>
+<li><strong>Justificación metodológica:</strong> &ldquo;Estamos haciendo BDD de verdad&rdquo;</li>
+<li><strong>Diferenciación profesional:</strong> Usar Cucumber te hace parecer más avanzado que usar solo unit tests</li>
+</ul>
+<p><strong>Por qué ocurre:</strong> La promesa de democratizar el testing es muy atractiva. Además, una vez que inviertes tiempo en aprender Gherkin y crear step definitions, es difícil admitir que no aporta valor en tu contexto específico.</p>
+<h3 id="problemas-a-largo-plazo-2">Problemas a largo plazo</h3>
+<ul>
+<li><strong>Complejidad innecesaria:</strong> Añades una capa extra que no siempre está justificada</li>
+<li><strong>Mantenimiento costoso:</strong> Los escenarios imperativos se vuelven frágiles ante cambios</li>
+<li><strong>Falsa colaboración:</strong> La gente de negocio raramente mantiene o escribe scenarios</li>
+<li><strong>Acoplamiento a implementación:</strong> Los steps se vuelven demasiado específicos sobre el &ldquo;cómo&rdquo;</li>
+<li><strong>Pérdida de valor real:</strong> Se usa como herramienta de testing posterior en lugar de facilitar conversaciones previas</li>
+</ul>
+<h3 id="cómo-solucionarlo-2">Cómo solucionarlo</h3>
+<ul>
+<li><strong>Evalúa el contexto real:</strong> ¿Hay colaboración activa entre roles no técnicos en la definición de criterios?</li>
+<li><strong>Úsalo a priori:</strong> Para generar conversaciones antes del desarrollo, no como herramienta de testing posterior</li>
+<li><strong>Escenarios declarativos:</strong> Enfócate en el qué (comportamiento) no en el cómo (implementación) siguiendo buenas prácticas de sintaxis Gherkin</li>
+<li><strong>Considera alternativas:</strong> Si todo tu equipo es técnico, tests directos pueden ser más eficientes</li>
+</ul>
+<h2 id="4-probar-a-través-de-la-interfaz-vs-probar-la-interfaz">4. Probar A Través de la Interfaz vs. Probar la Interfaz</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/antipatrones/antipatrones-2.png"
+        data-srcset="/images/substack/antipatrones/antipatrones-2.png, /images/substack/antipatrones/antipatrones-2.png 1.5x, /images/substack/antipatrones/antipatrones-2.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/antipatrones/antipatrones-2.png"
+        title="Probar a través de la interfaz vs probar la interfaz" /></p>
+<p>Este antipatrón consiste en usar herramientas e2e (como Selenium/Cypress) para probar todo el stack completo de la aplicación cuando lo que pretendes es validar únicamente la funcionalidad específica de la interfaz de usuario. Por ejemplo que se muestra un determinado mensaje de error o que un email se valida correctamente.</p>
+<p>Es la diferencia entre usar la UI como vehículo para probar toda la aplicación versus probar específicamente que la UI funciona correctamente.</p>
+<h3 id="por-qué-es-un-antipatrón-3">¿Por qué es un antipatrón?</h3>
+<p>Probar todo el stack a través de la UI con una herramienta e2e ofrece beneficios inmediatos muy atractivos:</p>
+<ul>
+<li><strong>Sensación de seguridad total:</strong> &ldquo;Si funciona en el navegador, todo el sistema funciona&rdquo;</li>
+<li><strong>Réplica del testing manual:</strong> Es la automatización más directa de lo que haríamos a mano</li>
+<li><strong>Menos análisis requerido:</strong> No hay que pensar en capas, dependencias o arquitectura</li>
+<li><strong>Menos comunicación:</strong> No necesitas coordinar con otros equipos sobre qué prueban ellos</li>
+<li><strong>Comprensión universal:</strong> Cualquiera puede entender qué hace la prueba solo viéndola ejecutar</li>
+<li><strong>Una herramienta para todo:</strong> Cypress resuelve &ldquo;todas&rdquo; las necesidades de testing</li>
+</ul>
+<p><strong>Por qué ocurre:</strong> Es natural querer replicar lo que hacemos manualmente. Además, pensar en capas y dividir responsabilidades de testing requiere más esfuerzo mental y coordinación con el equipo.</p>
+<h3 id="problemas-a-largo-plazo-3">Problemas a largo plazo</h3>
+<ul>
+<li><strong>Feedback lento y confuso:</strong> Cuando algo falla, no sabes si es la UI, API, base de datos o servicio externo</li>
+<li><strong>Mantenimiento costoso:</strong> Los cambios en cualquier capa rompen las pruebas end-to-end</li>
+<li><strong>Redundancia extrema:</strong> Validas la misma lógica en múltiples capas (ej. validación de emails)</li>
+<li><strong>Pruebas lentas e inestables:</strong> Más componentes = más puntos de fallo</li>
+<li><strong>Escalabilidad limitada:</strong> Añadir más pruebas end-to-end hace el suite progresivamente más lento</li>
+</ul>
+<h3 id="cómo-solucionarlo-3">Cómo solucionarlo</h3>
+<ul>
+<li><strong>Divide responsabilidades:</strong> Cada tipo de prueba en la capa más eficiente para lo que valida</li>
+<li><strong>Mock estratégico:</strong> Aisla la funcionalidad específica que quieres probar</li>
+<li><strong>Análisis de riesgos:</strong> Identifica qué flujos críticos SÍ requieren pruebas end-to-end completas</li>
+<li><strong>Comunicación entre equipos:</strong> Coordina para evitar duplicaciones innecesarias de validaciones</li>
+</ul>
+<h2 id="5-el-peligro-de-los-reintentos-en-los-flaky-tests">5. El peligro de los reintentos en los flaky tests</h2>
+<p>Los flaky tests son pruebas que a veces pasan y a veces fallan sin cambios aparentes en el código. El antipatrón surge cuando configuramos reintentos automáticos para que estas pruebas &ldquo;den verde&rdquo; en lugar de investigar y solucionar la causa raíz de su inestabilidad.</p>
+<h3 id="por-qué-es-un-antipatrón-4">¿Por qué es un antipatrón?</h3>
+<p>Configurar reintentos automáticos para flaky tests ofrece beneficios inmediatos irresistibles:</p>
+<ul>
+<li><strong>Solución rápida y fácil:</strong> Un simple <code>retry: 3</code> en tu configuración y &ldquo;problema resuelto&rdquo;</li>
+<li><strong>Pipeline verde instantáneo:</strong> No más builds rojos por &ldquo;problemas temporales&rdquo;</li>
+<li><strong>Menos interrupciones:</strong> El equipo no se ve interrumpido por falsos positivos</li>
+<li><strong>Atribución externa del problema:</strong> &ldquo;Es culpa de la herramienta o del entorno, no nuestro&rdquo;</li>
+<li><strong>Presión de entregas:</strong> Necesitas que esté verde &ldquo;ya&rdquo; para no bloquear el release</li>
+<li><strong>Menor investigación requerida:</strong> No tienes que analizar cada fallo individual</li>
+</ul>
+<p><strong>Por qué ocurre:</strong> Es mucho más fácil configurar un retry que investigar la causa raíz. Además, cuando el test pasa en el segundo intento, refuerza la creencia de que &ldquo;era solo un problema temporal&rdquo;.</p>
+<h3 id="problemas-a-largo-plazo-4">Problemas a largo plazo</h3>
+<ul>
+<li><strong>Pérdida total de confianza:</strong> Nadie confía en tests que &ldquo;a veces fallan&rdquo;</li>
+<li><strong>Problemas reales ocultos:</strong> Condiciones de carrera, memory leaks, problemas de concurrencia quedan enmascarados</li>
+<li><strong>Suite &ldquo;sandía&rdquo;:</strong> Verde por fuera en el dashboard, pero roja por dentro con fallos reales</li>
+<li><strong>Degradación progresiva:</strong> Los problemas subyacentes empeoran hasta ser imposibles de ignorar</li>
+<li><strong>Abandono eventual:</strong> Los equipos terminan deshabilitando o ignorando completamente los tests</li>
+</ul>
+<h3 id="cómo-solucionarlo-4">Cómo solucionarlo</h3>
+<ul>
+<li><strong>Investigación obligatoria:</strong> Cada fallo debe analizarse antes de cualquier reintento</li>
+<li><strong>Análisis de causa raíz exhaustivo:</strong> Logs, capturas, reproducción manual, consulta al equipo</li>
+<li><strong>Conocimiento técnico profundo:</strong> Entiende cómo funciona tu herramienta de testing internamente</li>
+<li><strong>Cultura de calidad:</strong> El &ldquo;está en verde&rdquo; no es suficiente si hubo reintentos sin investigación previa</li>
+</ul>
+<h2 id="6-la-ilusión-del-testing-orientado-a-la-cobertura">6. La Ilusión del testing orientado a la cobertura</h2>
+<p>Este antipatrón surge cuando el objetivo principal de escribir pruebas se convierte en alcanzar un porcentaje específico de cobertura de código (típicamente 80%), en lugar de enfocarse en probar comportamientos críticos del sistema. El resultado son pruebas que incrementan métricas pero no aportan valor real.</p>
+<h3 id="por-qué-es-un-antipatrón-5">¿Por qué es un antipatrón?</h3>
+<p>El objetivo del &ldquo;80% de cobertura&rdquo; ofrece beneficios inmediatos muy seductores:</p>
+<ul>
+<li><strong>Métrica fácil de medir:</strong> Un número claro que puedes reportar a management</li>
+<li><strong>Justificación objetiva:</strong> &ldquo;Tenemos 80% de cobertura, nuestro código está bien&rdquo;</li>
+<li><strong>Obligación contractual cumplida:</strong> Muchos contratos lo exigen explícitamente</li>
+<li><strong>Sensación de profesionalidad:</strong> &ldquo;Un buen desarrollador tiene alta cobertura&rdquo;</li>
+<li><strong>Gamificación:</strong> Es satisfactorio ver subir el porcentaje como un videojuego</li>
+<li><strong>Comparación fácil:</strong> Puedes comparar proyectos y equipos con una métrica simple</li>
+</ul>
+<p><strong>Por qué ocurre:</strong> Es mucho más fácil perseguir un número que analizar si las pruebas realmente aportan valor. Además, el número alto de pruebas unitarias da una falsa sensación de seguridad pero con la conciencia tranquila.</p>
+<h3 id="problemas-a-largo-plazo-5">Problemas a largo plazo</h3>
+<ul>
+<li><strong>Tests sin valor real:</strong> Testear getters/setters solo para aumentar el porcentaje</li>
+<li><strong>Acoplamiento extremo:</strong> Una clase de test por cada clase de producción</li>
+<li><strong>Mocking abusivo:</strong> Al final pruebas tus mocks, no el código real</li>
+<li><strong>Obstáculo para refactoring:</strong> Cambiar un constructor rompe 50 tests que ni siquiera detectaron bugs</li>
+<li><strong>Falsa seguridad:</strong> Alta cobertura no significa código libre de errores</li>
+</ul>
+<h3 id="cómo-solucionarlo-5">Cómo solucionarlo</h3>
+<ul>
+<li><strong>Enfócate en comportamiento:</strong> Tests que verifican flujos de usuario reales, no líneas de código. &ldquo;Test behaviour, not implementation&rdquo;</li>
+<li><strong>Delta de cobertura:</strong> Más importante que no baje cuando añades código nuevo</li>
+<li><strong>Tests sociales:</strong> Pruebas que ejercitan múltiples clases trabajando juntas</li>
+<li><strong>Mutation testing:</strong> Verifica que tus tests realmente detectan errores usando herramientas como PIT o Mutmut</li>
+</ul>
+<h2 id="conclusiones-estrategia-contexto-y-colaboración">Conclusiones: Estrategia, Contexto y Colaboración</h2>
+<p>Después de identificar los antipatrones más comunes en automatización de pruebas, es momento de transformar estos aprendizajes en acciones prácticas para evitar caer en las mismas trampas.</p>
+<h3 id="1-define-tu-estrategia-círculo-dorado">1. Define tu estrategia (Círculo Dorado)</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/antipatrones/antipatrones-3.png"
+        data-srcset="/images/substack/antipatrones/antipatrones-3.png, /images/substack/antipatrones/antipatrones-3.png 1.5x, /images/substack/antipatrones/antipatrones-3.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/antipatrones/antipatrones-3.png"
+        title="Círculo Dorado - Estrategia" /></p>
+<ul>
+<li><strong>Por qué:</strong> ¿Qué problemas de negocio específicos quieres resolver?</li>
+<li><strong>Cómo:</strong> ¿Te enfocarás en APIs, performance, experiencia visual?</li>
+<li><strong>Qué:</strong> Solo al final elige herramientas específicas</li>
+</ul>
+<h3 id="2-el-contexto-determina-la-validez">2. El contexto determina la validez</h3>
+<ul>
+<li>Una práctica puede ser antipatrón en un contexto y solución en otro</li>
+<li>Evalúa tu situación específica: equipo, producto, restricciones</li>
+</ul>
+<h3 id="3-colaboración-y-consenso">3. Colaboración y consenso</h3>
+<ul>
+<li>Las decisiones deben ser del equipo completo</li>
+<li>Evita imposiciones unilaterales</li>
+</ul>
+<h3 id="4-invierte-en-los-fundamentos">4. Invierte en los fundamentos</h3>
+<ul>
+<li>La automatización exitosa requiere cultura, conocimiento y tiempo</li>
+<li>Los resultados visibles dependen de una base sólida invisible</li>
+</ul>
+<h3 id="5-aprendizaje-continuo">5. Aprendizaje continuo</h3>
+<ul>
+<li>Los antipatrones evolucionan con las herramientas y prácticas</li>
+<li>Mantente actualizado y dispuesto a cuestionar tus propias prácticas</li>
+</ul>
+<p>Estos antipatrones no surgen por incompetencia, sino por decisiones racionales con información limitada. La clave está en mantener perspectiva a largo plazo y estar dispuesto a cambiar cuando el contexto lo requiera.</p>
+<p><strong>Recuerda:</strong> En automatización de pruebas, lo que funciona hoy puede ser el antipatrón de mañana. El verdadero profesional no es quien nunca se equivoca, sino quien cuestiona constantemente sus propias prácticas.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-09-15</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/antipatronesautomatizacion/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/antipatronesautomatizacion/" data-title="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos" data-via="morvader" data-hashtags="Automatización,Estrategia"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/antipatronesautomatizacion/" data-title="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/antipatronesautomatizacion/" data-title="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos" data-description="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fantipatronesautomatizacion%2f&amp;text=Antipatrones%20en%20la%20Automatizaci%c3%b3n%20de%20Pruebas%3a%20Errores%20Comunes%20y%20C%c3%b3mo%20Evitarlos" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/automatizaci%C3%B3n/">Automatización</a>,&nbsp;<a href="/tags/estrategia/">Estrategia</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/testinggorillaillusion/" class="prev" rel="prev" title="Testing y gorilas"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Testing y gorilas</a>
+            <a href="/liderazgocambio/" class="next" rel="next" title="Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión">Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body>
+
+</html>

@@ -3,7 +3,42 @@
         <title>Cultura - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/cultura/</link>
         <description>Cultura - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+    <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
+    <link>http://localhost:1313/dietatesting/</link>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/dietatesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/dieta-testing/dieta-testing-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unos años fui a un nutricionista. No tenía ningún problema con la comida, pero quería verme mejor. Cuando llegué, me preguntó cuál era mi objetivo. &ldquo;Bajar grasa y ganar músculo&rdquo;, le dije. En aquel momento, su respuesta me dejó descolocado: &ldquo;Eso es imposible. No funciona así. Primero tienes que hacer una cosa y luego la otra. Las dos a la vez no pueden ser&rdquo;.</p>
+<p>Trabajando en el mundo de la calidad, me he dado cuenta de que esta conversación resume perfectamente uno de los mayores problemas cuando los equipos intentan mejorar sus prácticas de testing. Se parte de objetivos contradictorios o poco claros.</p>]]></description>
+</item>
+<item>
+    <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</title>
+    <link>http://localhost:1313/contextovssesgo/</link>
+    <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/contextovssesgo/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" referrerpolicy="no-referrer">
+            </div><h2 id="reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</h2>
+<p>Te encuentras testeando un e-commerce y te encuentras con esta situación. ¿Abrirías un ticket en Jira?</p>
+<p></p>
+<p>Antes de responder, déjame contarte por qué esta pregunta es más compleja de lo que parece&hellip;</p>
+<h2 id="el-contexto-lo-es-todo">El contexto lo es todo</h2>
+<p>En casi todo lo que hacemos en la vida, el contexto es fundamental. Una misma acción puede tener diferentes efectos en función de las circunstancias en las que se produce. Esto, que parece lógico y de sentido común, no siempre se tiene en cuenta a la hora de hacer testing.</p>]]></description>
+</item>
+<item>
+    <title>Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión</title>
+    <link>http://localhost:1313/liderazgocambio/</link>
+    <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/liderazgocambio/</guid>
+    <description><![CDATA[<p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
+<p>En el día a día de una empresa, esta fábula tiene mucho sentido. Para impulsar un cambio, a menudo debemos jugar ambos papeles. Hay momentos para ser la rana: confiar en el equipo, dejarse llevar por la corriente y avanzar juntos.</p>]]></description>
+</item>
+<item>
     <title>Testing y gorilas</title>
     <link>http://localhost:1313/testinggorillaillusion/</link>
     <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>

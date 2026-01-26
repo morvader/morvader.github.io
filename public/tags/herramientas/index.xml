@@ -3,15 +3,17 @@
         <title>Herramientas - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/herramientas/</link>
         <description>Herramientas - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 27 Oct 2025 10:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/herramientas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/herramientas/" rel="self" type="application/rss+xml" /><item>
     <title>Bruno: Guía práctica para pruebas de API</title>
-    <link>http://localhost:1313/bruno-guia-api-testing/</link>
-    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0800</pubDate>
+    <link>http://localhost:1313/brunoapitesting/</link>
+    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/bruno-guia-api-testing/</guid>
+    <guid>http://localhost:1313/brunoapitesting/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/bruno/bruno.jpg" referrerpolicy="no-referrer">
-            </div>Guía completa de Bruno, la herramienta open-source para API testing git-friendly. Instalación, organización, assertions y CI/CD.]]></description>
+                <img src="/images/substack/bruno-api/bruno-api-1.png" referrerpolicy="no-referrer">
+            </div><h2 id="introducción">Introducción</h2>
+<p>Bruno es una herramienta de código abierto para el testeo de APIs que destaca por su sencillez, rendimiento y enfoque git-friendly. A diferencia de otras soluciones, Bruno almacena las colecciones localmente como archivos de texto, facilitando enormemente la colaboración a través del control de versiones y la integración en pipelines CI.</p>
+<p>Otra de las ventajas principales es que se puede trabajar de manera totalmente productiva desde su interfaz gráfica como manipulando directamente los ficheros de texto desde un IDE. Esta característica facilita la curva de aprendizaje de esta herramienta.</p>]]></description>
 </item>
 </channel>
 </rss>

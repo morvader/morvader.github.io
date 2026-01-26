@@ -3,7 +3,90 @@
         <title>All Posts - Testing from the trenches</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Path formativo para el QA del futuro</title>
+    <link>http://localhost:1313/pathformativoqa/</link>
+    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/pathformativoqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/path-formativo/path-formativo-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace años diseñé un <a href="https://www.testingfromthetrenches.com/posts/pdp-1/" target="_blank" rel="noopener noreffer ">itinerario formativo</a> por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.</p>
+<p>Creo que está bien estructurado y sigue siendo muy útil. No obstante, el contexto ha cambiado radicalmente y no le vendría mal una actualización.</p>
+<p>Cualquier itinerario debería seguir manteniendo una base sólida de testing. Porque no se trata de abandonar los fundamentos, sino de construir sobre ellos de forma diferente.</p>]]></description>
+</item>
+<item>
+    <title>My two cents: El futuro del QA en la era de la IA</title>
+    <link>http://localhost:1313/futuroqaeraia/</link>
+    <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/futuroqaeraia/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>
+<p>Esa era la idea principal de mi artículo, pero David me retó a añadir cómo veo el futuro del QA con la evolución de las IAs. Entonces dejé algunas ideas básicas que ahora quiero ampliar.</p>]]></description>
+</item>
+<item>
+    <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
+    <link>http://localhost:1313/dietatesting/</link>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/dietatesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/dieta-testing/dieta-testing-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unos años fui a un nutricionista. No tenía ningún problema con la comida, pero quería verme mejor. Cuando llegué, me preguntó cuál era mi objetivo. &ldquo;Bajar grasa y ganar músculo&rdquo;, le dije. En aquel momento, su respuesta me dejó descolocado: &ldquo;Eso es imposible. No funciona así. Primero tienes que hacer una cosa y luego la otra. Las dos a la vez no pueden ser&rdquo;.</p>
+<p>Trabajando en el mundo de la calidad, me he dado cuenta de que esta conversación resume perfectamente uno de los mayores problemas cuando los equipos intentan mejorar sus prácticas de testing. Se parte de objetivos contradictorios o poco claros.</p>]]></description>
+</item>
+<item>
+    <title>Bruno: Guía práctica para pruebas de API</title>
+    <link>http://localhost:1313/brunoapitesting/</link>
+    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/brunoapitesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/bruno-api/bruno-api-1.png" referrerpolicy="no-referrer">
+            </div><h2 id="introducción">Introducción</h2>
+<p>Bruno es una herramienta de código abierto para el testeo de APIs que destaca por su sencillez, rendimiento y enfoque git-friendly. A diferencia de otras soluciones, Bruno almacena las colecciones localmente como archivos de texto, facilitando enormemente la colaboración a través del control de versiones y la integración en pipelines CI.</p>
+<p>Otra de las ventajas principales es que se puede trabajar de manera totalmente productiva desde su interfaz gráfica como manipulando directamente los ficheros de texto desde un IDE. Esta característica facilita la curva de aprendizaje de esta herramienta.</p>]]></description>
+</item>
+<item>
+    <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</title>
+    <link>http://localhost:1313/contextovssesgo/</link>
+    <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/contextovssesgo/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" referrerpolicy="no-referrer">
+            </div><h2 id="reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</h2>
+<p>Te encuentras testeando un e-commerce y te encuentras con esta situación. ¿Abrirías un ticket en Jira?</p>
+<p></p>
+<p>Antes de responder, déjame contarte por qué esta pregunta es más compleja de lo que parece&hellip;</p>
+<h2 id="el-contexto-lo-es-todo">El contexto lo es todo</h2>
+<p>En casi todo lo que hacemos en la vida, el contexto es fundamental. Una misma acción puede tener diferentes efectos en función de las circunstancias en las que se produce. Esto, que parece lógico y de sentido común, no siempre se tiene en cuenta a la hora de hacer testing.</p>]]></description>
+</item>
+<item>
+    <title>Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión</title>
+    <link>http://localhost:1313/liderazgocambio/</link>
+    <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/liderazgocambio/</guid>
+    <description><![CDATA[<p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
+<p>En el día a día de una empresa, esta fábula tiene mucho sentido. Para impulsar un cambio, a menudo debemos jugar ambos papeles. Hay momentos para ser la rana: confiar en el equipo, dejarse llevar por la corriente y avanzar juntos.</p>]]></description>
+</item>
+<item>
+    <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
+    <link>http://localhost:1313/antipatronesautomatizacion/</link>
+    <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
+            </div><p>📺 Este artículo es el resumen de una charla que di en la VLCTesting en 2023. <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+<p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
+<h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
+<p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
+</item>
+<item>
     <title>Testing y gorilas</title>
     <link>http://localhost:1313/testinggorillaillusion/</link>
     <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
@@ -34,76 +117,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
             </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
-</item>
-<item>
-    <title>Creando una cultura de calidad en organizaciones</title>
-    <link>http://localhost:1313/kotterculturacalidad/</link>
-    <pubDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/kotterculturacalidad/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
-            </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
-</item>
-<item>
-    <title>Cómo afrontar la venta de proyectos de QA en consultoría</title>
-    <link>http://localhost:1313/ofertasqa/</link>
-    <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/ofertasqa/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/ofertasQA/techVsNegocio.png" referrerpolicy="no-referrer">
-            </div>Artículo, basado en experiencias reales, hablo de las claves para presentar QA como una inversión estratégica que mejora el delivery y reduce costes operativos]]></description>
-</item>
-<item>
-    <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia</title>
-    <link>http://localhost:1313/apitesting/</link>
-    <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/apitesting/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/apiTesting/TestingStrategy.png" referrerpolicy="no-referrer">
-            </div>Un Enfoque Pragmático para Iniciar la Automatización de Pruebas]]></description>
-</item>
-<item>
-    <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
-    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
-    <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/comunidad/comunidad.jpg" referrerpolicy="no-referrer">
-            </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>
-</item>
-<item>
-    <title>Framework para entrevistas técnicas</title>
-    <link>http://localhost:1313/entrevistas/</link>
-    <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/entrevistas/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/entrevistas/header.jpg" referrerpolicy="no-referrer">
-            </div>Consejos para preparar y hacer entrevistas técnicas]]></description>
-</item>
-<item>
-    <title>Definiendo un plan de carrera - Parte II</title>
-    <link>http://localhost:1313/pdp-2/</link>
-    <pubDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pdp-2/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/PDP/PDP2.jpg" referrerpolicy="no-referrer">
-            </div>Cómo poner en práctica un plan de carrera de manera efectiva]]></description>
-</item>
-<item>
-    <title>Definiendo un plan de carrera - Parte I</title>
-    <link>http://localhost:1313/pdp-1/</link>
-    <pubDate>Wed, 08 May 2024 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pdp-1/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/PDP/PDP.jpg" referrerpolicy="no-referrer">
-            </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT]]></description>
 </item>
 </channel>
 </rss>

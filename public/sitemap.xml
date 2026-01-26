@@ -2,29 +2,43 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/tags/cultura/</loc><lastmod>2025-09-09T21:45:46&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-09-09T21:45:46&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-09-09T21:45:46&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-09-09T21:45:46&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/testinggorillaillusion/</loc><lastmod>2025-09-09T21:45:46&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/carrera/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/ia/</loc><lastmod>2025-11-23T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/pathformativoqa/</loc><lastmod>2025-11-23T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/futuroqaeraia/</loc><lastmod>2025-11-16T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/cultura/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/dietatesting/</loc><lastmod>2025-10-30T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/estrategia/</loc><lastmod>2025-10-30T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/api-testing/</loc><lastmod>2025-10-27T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/brunoapitesting/</loc><lastmod>2025-10-27T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/herramientas/</loc><lastmod>2025-10-27T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/contextovssesgo/</loc><lastmod>2025-10-06T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/testing-exploratorio/</loc><lastmod>2025-10-06T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/liderazgo/</loc><lastmod>2025-09-22T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/liderazgocambio/</loc><lastmod>2025-09-22T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/antipatronesautomatizacion/</loc><lastmod>2025-09-15T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/automatizaci%C3%B3n/</loc><lastmod>2025-09-15T10:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/testinggorillaillusion/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://localhost:1313/exploratory-extension/testingextension/</loc><lastmod>2025-06-02T08:42:41&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/exploratory-extension/</loc><lastmod>2025-06-02T08:42:41&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/maturity-model/maturitymodel/</loc><lastmod>2025-05-24T11:29:53&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/maturity-model/</loc><lastmod>2025-05-24T11:29:53&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/equipoqaconsultoria/</loc><lastmod>2025-05-24T11:29:53&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/modelosmadurez/</loc><lastmod>2025-05-12T20:56:13&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/kotterculturacalidad/</loc><lastmod>2025-03-23T13:09:20&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/ofertasqa/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/negocio/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/apitesting/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/unit-testing/</loc><lastmod>2025-05-12T16:46:31&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/comunidades-practica-tecnica/</loc><lastmod>2025-01-08T12:49:57&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/carrera/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/entrevistas/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/pdp-2/</loc><lastmod>2024-06-03T15:53:04&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/pdp-1/</loc><lastmod>2024-05-13T17:56:22&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/tags/quality-assurance/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/negativetesting/</loc><lastmod>2025-03-23T13:07:06&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/equipoqaconsultoria/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/modelosmadurez/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/kotterculturacalidad/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/ofertasqa/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/negocio/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/apitesting/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/unit-testing/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/comunidades-practica-tecnica/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/entrevistas/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/pdp-2/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/pdp-1/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/quality-assurance/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/negativetesting/</loc><lastmod>2026-01-25T19:01:21&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://localhost:1313/talks/listadocharlas/</loc><lastmod>2025-05-12T16:46:31&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/talks/</loc><lastmod>2025-05-12T16:46:31&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/easyrandom/</loc><lastmod>2024-03-04T14:01:28&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

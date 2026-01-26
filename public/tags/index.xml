@@ -3,12 +3,76 @@
         <title>Tags - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Carrera</title>
+    <link>http://localhost:1313/tags/carrera/</link>
+    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/carrera/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>IA</title>
+    <link>http://localhost:1313/tags/ia/</link>
+    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/ia/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Cultura</title>
     <link>http://localhost:1313/tags/cultura/</link>
-    <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>xxxx</author>
     <guid>http://localhost:1313/tags/cultura/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Estrategia</title>
+    <link>http://localhost:1313/tags/estrategia/</link>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/estrategia/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>API Testing</title>
+    <link>http://localhost:1313/tags/api-testing/</link>
+    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/api-testing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Herramientas</title>
+    <link>http://localhost:1313/tags/herramientas/</link>
+    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/herramientas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Testing Exploratorio</title>
+    <link>http://localhost:1313/tags/testing-exploratorio/</link>
+    <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/testing-exploratorio/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Liderazgo</title>
+    <link>http://localhost:1313/tags/liderazgo/</link>
+    <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/liderazgo/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Automatización</title>
+    <link>http://localhost:1313/tags/automatizaci%C3%B3n/</link>
+    <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/automatizaci%C3%B3n/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -17,30 +81,6 @@
     <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
     <author>xxxx</author>
     <guid>http://localhost:1313/tags/negocio/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Unit Testing</title>
-    <link>http://localhost:1313/tags/unit-testing/</link>
-    <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/unit-testing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Carrera</title>
-    <link>http://localhost:1313/tags/carrera/</link>
-    <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/carrera/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Quality Assurance</title>
-    <link>http://localhost:1313/tags/quality-assurance/</link>
-    <pubDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/quality-assurance/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

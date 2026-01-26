@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Bruno: Guía práctica para pruebas de API - Testing from the trenches</title><meta name="Description" content="Facilitando la curva de entrada al API Testing con Bruno"><meta property="og:url" content="http://localhost:1313/brunoapitesting/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Bruno: Guía práctica para pruebas de API">
+  <meta property="og:description" content="Facilitando la curva de entrada al API Testing con Bruno">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-27T10:00:00+01:00">
+    <meta property="article:modified_time" content="2025-10-27T10:00:00+01:00">
+    <meta property="article:tag" content="Herramientas">
+    <meta property="article:tag" content="API Testing">
+    <meta property="og:image" content="http://localhost:1313/images/substack/bruno-api/bruno-api-1.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/substack/bruno-api/bruno-api-1.png">
+  <meta name="twitter:title" content="Bruno: Guía práctica para pruebas de API">
+  <meta name="twitter:description" content="Facilitando la curva de entrada al API Testing con Bruno">
+      <meta name="twitter:site" content="@morvader">
+<meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/brunoapitesting/" /><link rel="prev" href="http://localhost:1313/contextovssesgo/" /><link rel="next" href="http://localhost:1313/dietatesting/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0" /><meta property="og:title" content="Bruno: Guía práctica para pruebas de API" />
+    <meta property="og:description" content="Facilitando la curva de entrada al API Testing con Bruno" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/brunoapitesting/" />
+    <meta property="og:site_name" content="Testing from the trenches" />
+    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/substack/bruno-api/bruno-api-1.png" />
+        <meta property="og:image:secure_url" content="http://localhost:1313/images/substack/bruno-api/bruno-api-1.png" /><meta property="article:published_time" content="2025-10-27T10:00:00&#43;01:00" /><meta property="article:modified_time" content="2025-10-27T10:00:00&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Herramientas" /><meta property="article:tag" content="API Testing" /><meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bruno: Guía práctica para pruebas de API" />
+    <meta name="twitter:description" content="Facilitando la curva de entrada al API Testing con Bruno" /><meta name="twitter:image" content="http://localhost:1313/images/substack/bruno-api/bruno-api-1.png" /><meta name="twitter:site" content="@morvader" />
+        <meta name="twitter:creator" content="@morvader" /><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Bruno: Guía práctica para pruebas de API",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/brunoapitesting\/"
+        },"image": ["http:\/\/localhost:1313\/images\/substack\/bruno-api\/bruno-api-1.png"],"genre": "posts","keywords": "Herramientas, API Testing","wordcount":  1062 ,
+        "url": "http:\/\/localhost:1313\/brunoapitesting\/","datePublished": "2025-10-27T10:00:00+01:00","dateModified": "2025-10-27T10:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Francisco Moreno","logo": "http:\/\/localhost:1313\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "Facilitando la curva de entrada al API Testing con Bruno"
+    }
+    </script>
+    
+</head>
+
+<body data-header-desktop="fixed"
+    data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles">📝  Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤  Talks </a><a class="menu-item" href="/tags/" title="Tags">🏷️  Tags </a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈  Maturity Model </a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍  Exploratory Testing Extension </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">📝 Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤 Talks</a><a class="menu-item" href="/tags/" title="Tags">🏷️ Tags</a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈 Maturity Model</a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍 Exploratory Testing Extension</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Bruno: Guía práctica para pruebas de API</h1><h2 class="single-subtitle">Facilitando la curva de entrada al API Testing con Bruno</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-10-27">2025-10-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1062 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/bruno-api/bruno-api-1.png"
+        data-srcset="/images/substack/bruno-api/bruno-api-1.png, /images/substack/bruno-api/bruno-api-1.png 1.5x, /images/substack/bruno-api/bruno-api-1.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/bruno-api/bruno-api-1.png"
+        title="Facilitando la curva de entrada al API Testing con Bruno" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#instalación">Instalación</a>
+      <ul>
+        <li><a href="#aplicación-de-escritorio">Aplicación de escritorio</a></li>
+        <li><a href="#cli-interfaz-de-línea-de-comandos">CLI (Interfaz de línea de comandos)</a></li>
+      </ul>
+    </li>
+    <li><a href="#organización-de-colecciones">Organización de colecciones</a>
+      <ul>
+        <li><a href="#ventajas-de-trabajar-con-ficheros-de-texto">Ventajas de trabajar con ficheros de texto</a></li>
+      </ul>
+    </li>
+    <li><a href="#variables-y-entornos">Variables y entornos</a>
+      <ul>
+        <li><a href="#definición-de-entornos">Definición de Entornos</a></li>
+        <li><a href="#uso-de-variables">Uso de variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#añadiendo-tests-de-api">Añadiendo Tests de API</a>
+      <ul>
+        <li><a href="#aserciones-declarativas">Aserciones declarativas</a></li>
+        <li><a href="#código-javascript">Código JavaScript</a></li>
+        <li><a href="#ejemplo-de-solicitud-completa-con-pruebas">Ejemplo de solicitud completa con pruebas</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejecución-en-consola">Ejecución en consola</a>
+      <ul>
+        <li><a href="#ejecutar-una-petición-individual">Ejecutar una petición individual</a></li>
+        <li><a href="#ejecutar-toda-la-colección">Ejecutar toda la colección</a></li>
+        <li><a href="#opciones-útiles">Opciones útiles</a></li>
+        <li><a href="#generación-de-informes">Generación de informes</a></li>
+      </ul>
+    </li>
+    <li><a href="#integración-cicd">Integración CI/CD</a>
+      <ul>
+        <li><a href="#gitlab-ci">GitLab CI</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejemplo-práctico">Ejemplo práctico</a>
+      <ul>
+        <li><a href="#1-clonar-y-explorar">1. Clonar y explorar</a></li>
+        <li><a href="#2-abrir-con-bruno-desktop">2. Abrir con Bruno Desktop</a></li>
+        <li><a href="#3-ejecutar-desde-cli">3. Ejecutar desde CLI</a></li>
+        <li><a href="#4-ver-resultados">4. Ver resultados</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusiones">Conclusiones</a></li>
+    <li><a href="#recursos">Recursos</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introducción">Introducción</h2>
+<p>Bruno es una herramienta de código abierto para el testeo de APIs que destaca por su sencillez, rendimiento y enfoque git-friendly. A diferencia de otras soluciones, Bruno almacena las colecciones localmente como archivos de texto, facilitando enormemente la colaboración a través del control de versiones y la integración en pipelines CI.</p>
+<p>Otra de las ventajas principales es que se puede trabajar de manera totalmente productiva desde su interfaz gráfica como manipulando directamente los ficheros de texto desde un IDE. Esta característica facilita la curva de aprendizaje de esta herramienta.</p>
+<p>En este artículo, exploraremos las principales características de Bruno que lo hacen especialmente útil para los equipos de testing y desarrollo.</p>
+<h2 id="instalación">Instalación</h2>
+<h3 id="aplicación-de-escritorio">Aplicación de escritorio</h3>
+<p>Bruno está disponible para Windows, macOS y Linux. Se puede descargar directamente desde:</p>
+<p><a href="https://www.usebruno.com/downloads" target="_blank" rel="noopener noreffer ">https://www.usebruno.com/downloads</a></p>
+<p>Una vez abierta, la aplicación de escritorio tiene esta pinta:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/bruno-api/bruno-api-1.png"
+        data-srcset="/images/substack/bruno-api/bruno-api-1.png, /images/substack/bruno-api/bruno-api-1.png 1.5x, /images/substack/bruno-api/bruno-api-1.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/bruno-api/bruno-api-1.png"
+        title="Bruno Desktop App" /></p>
+<p>Es muy intuitiva lo que facilita crear o abrir colecciones. En este caso, si no quieres empezar de cero, puedes descargar este repo de ejemplo:</p>
+<p><a href="https://github.com/morvader/BrunoExample" target="_blank" rel="noopener noreffer ">https://github.com/morvader/BrunoExample</a></p>
+<h3 id="cli-interfaz-de-línea-de-comandos">CLI (Interfaz de línea de comandos)</h3>
+<p>Para automatizar pruebas y ejecutarlas por línea de comando en local o pipelines tendrás que instalar su aplicación node.</p>
+<p>Usando npm:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g @usebruno/cli</span></span></code></pre></div></div>
+<p>Usando Homebrew (macOS):</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install usebruno/tap/bruno</span></span></code></pre></div></div>
+<p>Verificar la instalación:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bru --version</span></span></code></pre></div></div>
+<p>También hay disponible un plugin de VsCode que os permitirá trabajar y ejecutar peticiones directamente desde el IDE.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/bruno-api/bruno-api-2.png"
+        data-srcset="/images/substack/bruno-api/bruno-api-2.png, /images/substack/bruno-api/bruno-api-2.png 1.5x, /images/substack/bruno-api/bruno-api-2.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/bruno-api/bruno-api-2.png"
+        title="Bruno VSCode Plugin" /></p>
+<h2 id="organización-de-colecciones">Organización de colecciones</h2>
+<p>Uno de los puntos fuertes de Bruno es cómo organiza las colecciones. Los archivos <code>.bru</code> se almacenan en tu sistema de archivos, lo que permite una estructura jerárquica natural:</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">JsonPlaceholder/
+</span></span><span class="line"><span class="cl">├── bruno.json              # Collection configuration
+</span></span><span class="line"><span class="cl">├── environments/
+</span></span><span class="line"><span class="cl">│   ├── Development.bru
+</span></span><span class="line"><span class="cl">│   └── Production.bru
+</span></span><span class="line"><span class="cl">├── Users/
+</span></span><span class="line"><span class="cl">│   ├── get-users.bru
+</span></span><span class="line"><span class="cl">│   ├── get-user-by-id.bru
+</span></span><span class="line"><span class="cl">│   └── create-user.bru
+</span></span><span class="line"><span class="cl">└── Posts/
+</span></span><span class="line"><span class="cl">    ├── get-posts.bru
+</span></span><span class="line"><span class="cl">    └── create-post.bru</span></span></code></pre></div></div>
+<h3 id="ventajas-de-trabajar-con-ficheros-de-texto">Ventajas de trabajar con ficheros de texto</h3>
+<p>Los archivos <code>.bru</code> son texto plano, lo que permite:</p>
+<ul>
+<li><strong>Un control de versiones natural:</strong> Cada cambio puede ser rastreado con Git</li>
+<li><strong>Revisión del código:</strong> Los cambios en las pruebas se revisan en pull requests</li>
+<li><strong>Colaboración sin fricciones:</strong> El equipo trabaja como con el código fuente</li>
+<li><strong>Branching:</strong> Desarrollo paralelo de pruebas en diferentes ramas</li>
+</ul>
+<h2 id="variables-y-entornos">Variables y entornos</h2>
+<h3 id="definición-de-entornos">Definición de Entornos</h3>
+<p>Bruno permite gestionar múltiples entornos (Desarrollo, Staging, Producción). Los archivos de entorno se guardan en la carpeta <code>environments/</code>:</p>
+<p><strong>environments/Producción.bru:</strong></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">vars</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">baseUrl</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">jsonplaceholder</span><span class="o">.</span><span class="n">typicode</span><span class="o">.</span><span class="n">com</span>
+</span></span><span class="line"><span class="cl">  <span class="n">apiTimeout</span><span class="p">:</span> <span class="mi">5000</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<p><strong>environments/Development.bru:</strong></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">vars</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">baseUrl</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">3000</span>
+</span></span><span class="line"><span class="cl">  <span class="n">apiTimeout</span><span class="p">:</span> <span class="mi">10000</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<h3 id="uso-de-variables">Uso de variables</h3>
+<p>Las variables se referencian con llaves dobles en las peticiones:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">get {
+</span></span><span class="line"><span class="cl">  url: {{baseUrl}}/users/userId
+</span></span><span class="line"><span class="cl">  body: none
+</span></span><span class="line"><span class="cl">  auth: none
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">headers {
+</span></span><span class="line"><span class="cl">  Authorization: Bearer {{apiKey}}
+</span></span><span class="line"><span class="cl">  Content-Type: application/json
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div></div>
+<h2 id="añadiendo-tests-de-api">Añadiendo Tests de API</h2>
+<p>Bruno ofrece dos formas de definir validaciones: aserciones declarativas y tests JavaScript.</p>
+<h3 id="aserciones-declarativas">Aserciones declarativas</h3>
+<p>La forma más sencilla de validar respuestas sin escribir código:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">assert {
+</span></span><span class="line"><span class="cl">  res.status: eq 200
+</span></span><span class="line"><span class="cl">  res.body: isArray
+</span></span><span class="line"><span class="cl">  res.body.length: gt 0
+</span></span><span class="line"><span class="cl">  res.body[0].email: contains @
+</span></span><span class="line"><span class="cl">  res.responseTime: lt 2000
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div></div>
+<p><strong>Operadores disponibles:</strong></p>
+<ul>
+<li><code>eq</code>: igual a</li>
+<li><code>neq</code>: no igual a</li>
+<li><code>gt</code>: mayor que</li>
+<li><code>gte</code>: mayor o igual que</li>
+<li><code>lt</code>: menor que</li>
+<li><code>lte</code>: menor o igual que</li>
+<li><code>contains</code>: contiene</li>
+<li><code>notContains</code>: no contiene</li>
+<li><code>isArray</code>: es una matriz</li>
+<li><code>isObject</code>: es un objeto</li>
+<li><code>isString</code>: es una cadena</li>
+<li><code>isNumber</code>: es un número</li>
+<li><code>isBoolean</code>: es un boolean</li>
+<li><code>isNull</code>: es nulo</li>
+</ul>
+<h3 id="código-javascript">Código JavaScript</h3>
+<p>Para validaciones más complejas, Bruno admite pruebas con Chai:</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-javascript">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">tests</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">test</span><span class="p">(</span><span class="s2">&#34;should return valid users&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">getStatus</span><span class="p">()).</span><span class="nx">to</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">getBody</span><span class="p">()).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">an</span><span class="p">(</span><span class="s1">&#39;array&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">getBody</span><span class="p">().</span><span class="nx">length</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">greaterThan</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">test</span><span class="p">(</span><span class="s2">&#34;each user should have required fields&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">users</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">users</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">user</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">expect</span><span class="p">(</span><span class="nx">user</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">have</span><span class="p">.</span><span class="nx">property</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">expect</span><span class="p">(</span><span class="nx">user</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">have</span><span class="p">.</span><span class="nx">property</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">expect</span><span class="p">(</span><span class="nx">user</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">have</span><span class="p">.</span><span class="nx">property</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">expect</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^[^\s@]+@[^\s@]+\.[^\s@]+$/</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">test</span><span class="p">(</span><span class="s2">&#34;response time should be acceptable&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">expect</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">getResponseTime</span><span class="p">()).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">lessThan</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<h3 id="ejemplo-de-solicitud-completa-con-pruebas">Ejemplo de solicitud completa con pruebas</h3>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">meta</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">name</span><span class="p">:</span> <span class="n">Create</span> <span class="n">User</span>
+</span></span><span class="line"><span class="cl">  <span class="n">type</span><span class="p">:</span> <span class="n">http</span>
+</span></span><span class="line"><span class="cl">  <span class="n">seq</span><span class="p">:</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">post</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">url</span><span class="p">:</span> <span class="n">baseUrl</span><span class="o">/</span><span class="n">users</span>
+</span></span><span class="line"><span class="cl">  <span class="n">body</span><span class="p">:</span> <span class="n">json</span>
+</span></span><span class="line"><span class="cl">  <span class="n">auth</span><span class="p">:</span> <span class="n">none</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">body</span><span class="p">:</span><span class="n">json</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Test User&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;username&#34;</span><span class="p">:</span> <span class="s2">&#34;testuser&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;test@example.com&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">assert</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">res</span><span class="o">.</span><span class="n">status</span><span class="p">:</span> <span class="n">eq</span> <span class="mi">201</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="n">res</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">name</span><span class="p">]:</span> <span class="n">eq</span> <span class="n">Test</span> <span class="n">User</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">tests</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">test</span><span class="p">(</span><span class="s2">&#34;should create user successfully&#34;</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">expect</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">getStatus</span><span class="p">())</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="mi">201</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="n">body</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">getBody</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">expect</span><span class="p">(</span><span class="n">body</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="n">have</span><span class="o">.</span><span class="n">property</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">expect</span><span class="p">(</span><span class="n">body</span><span class="o">.</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="s1">&#39;Test User&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">test</span><span class="p">(</span><span class="s2">&#34;should save user ID for next requests&#34;</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="n">userId</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">getBody</span><span class="p">()</span><span class="o">.</span><span class="n">id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bru</span><span class="o">.</span><span class="n">setVar</span><span class="p">(</span><span class="s2">&#34;createdUserId&#34;</span><span class="p">,</span> <span class="n">userId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">expect</span><span class="p">(</span><span class="n">userId</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="n">be</span><span class="o">.</span><span class="n">a</span><span class="p">(</span><span class="s1">&#39;number&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<h2 id="ejecución-en-consola">Ejecución en consola</h2>
+<p>Una de las características más potentes de Bruno es su CLI, fundamental para la automatización y CI/CD.</p>
+<h3 id="ejecutar-una-petición-individual">Ejecutar una petición individual</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bru run get-users.bru --env Production</span></span></code></pre></div></div>
+<h3 id="ejecutar-toda-la-colección">Ejecutar toda la colección</h3>
+<p>Desde el directorio raíz de la colección:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bru run . --env Production</span></span></code></pre></div></div>
+<p><strong>Ejemplo de salida:</strong></p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Running Collection: JsonPlaceholder
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">✓ get-users (234ms)
+</span></span><span class="line"><span class="cl">  ✓ should return valid users
+</span></span><span class="line"><span class="cl">  ✓ each user should have required fields
+</span></span><span class="line"><span class="cl">  ✓ response time should be acceptable
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">✓ create-user (189ms)
+</span></span><span class="line"><span class="cl">  ✓ should create user successfully
+</span></span><span class="line"><span class="cl">  ✓ should save user ID for next requests
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">✓ get-user-by-id (156ms)
+</span></span><span class="line"><span class="cl">  ✓ should return correct user
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Tests: 6 passed, 6 total
+</span></span><span class="line"><span class="cl">Time: 1.579s</span></span></code></pre></div></div>
+<h3 id="opciones-útiles">Opciones útiles</h3>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Run requests with a specific tag</span>
+</span></span><span class="line"><span class="cl">bru run . --env Production --tags smoke
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run requests with multiple tags</span>
+</span></span><span class="line"><span class="cl">bru run . --env Production --tags <span class="s2">&#34;smoke,critical&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run all requests from a specific folder</span>
+</span></span><span class="line"><span class="cl">bru run Users/ --env Production
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run a specific request within a folder</span>
+</span></span><span class="line"><span class="cl">bru run Users/get-users.bru --env Production
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Combine specific folder with tags</span>
+</span></span><span class="line"><span class="cl">bru run Posts/ --env Production --tags regression
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Verbose mode for debugging</span>
+</span></span><span class="line"><span class="cl">bru run . --env Production --verbose</span></span></code></pre></div></div>
+<h3 id="generación-de-informes">Generación de informes</h3>
+<p><strong>Informe HTML:</strong></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bru run . --env Production --reporter-html results.html</span></span></code></pre></div></div>
+<p><strong>Informe JSON:</strong></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bru run . --env Production --reporter-json results.json</span></span></code></pre></div></div>
+<p><strong>Informe JUnit XML (para CI/CD):</strong></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bru run . --env Production --reporter-junit results.xml</span></span></code></pre></div></div>
+<h2 id="integración-cicd">Integración CI/CD</h2>
+<h3 id="gitlab-ci">GitLab CI</h3>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-yaml">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">api-tests</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">node:18</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">npm install -g @usebruno/cli</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">cd JsonPlaceholder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">bru run . --env Production --reporter-junit results.xml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">artifacts</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">when</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">reports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">junit</span><span class="p">:</span><span class="w"> </span><span class="l">results.xml</span></span></span></code></pre></div></div>
+<h2 id="ejemplo-práctico">Ejemplo práctico</h2>
+<p>Basado en el repositorio BrunoExample:</p>
+<h3 id="1-clonar-y-explorar">1. Clonar y explorar</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/morvader/BrunoExample.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> BrunoExample</span></span></code></pre></div></div>
+<h3 id="2-abrir-con-bruno-desktop">2. Abrir con Bruno Desktop</h3>
+<ol>
+<li>Abrir Bruno</li>
+<li>Haga clic en &ldquo;Abrir colección&rdquo;</li>
+<li>Selecciona la carpeta JsonPlaceholder</li>
+</ol>
+<h3 id="3-ejecutar-desde-cli">3. Ejecutar desde CLI</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> JsonPlaceholder
+</span></span><span class="line"><span class="cl">bru run . --env Production --reporter-html results.html</span></span></code></pre></div></div>
+<h3 id="4-ver-resultados">4. Ver resultados</h3>
+<p>Abra <code>results.html</code> en su navegador para ver el informe detallado.</p>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>Bruno ofrece un enfoque moderno a las pruebas de API con claras ventajas:</p>
+<ul>
+<li><strong>Git-friendly:</strong> Integración natural con el control de versiones</li>
+<li><strong>Organización flexible:</strong> Estructura de carpetas intuitiva</li>
+<li><strong>Potentes variables:</strong> Gestión sencilla de múltiples entornos</li>
+<li><strong>Pruebas versátiles:</strong> Aserciones declarativas o JavaScript según sea necesario</li>
+<li><strong>CLI robusta:</strong> Automatización sencilla en conductos CI/CD</li>
+<li><strong>Ligero y rápido:</strong> Sin dependencias de servicios en la nube</li>
+<li><strong>De código abierto:</strong> Control total sobre la herramienta y los datos</li>
+</ul>
+<p>Ideal para equipos que buscan simplicidad, control y facilidad de integración en sus flujos de trabajo de desarrollo.</p>
+<h2 id="recursos">Recursos</h2>
+<ul>
+<li>Sitio oficial: <a href="https://www.usebruno.com/" target="_blank" rel="noopener noreffer ">https://www.usebruno.com/</a></li>
+<li>Documentación: <a href="https://docs.usebruno.com/" target="_blank" rel="noopener noreffer ">https://docs.usebruno.com/</a></li>
+<li>Repositorio de ejemplo: <a href="https://github.com/morvader/BrunoExample" target="_blank" rel="noopener noreffer ">https://github.com/morvader/BrunoExample</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-10-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/brunoapitesting/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/brunoapitesting/" data-title="Bruno: Guía práctica para pruebas de API" data-via="morvader" data-hashtags="Herramientas,API Testing"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/brunoapitesting/" data-title="Bruno: Guía práctica para pruebas de API"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/brunoapitesting/" data-title="Bruno: Guía práctica para pruebas de API" data-description="Facilitando la curva de entrada al API Testing con Bruno"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fbrunoapitesting%2f&amp;text=Bruno%3a%20Gu%c3%ada%20pr%c3%a1ctica%20para%20pruebas%20de%20API" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/herramientas/">Herramientas</a>,&nbsp;<a href="/tags/api-testing/">API Testing</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/contextovssesgo/" class="prev" rel="prev" title="Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</a>
+            <a href="/dietatesting/" class="next" rel="next" title="De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad">De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body>
+
+</html>

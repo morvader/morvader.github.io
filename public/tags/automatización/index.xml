@@ -3,25 +3,18 @@
         <title>Automatización - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/automatizaci%C3%B3n/</link>
         <description>Automatización - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 30 Oct 2025 10:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/automatizaci%C3%B3n/" rel="self" type="application/rss+xml" /><item>
-    <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
-    <link>http://localhost:1313/dieta-testing-adherencia/</link>
-    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0800</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/automatizaci%C3%B3n/" rel="self" type="application/rss+xml" /><item>
+    <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
+    <link>http://localhost:1313/antipatronesautomatizacion/</link>
+    <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/dieta-testing-adherencia/</guid>
+    <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/dieta-testing/dieta-testing.jpg" referrerpolicy="no-referrer">
-            </div>Paralelismos entre nutrición y prácticas de testing. Por qué la adherencia importa más que la perfección en la calidad del software.]]></description>
-</item>
-<item>
-    <title>Bruno: Guía práctica para pruebas de API</title>
-    <link>http://localhost:1313/bruno-guia-api-testing/</link>
-    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/bruno-guia-api-testing/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/bruno/bruno.jpg" referrerpolicy="no-referrer">
-            </div>Guía completa de Bruno, la herramienta open-source para API testing git-friendly. Instalación, organización, assertions y CI/CD.]]></description>
+                <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
+            </div><p>📺 Este artículo es el resumen de una charla que di en la VLCTesting en 2023. <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+<p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
+<h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
+<p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
 </item>
 </channel>
 </rss>

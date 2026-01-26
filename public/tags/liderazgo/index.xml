@@ -3,15 +3,14 @@
         <title>Liderazgo - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/liderazgo/</link>
         <description>Liderazgo - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 22 Sep 2025 10:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/liderazgo/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/liderazgo/" rel="self" type="application/rss+xml" /><item>
     <title>Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión</title>
-    <link>http://localhost:1313/liderazgo-cambio-rana-escorpion/</link>
-    <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0800</pubDate>
+    <link>http://localhost:1313/liderazgocambio/</link>
+    <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/liderazgo-cambio-rana-escorpion/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/avatar.jpg" referrerpolicy="no-referrer">
-            </div>Estrategias de liderazgo basadas en la fábula del escorpión y la rana. Cuándo cooperar y cuándo desafiar el status quo.]]></description>
+    <guid>http://localhost:1313/liderazgocambio/</guid>
+    <description><![CDATA[<p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
+<p>En el día a día de una empresa, esta fábula tiene mucho sentido. Para impulsar un cambio, a menudo debemos jugar ambos papeles. Hay momentos para ser la rana: confiar en el equipo, dejarse llevar por la corriente y avanzar juntos.</p>]]></description>
 </item>
 </channel>
 </rss>
