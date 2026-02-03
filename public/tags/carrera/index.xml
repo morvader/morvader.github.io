@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Carrera - Tag - Testing from the trenches</title>
-        <link>http://localhost:1313/tags/carrera/</link>
+        <link>http://localhost:37105/tags/carrera/</link>
         <description>Carrera - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/carrera/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:37105/tags/carrera/" rel="self" type="application/rss+xml" /><item>
     <title>Path formativo para el QA del futuro</title>
-    <link>http://localhost:1313/pathformativoqa/</link>
+    <link>http://localhost:37105/pathformativoqa/</link>
     <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pathformativoqa/</guid>
+    <guid>http://localhost:37105/pathformativoqa/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/path-formativo/path-formativo-1.png" referrerpolicy="no-referrer">
             </div><p>Hace años diseñé un <a href="https://www.testingfromthetrenches.com/posts/pdp-1/" target="_blank" rel="noopener noreffer ">itinerario formativo</a> por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.</p>
@@ -17,10 +17,10 @@
 </item>
 <item>
     <title>My two cents: El futuro del QA en la era de la IA</title>
-    <link>http://localhost:1313/futuroqaeraia/</link>
+    <link>http://localhost:37105/futuroqaeraia/</link>
     <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/futuroqaeraia/</guid>
+    <guid>http://localhost:37105/futuroqaeraia/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
             </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>
@@ -28,30 +28,30 @@
 </item>
 <item>
     <title>Framework para entrevistas técnicas</title>
-    <link>http://localhost:1313/entrevistas/</link>
+    <link>http://localhost:37105/entrevistas/</link>
     <pubDate>Thu, 21 Nov 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/entrevistas/</guid>
+    <guid>http://localhost:37105/entrevistas/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/entrevistas/header.jpg" referrerpolicy="no-referrer">
             </div>Consejos para preparar y hacer entrevistas técnicas]]></description>
 </item>
 <item>
     <title>Definiendo un plan de carrera - Parte II</title>
-    <link>http://localhost:1313/pdp-2/</link>
+    <link>http://localhost:37105/pdp-2/</link>
     <pubDate>Mon, 03 Jun 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pdp-2/</guid>
+    <guid>http://localhost:37105/pdp-2/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/PDP/PDP2.jpg" referrerpolicy="no-referrer">
             </div>Cómo poner en práctica un plan de carrera de manera efectiva]]></description>
 </item>
 <item>
     <title>Definiendo un plan de carrera - Parte I</title>
-    <link>http://localhost:1313/pdp-1/</link>
+    <link>http://localhost:37105/pdp-1/</link>
     <pubDate>Wed, 08 May 2024 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pdp-1/</guid>
+    <guid>http://localhost:37105/pdp-1/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/PDP/PDP.jpg" referrerpolicy="no-referrer">
             </div>Principales aspectos que marcan en desarrollo profesional de una persona en el mundo IT]]></description>

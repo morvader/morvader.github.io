@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>IA - Tag - Testing from the trenches</title>
-        <link>http://localhost:1313/tags/ia/</link>
+        <link>http://localhost:37105/tags/ia/</link>
         <description>IA - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/ia/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:37105/tags/ia/" rel="self" type="application/rss+xml" /><item>
     <title>Augmented Risk-Based Testing</title>
-    <link>http://localhost:1313/augmentedriskbasedtesting/</link>
-    <pubDate>Tue, 03 Feb 2026 10:00:00 &#43;0100</pubDate>
+    <link>http://localhost:37105/augmentedriskbasedtesting/</link>
+    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/augmentedriskbasedtesting/</guid>
+    <guid>http://localhost:37105/augmentedriskbasedtesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/augmented-rbt/augmented-rbt-1.png" referrerpolicy="no-referrer">
             </div><h2 id="introducción-al-risk-based-testing">Introducción al Risk-Based Testing</h2>
@@ -17,10 +17,10 @@
 </item>
 <item>
     <title>Path formativo para el QA del futuro</title>
-    <link>http://localhost:1313/pathformativoqa/</link>
+    <link>http://localhost:37105/pathformativoqa/</link>
     <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/pathformativoqa/</guid>
+    <guid>http://localhost:37105/pathformativoqa/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/path-formativo/path-formativo-1.png" referrerpolicy="no-referrer">
             </div><p>Hace años diseñé un <a href="https://www.testingfromthetrenches.com/posts/pdp-1/" target="_blank" rel="noopener noreffer ">itinerario formativo</a> por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.</p>
@@ -29,10 +29,10 @@
 </item>
 <item>
     <title>My two cents: El futuro del QA en la era de la IA</title>
-    <link>http://localhost:1313/futuroqaeraia/</link>
+    <link>http://localhost:37105/futuroqaeraia/</link>
     <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/futuroqaeraia/</guid>
+    <guid>http://localhost:37105/futuroqaeraia/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
             </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>

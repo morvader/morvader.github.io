@@ -226,7 +226,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.social]
     GitHub = "morvader"
     Linkedin = "franciscomorenosanz"
-    Twitter = "morvader"
+    X = "morvader"
+    Bluesky = "morvader.bsky.social"
     Instagram = ""
     Facebook = ""
     Telegram = ""

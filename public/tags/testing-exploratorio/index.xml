@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Testing Exploratorio - Tag - Testing from the trenches</title>
-        <link>http://localhost:1313/tags/testing-exploratorio/</link>
+        <link>http://localhost:37105/tags/testing-exploratorio/</link>
         <description>Testing Exploratorio - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/testing-exploratorio/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:37105/tags/testing-exploratorio/" rel="self" type="application/rss+xml" /><item>
     <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</title>
-    <link>http://localhost:1313/contextovssesgo/</link>
+    <link>http://localhost:37105/contextovssesgo/</link>
     <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/contextovssesgo/</guid>
+    <guid>http://localhost:37105/contextovssesgo/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" referrerpolicy="no-referrer">
             </div><h2 id="reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</h2>

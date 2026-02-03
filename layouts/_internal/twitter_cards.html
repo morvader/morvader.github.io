@@ -1,0 +1,24 @@
+{{- $images := $.Params.images | default $.Site.Params.images -}}
+{{- $imageSrc := "" -}}
+
+{{- with $images -}}
+  {{- $imageSrc = index . 0 -}}
+  {{- if not (strings.HasPrefix $imageSrc "http") -}}
+    {{- $imageSrc = $imageSrc | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $imageSrc -}}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="{{ $imageSrc }}"/>
+{{- else -}}
+<meta name="twitter:card" content="summary"/>
+{{- end -}}
+
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
+
+{{- with $.Site.Params.social.Twitter -}}
+<meta name="twitter:site" content="@{{ . }}"/>
+<meta name="twitter:creator" content="@{{ . }}"/>
+{{- end -}}
