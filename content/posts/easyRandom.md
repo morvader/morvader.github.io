@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java"
 license: ""
-images: []
+images: ["/images/easyRandom/easyRandom-1.png"]
 
 tags: [Unit testing]
 categories: []
 
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: "/images/easyRandom/easyRandom-1.png"
+featuredImagePreview: "/images/easyRandom/easyRandom-1.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -55,7 +55,7 @@ library:
     # Or
     # someJS = "https://cdn.example.com/some.js"
 seo:
-  images: []
+  images: ["/images/easyRandom/easyRandom-1.png"]
 ---
 <!--more-->
 

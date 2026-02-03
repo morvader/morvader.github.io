@@ -1,7 +1,7 @@
 # Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos
 
 
-📺 Este artículo es el resumen de una charla que di en la VLCTesting en 2023. [Aquí tenéis la grabación](https://www.youtube.com/watch?v=example).
+📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. [Aquí tenéis la grabación](https://www.youtube.com/watch?v=bsdFGKWZHFY).
 
 La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.
 

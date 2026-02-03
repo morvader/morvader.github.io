@@ -15,10 +15,10 @@
     <meta property="article:published_time" content="2023-10-17T15:58:26+08:00">
     <meta property="article:modified_time" content="2024-03-04T14:01:28+01:00">
     <meta property="article:tag" content="Unit Testing">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="http://localhost:1313/images/easyRandom/easyRandom-1.png">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+  <meta name="twitter:image" content="http://localhost:1313/images/easyRandom/easyRandom-1.png">
   <meta name="twitter:title" content="Cómo mejorar la mantenibilidad de las pruebas unitarias">
   <meta name="twitter:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java">
       <meta name="twitter:site" content="@morvader">
@@ -32,10 +32,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://localhost:1313/easyrandom/" />
     <meta property="og:site_name" content="Testing from the trenches" />
-    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/avatar.jpg" />
-        <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg" /><meta property="article:published_time" content="2023-10-17T15:58:26&#43;08:00" /><meta property="article:modified_time" content="2024-03-04T14:01:28&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Unit testing" /><meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/easyRandom/easyRandom-1.png" />
+        <meta property="og:image:secure_url" content="http://localhost:1313/images/easyRandom/easyRandom-1.png" /><meta property="article:published_time" content="2023-10-17T15:58:26&#43;08:00" /><meta property="article:modified_time" content="2024-03-04T14:01:28&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Unit testing" /><meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Cómo mejorar la mantenibilidad de las pruebas unitarias" />
-    <meta name="twitter:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java" /><meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg" /><meta name="twitter:site" content="@morvader" />
+    <meta name="twitter:description" content="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java" /><meta name="twitter:image" content="http://localhost:1313/images/easyRandom/easyRandom-1.png" /><meta name="twitter:site" content="@morvader" />
         <meta name="twitter:creator" content="@morvader" /><script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -45,7 +45,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/easyrandom\/"
-        },"image": ["http:\/\/localhost:1313\/images\/avatar.jpg"],"genre": "posts","keywords": "Unit testing","wordcount":  1892 ,
+        },"image": ["http:\/\/localhost:1313\/images\/easyRandom\/easyRandom-1.png"],"genre": "posts","keywords": "Unit testing","wordcount":  1892 ,
         "url": "http:\/\/localhost:1313\/easyrandom\/","datePublished": "2023-10-17T15:58:26+08:00","dateModified": "2024-03-04T14:01:28+01:00","publisher": {
             "@type": "Organization",
             "name": "Francisco Moreno","logo": "http:\/\/localhost:1313\/images\/avatar.jpg"},"author": {
@@ -125,7 +125,14 @@
             <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-17">2023-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1892 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="true">
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/easyRandom/easyRandom-1.png"
+        data-srcset="/images/easyRandom/easyRandom-1.png, /images/easyRandom/easyRandom-1.png 1.5x, /images/easyRandom/easyRandom-1.png 2x"
+        data-sizes="auto"
+        alt="/images/easyRandom/easyRandom-1.png"
+        title="Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java" /></div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -252,7 +259,7 @@ El fichero pom.xml quedaría de la siguiente manera:</p>
 <h3 id="caso-de-uso-básico">Caso de uso básico</h3>
 <p>El caso de uso más básico ya lo hemos visto antes. En ese ejemplo, se asignan valores a los campos de la clase persona de manera totalmente aleatoria. Obviamente, a la hora de hacer pruebas, necesitaremos tener control sobre algunos campos determinados. Vamos a ver esto en un ejemplo.
 Recordemos que easyRandom también puede utilizarse con tipos primitivos. Por tanto, nuestro ejemplo podría quedar así</p>
-<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-java">
         <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>

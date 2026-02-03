@@ -3,35 +3,17 @@
         <title>Testing - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/testing/</link>
         <description>Testing - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 30 Oct 2025 10:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/testing/" rel="self" type="application/rss+xml" /><item>
-    <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
-    <link>http://localhost:1313/dieta-testing-adherencia/</link>
-    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0800</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/testing/" rel="self" type="application/rss+xml" /><item>
+    <title>Augmented Risk-Based Testing</title>
+    <link>http://localhost:1313/augmentedriskbasedtesting/</link>
+    <pubDate>Tue, 03 Feb 2026 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/dieta-testing-adherencia/</guid>
+    <guid>http://localhost:1313/augmentedriskbasedtesting/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/dieta-testing/dieta-testing.jpg" referrerpolicy="no-referrer">
-            </div>Paralelismos entre nutrición y prácticas de testing. Por qué la adherencia importa más que la perfección en la calidad del software.]]></description>
-</item>
-<item>
-    <title>Bruno: Guía práctica para pruebas de API</title>
-    <link>http://localhost:1313/bruno-guia-api-testing/</link>
-    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/bruno-guia-api-testing/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/bruno/bruno.jpg" referrerpolicy="no-referrer">
-            </div>Guía completa de Bruno, la herramienta open-source para API testing git-friendly. Instalación, organización, assertions y CI/CD.]]></description>
-</item>
-<item>
-    <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</title>
-    <link>http://localhost:1313/contexto-vs-sesgo-testing/</link>
-    <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/contexto-vs-sesgo-testing/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/contexto-sesgo/contexto-sesgo.jpg" referrerpolicy="no-referrer">
-            </div>Cómo distinguir entre sesgos personales y problemas reales de negocio en el testing de software. El contexto es clave.]]></description>
+                <img src="/images/substack/augmented-rbt/augmented-rbt-1.png" referrerpolicy="no-referrer">
+            </div><h2 id="introducción-al-risk-based-testing">Introducción al Risk-Based Testing</h2>
+<p>Si llevas un tiempo en esto del testing, seguro que te suena el concepto de <strong>Risk-Based Testing (RBT)</strong>. Básicamente, se trata de optimizar el coste (tiempo) / impacto de las pruebas. Se consigue priorizando la ejecución de aquellos casos que cubran las funcionalidades críticas de la aplicación o con una mayor probabilidad de error. Es definitiva, cubrir antes las zonas de mayor riesgo.</p>
+<p>La teoría es clara, pero. ¿Cómo identificamos <em>realmente</em> las zonas de mayor riesgo en el día a día?</p>]]></description>
 </item>
 </channel>
 </rss>

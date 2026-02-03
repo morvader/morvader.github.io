@@ -13,7 +13,7 @@
 * **Evento:** Señoras que a veces... - Almudena Vivanco
 * **Año:** 2025
 * **Descripción:** Charlo con Almude sobre cómo afecta la IA a la porfesión del QA y de qué estrategias se pueden seguir para testear LLMs.
-* **Enlace:** [Escuchar en Spotify](hhttps://open.spotify.com/episode/5uQ3LQ6A2n1l4Ty6zMuvtg?si=0b310ef6ed5345cd)
+* **Enlace:** [Escuchar en Spotify](https://open.spotify.com/episode/5uQ3LQ6A2n1l4Ty6zMuvtg?si=0b310ef6ed5345cd)
 
 ### Cambiando el paradigma con Francisco Moreno - MAD Podcast #04
 

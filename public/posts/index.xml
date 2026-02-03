@@ -3,7 +3,19 @@
         <title>All Posts - Testing from the trenches</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Augmented Risk-Based Testing</title>
+    <link>http://localhost:1313/augmentedriskbasedtesting/</link>
+    <pubDate>Tue, 03 Feb 2026 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/augmentedriskbasedtesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/augmented-rbt/augmented-rbt-1.png" referrerpolicy="no-referrer">
+            </div><h2 id="introducción-al-risk-based-testing">Introducción al Risk-Based Testing</h2>
+<p>Si llevas un tiempo en esto del testing, seguro que te suena el concepto de <strong>Risk-Based Testing (RBT)</strong>. Básicamente, se trata de optimizar el coste (tiempo) / impacto de las pruebas. Se consigue priorizando la ejecución de aquellos casos que cubran las funcionalidades críticas de la aplicación o con una mayor probabilidad de error. Es definitiva, cubrir antes las zonas de mayor riesgo.</p>
+<p>La teoría es clara, pero. ¿Cómo identificamos <em>realmente</em> las zonas de mayor riesgo en el día a día?</p>]]></description>
+</item>
+<item>
     <title>Path formativo para el QA del futuro</title>
     <link>http://localhost:1313/pathformativoqa/</link>
     <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
@@ -70,7 +82,9 @@
     <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
     <guid>http://localhost:1313/liderazgocambio/</guid>
-    <description><![CDATA[<p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/liderazgo/liderazgo-1.png" referrerpolicy="no-referrer">
+            </div><p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
 <p>En el día a día de una empresa, esta fábula tiene mucho sentido. Para impulsar un cambio, a menudo debemos jugar ambos papeles. Hay momentos para ser la rana: confiar en el equipo, dejarse llevar por la corriente y avanzar juntos.</p>]]></description>
 </item>
 <item>
@@ -81,7 +95,7 @@
     <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
-            </div><p>📺 Este artículo es el resumen de una charla que di en la VLCTesting en 2023. <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+            </div><p>📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. <a href="https://www.youtube.com/watch?v=bsdFGKWZHFY" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
 <p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
 <h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
 <p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
@@ -107,16 +121,6 @@
             </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
 <p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
 <p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
-</item>
-<item>
-    <title>Modelos de madurez y mejora continua en organizaciones</title>
-    <link>http://localhost:1313/modelosmadurez/</link>
-    <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/modelosmadurez/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
-            </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
 </item>
 </channel>
 </rss>

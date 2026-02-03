@@ -13,7 +13,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-09-15T10:00:00+01:00">
-    <meta property="article:modified_time" content="2025-09-15T10:00:00+01:00">
+    <meta property="article:modified_time" content="2026-01-26T07:46:49+01:00">
     <meta property="article:tag" content="Automatización">
     <meta property="article:tag" content="Estrategia">
     <meta property="og:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png">
@@ -34,7 +34,7 @@
     <meta property="og:url" content="http://localhost:1313/antipatronesautomatizacion/" />
     <meta property="og:site_name" content="Testing from the trenches" />
     <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" />
-        <meta property="og:image:secure_url" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" /><meta property="article:published_time" content="2025-09-15T10:00:00&#43;01:00" /><meta property="article:modified_time" content="2025-09-15T10:00:00&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Automatización" /><meta property="article:tag" content="Estrategia" /><meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image:secure_url" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" /><meta property="article:published_time" content="2025-09-15T10:00:00&#43;01:00" /><meta property="article:modified_time" content="2026-01-26T07:46:49&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Automatización" /><meta property="article:tag" content="Estrategia" /><meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos" />
     <meta name="twitter:description" content="6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo" /><meta name="twitter:image" content="http://localhost:1313/images/substack/antipatrones/antipatrones-1.png" /><meta name="twitter:site" content="@morvader" />
         <meta name="twitter:creator" content="@morvader" /><script type="application/ld+json">
@@ -46,8 +46,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/localhost:1313\/antipatronesautomatizacion\/"
-        },"image": ["http:\/\/localhost:1313\/images\/substack\/antipatrones\/antipatrones-1.png"],"genre": "posts","keywords": "Automatización, Estrategia","wordcount":  2113 ,
-        "url": "http:\/\/localhost:1313\/antipatronesautomatizacion\/","datePublished": "2025-09-15T10:00:00+01:00","dateModified": "2025-09-15T10:00:00+01:00","publisher": {
+        },"image": ["http:\/\/localhost:1313\/images\/substack\/antipatrones\/antipatrones-1.png"],"genre": "posts","keywords": "Automatización, Estrategia","wordcount":  2116 ,
+        "url": "http:\/\/localhost:1313\/antipatronesautomatizacion\/","datePublished": "2025-09-15T10:00:00+01:00","dateModified": "2026-01-26T07:46:49+01:00","publisher": {
             "@type": "Organization",
             "name": "Francisco Moreno","logo": "http:\/\/localhost:1313\/images\/avatar.jpg"},"author": {
                 "@type": "Person",
@@ -124,7 +124,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</h1><h2 class="single-subtitle">6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-09-15">2025-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2113 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-09-15">2025-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2116 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -194,7 +194,7 @@
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>📺 Este artículo es el resumen de una charla que di en la VLCTesting en 2023. <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+            </div><div class="content" id="content"><p>📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. <a href="https://www.youtube.com/watch?v=bsdFGKWZHFY" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
 <p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
 <h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
 <p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>
@@ -430,7 +430,7 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2025-09-15</span>
+                <span>Updated on 2026-01-26</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>

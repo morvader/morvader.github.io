@@ -8,13 +8,13 @@ author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "El Escorpión la Rana y la Estrategia del Cambio: Guía para Líderes"
 license: ""
-images: []
+images: ["/images/liderazgo/liderazgo-1.png"]
 
 tags: ["Liderazgo", "Cultura"]
 categories: []
 
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: "/images/liderazgo/liderazgo-1.png"
+featuredImagePreview: "/images/liderazgo/liderazgo-1.png"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -43,7 +43,7 @@ library:
   css:
   js:
 seo:
-  images: []
+  images: ["/images/liderazgo/liderazgo-1.png"]
 ---
 
 Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: "No he podido evitarlo, es mi naturaleza".
