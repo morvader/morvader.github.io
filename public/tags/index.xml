@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Testing from the trenches</title>
-        <link>http://localhost:37105/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:37105/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Agentes IA</title>
-    <link>http://localhost:37105/tags/agentes-ia/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Chrome Extension</title>
+    <link>http://localhost:1313/tags/chrome-extension/</link>
+    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:37105/tags/agentes-ia/</guid>
+    <guid>http://localhost:1313/tags/chrome-extension/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>IA</title>
-    <link>http://localhost:37105/tags/ia/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
+    <link>http://localhost:1313/tags/ia/</link>
+    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:37105/tags/ia/</guid>
+    <guid>http://localhost:1313/tags/ia/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Risk-Based Testing</title>
-    <link>http://localhost:37105/tags/risk-based-testing/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
+    <title>Side Project</title>
+    <link>http://localhost:1313/tags/side-project/</link>
+    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:37105/tags/risk-based-testing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Testing</title>
-    <link>http://localhost:37105/tags/testing/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:37105/tags/testing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Carrera</title>
-    <link>http://localhost:37105/tags/carrera/</link>
-    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:37105/tags/carrera/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cultura</title>
-    <link>http://localhost:37105/tags/cultura/</link>
-    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:37105/tags/cultura/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Estrategia</title>
-    <link>http://localhost:37105/tags/estrategia/</link>
-    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:37105/tags/estrategia/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>API Testing</title>
-    <link>http://localhost:37105/tags/api-testing/</link>
-    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:37105/tags/api-testing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Herramientas</title>
-    <link>http://localhost:37105/tags/herramientas/</link>
-    <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:37105/tags/herramientas/</guid>
+    <guid>http://localhost:1313/tags/side-project/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Testing Exploratorio</title>
-    <link>http://localhost:37105/tags/testing-exploratorio/</link>
-    <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <link>http://localhost:1313/tags/testing-exploratorio/</link>
+    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:37105/tags/testing-exploratorio/</guid>
+    <guid>http://localhost:1313/tags/testing-exploratorio/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Agentes IA</title>
+    <link>http://localhost:1313/tags/agentes-ia/</link>
+    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/agentes-ia/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Risk-Based Testing</title>
+    <link>http://localhost:1313/tags/risk-based-testing/</link>
+    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/risk-based-testing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Testing</title>
+    <link>http://localhost:1313/tags/testing/</link>
+    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/testing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Carrera</title>
+    <link>http://localhost:1313/tags/carrera/</link>
+    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/carrera/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cultura</title>
+    <link>http://localhost:1313/tags/cultura/</link>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/cultura/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Estrategia</title>
+    <link>http://localhost:1313/tags/estrategia/</link>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/estrategia/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

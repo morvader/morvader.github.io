@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Quality Assurance - Tag - Testing from the trenches</title>
-        <link>http://localhost:37105/tags/quality-assurance/</link>
+        <link>http://localhost:1313/tags/quality-assurance/</link>
         <description>Quality Assurance - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:37105/tags/quality-assurance/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/quality-assurance/" rel="self" type="application/rss+xml" /><item>
     <title>Testing defensivo</title>
-    <link>http://localhost:37105/negativetesting/</link>
+    <link>http://localhost:1313/negativetesting/</link>
     <pubDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/negativetesting/</guid>
+    <guid>http://localhost:1313/negativetesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/negativeTestingPost/inicial.png" referrerpolicy="no-referrer">
             </div>Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código]]></description>

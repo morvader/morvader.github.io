@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Retomando un proyecto personal 10 años después - Testing from the trenches</title><meta name="Description" content="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años"><meta property="og:url" content="http://localhost:1313/retomandoproyectopersonal/">
+  <meta property="og:site_name" content="Testing from the trenches">
+  <meta property="og:title" content="Retomando un proyecto personal 10 años después">
+  <meta property="og:description" content="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-13T22:00:00+01:00">
+    <meta property="article:modified_time" content="2026-02-13T22:00:00+01:00">
+    <meta property="article:tag" content="Testing Exploratorio">
+    <meta property="article:tag" content="Chrome Extension">
+    <meta property="article:tag" content="IA">
+    <meta property="article:tag" content="Side Project">
+    <meta property="og:image" content="http://localhost:1313/images/substack/chrome-extension/chrome-extension-1.png">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/images/substack/chrome-extension/chrome-extension-1.png"/><meta name="twitter:title" content="Retomando un proyecto personal 10 años después"/>
+<meta name="twitter:description" content="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años"/><meta name="application-name" content="Testing from the trenches">
+<meta name="apple-mobile-web-app-title" content="Testing from the trenches"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/retomandoproyectopersonal/" /><link rel="prev" href="http://localhost:1313/augmentedriskbasedtesting/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="i2P6ivYVKHpkT3LuGoldDUYBkvjqVbSQFiBDZX852D0" /><meta property="og:title" content="Retomando un proyecto personal 10 años después" />
+    <meta property="og:description" content="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/retomandoproyectopersonal/" />
+    <meta property="og:site_name" content="Testing from the trenches" />
+    <meta property="og:locale" content="es" /><meta property="og:image" content="http://localhost:1313/images/substack/chrome-extension/chrome-extension-3.png" />
+        <meta property="og:image:secure_url" content="http://localhost:1313/images/substack/chrome-extension/chrome-extension-3.png" /><meta property="article:published_time" content="2026-02-13T22:00:00&#43;01:00" /><meta property="article:modified_time" content="2026-02-13T22:00:00&#43;01:00" /><meta property="article:author" content="Francisco Moreno" /><meta property="article:tag" content="Testing Exploratorio" /><meta property="article:tag" content="Chrome Extension" /><meta property="article:tag" content="IA" /><meta property="article:tag" content="Side Project" /><meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Retomando un proyecto personal 10 años después" />
+    <meta name="twitter:description" content="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años" /><meta name="twitter:image" content="http://localhost:1313/images/substack/chrome-extension/chrome-extension-3.png" /><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Retomando un proyecto personal 10 años después",
+        "inLanguage": "es",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/retomandoproyectopersonal\/"
+        },"image": ["http:\/\/localhost:1313\/images\/substack\/chrome-extension\/chrome-extension-3.png"],"genre": "posts","keywords": "Testing Exploratorio, Chrome Extension, IA, Side Project","wordcount":  747 ,
+        "url": "http:\/\/localhost:1313\/retomandoproyectopersonal\/","datePublished": "2026-02-13T22:00:00+01:00","dateModified": "2026-02-13T22:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Francisco Moreno","logo": "http:\/\/localhost:1313\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "Francisco Moreno"
+            },"description": "Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años"
+    }
+    </script>
+    
+</head>
+
+<body data-header-desktop="fixed"
+    data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Testing articles">📝  Posts </a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤  Talks </a><a class="menu-item" href="/tags/" title="Tags">🏷️  Tags </a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈  Maturity Model </a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍  Exploratory Testing Extension </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Testing from the trenches">Testing from the trenches</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Testing articles">📝 Posts</a><a class="menu-item" href="/talks/listadocharlas/" title="My testing talks and podcast">🎤 Talks</a><a class="menu-item" href="/tags/" title="Tags">🏷️ Tags</a><a class="menu-item" href="/maturity-model/maturitymodel" title="Cuestionario de niveles de madurez">📈 Maturity Model</a><a class="menu-item" href="/exploratory-extension/testingextension" title="Exploratory Testing Chrome Extension">🔍 Exploratory Testing Extension</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Retomando un proyecto personal 10 años después</h1><h2 class="single-subtitle">Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://twitter.com/morvader" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Francisco Moreno</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-02-13">2026-02-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;747 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/chrome-extension/chrome-extension-3.png"
+        data-srcset="/images/substack/chrome-extension/chrome-extension-3.png, /images/substack/chrome-extension/chrome-extension-3.png 1.5x, /images/substack/chrome-extension/chrome-extension-3.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/chrome-extension/chrome-extension-3.png"
+        title="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-problema-quería-resolver">Qué problema quería resolver</a></li>
+    <li><a href="#los-pilares-básicos">Los pilares básicos</a></li>
+    <li><a href="#el-paréntesis-de-10-años">El paréntesis de 10 años</a></li>
+    <li><a href="#la-era-de-la-ia-chupito">La era de la IA (chupito)</a></li>
+    <li><a href="#la-nueva-versión">La nueva versión</a></li>
+    <li><a href="#conclusiones">Conclusiones</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Hace ya 10 años (2016) empecé a desarrollar una extensión de Chrome para ayudar en las sesiones de Testing Exploratorio. ¿Por qué lo hice? Pues por la misma razón que se crearon 17 frameworks de JavaScript distintos. Ninguna de las herramientas que había disponibles me convencía del todo, así que me hice la mía.</p>
+<p>Por otra parte, también tenía el objetivo de tener un side project en el que poder aprender y seguir programando.</p>
+<p>Vamos por partes para que entendáis por qué escribo este post ahora:</p>
+<h2 id="qué-problema-quería-resolver">Qué problema quería resolver</h2>
+<p>La motivación para crear esta herramienta vino de mi frustración con las opciones disponibles en ese momento. Las herramientas para registrar sesiones de Testing Exploratorio no me terminaban de convencer. El problema principal era el cambio de contexto constante.</p>
+<p>Yo tomaba notas en una libreta durante las sesiones. Luego tenía que pasarlo todo al ordenador. Transcribir mis anotaciones. Reportar los bugs en Jira, documentar evidencias, abrir chats para resolver dudas, etc. Era un proceso tedioso que rompía la concentración y el flujo de trabajo.</p>
+<p>Las herramientas de entonces tampoco ayudaban mucho. Requerían abrir un bloc de notas. O un Word. O un Excel. Cualquier aplicación externa que te sacaba de donde tenías puesta la atención.</p>
+<p>Mi idea era simple: mantener las notas lo más cerca posible del lugar donde surgía el problema. Donde aparecía la duda. Donde nacía la pregunta típica durante una sesión de Testing Exploratorio.</p>
+<p>En este caso era la web, por tanto lo más cercano era el propio navegador. De ahí construir una extensión.</p>
+<h2 id="los-pilares-básicos">Los pilares básicos</h2>
+<p>Me centré en tres cosas:</p>
+<ul>
+<li>Sencillez</li>
+<li>No perder el foco</li>
+<li>Uso de una única herramienta</li>
+</ul>
+<p>Todo integrado en el navegador. Sin salir de la aplicación que estabas probando.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/chrome-extension/chrome-extension-1.png"
+        data-srcset="/images/substack/chrome-extension/chrome-extension-1.png, /images/substack/chrome-extension/chrome-extension-1.png 1.5x, /images/substack/chrome-extension/chrome-extension-1.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/chrome-extension/chrome-extension-1.png"
+        title="Pilares básicos de la extensión" /></p>
+<h2 id="el-paréntesis-de-10-años">El paréntesis de 10 años</h2>
+<p>Durante muchos años tuve el proyecto abandonado. Me faltaba tiempo. Y sobre todo conocimientos adecuados de HTML y JavaScript. No es mi especialidad. Siempre quise añadir funcionalidades más avanzadas pero no sabía cómo implementarlas.</p>
+<p>Una de las que más me rondaba la cabeza era poder recortar (crop) las capturas de pantalla. Y luego anotarlas con flechas o cuadros que ayudaran a explicar mejor los problemas.</p>
+<p>Sin embargo, la comunidad nunca dejó de usarla.</p>
+<p>A pesar de la falta de actualizaciones, la extensión siguió creciendo orgánicamente hasta superar los 7.000 usuarios activos. Me sorprendía ver cómo aparecía recomendada en artículos de referencia año tras año:</p>
+<ul>
+<li>
+<p><strong>Software Testing Help</strong> la ha incluido recientemente en su ranking de las &ldquo;17 Mejores Herramientas de Testing Exploratorio para 2026&rdquo;, poniéndola al nivel de gigantes comerciales.</p>
+</li>
+<li>
+<p>En <strong>Software Testing Magazine</strong>, la destacaron por su capacidad de generar reportes limpios sin complicaciones.</p>
+</li>
+<li>
+<p>Incluso plataformas como <strong>BrowserStack</strong> la listan como una de las esenciales para QA.</p>
+</li>
+</ul>
+<p>Leer que la gente valoraba esa simplicidad frente a herramientas más pesadas (como la de Microsoft o plugins complejos de Jira) fue lo que me mantuvo con la espinita clavada de: &ldquo;Tengo que volver a esto&rdquo;.</p>
+<h2 id="la-era-de-la-ia-chupito">La era de la IA (chupito)</h2>
+<p>En mi caso particular fue Claude Code el que me ayudó a retomar estas ideas y roadmap.</p>
+<p>Lo que antes me hubiera llevado meses de aprendizaje y prueba-error ahora lo pude desarrollar en días. De repente esa funcionalidad que llevaba años queriendo implementar se volvió posible. Pude trabajar iterativamente con Claude hasta conseguir lo que quería.</p>
+<h2 id="la-nueva-versión">La nueva versión</h2>
+<p>Ahora mismo la extensión tiene:</p>
+<ul>
+<li>Recorte de zonas específicas en las capturas de pantalla</li>
+<li>Anotaciones sobre las imágenes con flechas y cuadros</li>
+<li>Mejoras en la estética general</li>
+<li>Informes más claros y útiles</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/chrome-extension/chrome-extension-2.png"
+        data-srcset="/images/substack/chrome-extension/chrome-extension-2.png, /images/substack/chrome-extension/chrome-extension-2.png 1.5x, /images/substack/chrome-extension/chrome-extension-2.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/chrome-extension/chrome-extension-2.png"
+        title="Nueva versión de la extensión" /></p>
+<p>Todo manteniendo la filosofía original de sencillez.</p>
+<p>Los informes también han mejorado bastante a nivel estético y permiten exportar todo fácilmente.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/substack/chrome-extension/chrome-extension-3.png"
+        data-srcset="/images/substack/chrome-extension/chrome-extension-3.png, /images/substack/chrome-extension/chrome-extension-3.png 1.5x, /images/substack/chrome-extension/chrome-extension-3.png 2x"
+        data-sizes="auto"
+        alt="/images/substack/chrome-extension/chrome-extension-3.png"
+        title="Informes mejorados" /></p>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>¿Tiene sentido revivir esto ahora? Pues no sé si el número de usuarios subirá o bajará, pero vamos, a día de hoy mi objetivo inicial se mantiene intacto: tener un lugar reservado en el que poder seguir aprendiendo y experimentando sin presiones.</p>
+<p>De todas formas, si usas la herramienta y tienes sugerencias son bienvenidas. Si encuentras bugs avísame. Si se te ocurre alguna funcionalidad que haría tu trabajo más fácil me encantaría escucharla.</p>
+<p>Puedes encontrar la extensión aquí: <strong><a href="https://chromewebstore.google.com/detail/exploratory-testing-exten/khigmghadjljgjpamimgjjmpmlbgmekj" target="_blank" rel="noopener noreffer ">Exploratory Testing Extension</a></strong></p>
+<p>El código sigue siendo open source. La extensión sigue siendo gratis. Y la intención sigue siendo la misma de 2016: aportar algo útil a nuestra comunidad.</p>
+<p>Gracias por leer. Y gracias por cualquier feedback que quieras compartir.</p>
+<hr>
+<p><em>¿Usas herramientas de Testing Exploratorio en tu día a día? ¿Qué funcionalidades te gustaría ver en una extensión de navegador? Déjame un comentario.</em></p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-02-13</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/retomandoproyectopersonal/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/retomandoproyectopersonal/" data-title="Retomando un proyecto personal 10 años después" data-via="morvader" data-hashtags="Testing Exploratorio,Chrome Extension,IA,Side Project"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/retomandoproyectopersonal/" data-title="Retomando un proyecto personal 10 años después"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/retomandoproyectopersonal/" data-title="Retomando un proyecto personal 10 años después" data-description="Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fretomandoproyectopersonal%2f&amp;text=Retomando%20un%20proyecto%20personal%2010%20a%c3%b1os%20despu%c3%a9s" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/testing-exploratorio/">Testing Exploratorio</a>,&nbsp;<a href="/tags/chrome-extension/">Chrome Extension</a>,&nbsp;<a href="/tags/ia/">IA</a>,&nbsp;<a href="/tags/side-project/">Side Project</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/augmentedriskbasedtesting/" class="prev" rel="prev" title="Augmented Risk-Based Testing"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Augmented Risk-Based Testing</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.145.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script src="/js/theme.min.js"></script></body>
+
+</html>

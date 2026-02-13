@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cultura - Tag - Testing from the trenches</title>
-        <link>http://localhost:37105/tags/cultura/</link>
+        <link>http://localhost:1313/tags/cultura/</link>
         <description>Cultura - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:37105/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
     <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
-    <link>http://localhost:37105/dietatesting/</link>
+    <link>http://localhost:1313/dietatesting/</link>
     <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/dietatesting/</guid>
+    <guid>http://localhost:1313/dietatesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/dieta-testing/dieta-testing-1.png" referrerpolicy="no-referrer">
             </div><p>Hace unos años fui a un nutricionista. No tenía ningún problema con la comida, pero quería verme mejor. Cuando llegué, me preguntó cuál era mi objetivo. &ldquo;Bajar grasa y ganar músculo&rdquo;, le dije. En aquel momento, su respuesta me dejó descolocado: &ldquo;Eso es imposible. No funciona así. Primero tienes que hacer una cosa y luego la otra. Las dos a la vez no pueden ser&rdquo;.</p>
@@ -16,10 +16,10 @@
 </item>
 <item>
     <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</title>
-    <link>http://localhost:37105/contextovssesgo/</link>
+    <link>http://localhost:1313/contextovssesgo/</link>
     <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/contextovssesgo/</guid>
+    <guid>http://localhost:1313/contextovssesgo/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" referrerpolicy="no-referrer">
             </div><h2 id="reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</h2>
@@ -31,10 +31,10 @@
 </item>
 <item>
     <title>Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión</title>
-    <link>http://localhost:37105/liderazgocambio/</link>
+    <link>http://localhost:1313/liderazgocambio/</link>
     <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/liderazgocambio/</guid>
+    <guid>http://localhost:1313/liderazgocambio/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/liderazgo/liderazgo-1.png" referrerpolicy="no-referrer">
             </div><p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
@@ -42,20 +42,20 @@
 </item>
 <item>
     <title>Testing y gorilas</title>
-    <link>http://localhost:37105/testinggorillaillusion/</link>
+    <link>http://localhost:1313/testinggorillaillusion/</link>
     <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/testinggorillaillusion/</guid>
+    <guid>http://localhost:1313/testinggorillaillusion/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/gorillaTesting/gorillaTesting.jpg" referrerpolicy="no-referrer">
             </div>Estrategias para evitar visión de túnel en las pruebas]]></description>
 </item>
 <item>
     <title>Construyendo un equipo de QA desde cero en una consultora</title>
-    <link>http://localhost:37105/equipoqaconsultoria/</link>
+    <link>http://localhost:1313/equipoqaconsultoria/</link>
     <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/equipoqaconsultoria/</guid>
+    <guid>http://localhost:1313/equipoqaconsultoria/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
             </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
@@ -64,30 +64,30 @@
 </item>
 <item>
     <title>Modelos de madurez y mejora continua en organizaciones</title>
-    <link>http://localhost:37105/modelosmadurez/</link>
+    <link>http://localhost:1313/modelosmadurez/</link>
     <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/modelosmadurez/</guid>
+    <guid>http://localhost:1313/modelosmadurez/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
             </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
 </item>
 <item>
     <title>Creando una cultura de calidad en organizaciones</title>
-    <link>http://localhost:37105/kotterculturacalidad/</link>
+    <link>http://localhost:1313/kotterculturacalidad/</link>
     <pubDate>Sun, 23 Mar 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/kotterculturacalidad/</guid>
+    <guid>http://localhost:1313/kotterculturacalidad/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
             </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
 </item>
 <item>
     <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
-    <link>http://localhost:37105/comunidades-practica-tecnica/</link>
+    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
     <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/comunidades-practica-tecnica/</guid>
+    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/comunidad/comunidad.jpg" referrerpolicy="no-referrer">
             </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>

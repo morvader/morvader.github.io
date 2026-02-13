@@ -1,14 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - Testing from the trenches</title>
-        <link>http://localhost:37105/posts/</link>
+        <link>http://localhost:1313/posts/</link>
         <description>All Posts | Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:37105/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Retomando un proyecto personal 10 años después</title>
+    <link>http://localhost:1313/retomandoproyectopersonal/</link>
+    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/retomandoproyectopersonal/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/chrome-extension/chrome-extension-3.png" referrerpolicy="no-referrer">
+            </div>Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio después de 10 años]]></description>
+</item>
+<item>
     <title>Augmented Risk-Based Testing</title>
-    <link>http://localhost:37105/augmentedriskbasedtesting/</link>
+    <link>http://localhost:1313/augmentedriskbasedtesting/</link>
     <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/augmentedriskbasedtesting/</guid>
+    <guid>http://localhost:1313/augmentedriskbasedtesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/augmented-rbt/augmented-rbt-1.png" referrerpolicy="no-referrer">
             </div><h2 id="introducción-al-risk-based-testing">Introducción al Risk-Based Testing</h2>
@@ -17,10 +27,10 @@
 </item>
 <item>
     <title>Path formativo para el QA del futuro</title>
-    <link>http://localhost:37105/pathformativoqa/</link>
+    <link>http://localhost:1313/pathformativoqa/</link>
     <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/pathformativoqa/</guid>
+    <guid>http://localhost:1313/pathformativoqa/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/path-formativo/path-formativo-1.png" referrerpolicy="no-referrer">
             </div><p>Hace años diseñé un <a href="https://www.testingfromthetrenches.com/posts/pdp-1/" target="_blank" rel="noopener noreffer ">itinerario formativo</a> por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.</p>
@@ -29,10 +39,10 @@
 </item>
 <item>
     <title>My two cents: El futuro del QA en la era de la IA</title>
-    <link>http://localhost:37105/futuroqaeraia/</link>
+    <link>http://localhost:1313/futuroqaeraia/</link>
     <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/futuroqaeraia/</guid>
+    <guid>http://localhost:1313/futuroqaeraia/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
             </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>
@@ -40,10 +50,10 @@
 </item>
 <item>
     <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
-    <link>http://localhost:37105/dietatesting/</link>
+    <link>http://localhost:1313/dietatesting/</link>
     <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/dietatesting/</guid>
+    <guid>http://localhost:1313/dietatesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/dieta-testing/dieta-testing-1.png" referrerpolicy="no-referrer">
             </div><p>Hace unos años fui a un nutricionista. No tenía ningún problema con la comida, pero quería verme mejor. Cuando llegué, me preguntó cuál era mi objetivo. &ldquo;Bajar grasa y ganar músculo&rdquo;, le dije. En aquel momento, su respuesta me dejó descolocado: &ldquo;Eso es imposible. No funciona así. Primero tienes que hacer una cosa y luego la otra. Las dos a la vez no pueden ser&rdquo;.</p>
@@ -51,10 +61,10 @@
 </item>
 <item>
     <title>Bruno: Guía práctica para pruebas de API</title>
-    <link>http://localhost:37105/brunoapitesting/</link>
+    <link>http://localhost:1313/brunoapitesting/</link>
     <pubDate>Mon, 27 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/brunoapitesting/</guid>
+    <guid>http://localhost:1313/brunoapitesting/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/bruno-api/bruno-api-1.png" referrerpolicy="no-referrer">
             </div><h2 id="introducción">Introducción</h2>
@@ -63,10 +73,10 @@
 </item>
 <item>
     <title>Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing</title>
-    <link>http://localhost:37105/contextovssesgo/</link>
+    <link>http://localhost:1313/contextovssesgo/</link>
     <pubDate>Mon, 06 Oct 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/contextovssesgo/</guid>
+    <guid>http://localhost:1313/contextovssesgo/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/contexto-sesgo/contexto-sesgo-1.jpeg" referrerpolicy="no-referrer">
             </div><h2 id="reportarías-esto-como-un-bug">¿Reportarías esto como un bug?</h2>
@@ -78,10 +88,10 @@
 </item>
 <item>
     <title>Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión</title>
-    <link>http://localhost:37105/liderazgocambio/</link>
+    <link>http://localhost:1313/liderazgocambio/</link>
     <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/liderazgocambio/</guid>
+    <guid>http://localhost:1313/liderazgocambio/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/liderazgo/liderazgo-1.png" referrerpolicy="no-referrer">
             </div><p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
@@ -89,10 +99,10 @@
 </item>
 <item>
     <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
-    <link>http://localhost:37105/antipatronesautomatizacion/</link>
+    <link>http://localhost:1313/antipatronesautomatizacion/</link>
     <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/antipatronesautomatizacion/</guid>
+    <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
             </div><p>📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. <a href="https://www.youtube.com/watch?v=bsdFGKWZHFY" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
@@ -102,25 +112,13 @@
 </item>
 <item>
     <title>Testing y gorilas</title>
-    <link>http://localhost:37105/testinggorillaillusion/</link>
+    <link>http://localhost:1313/testinggorillaillusion/</link>
     <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
     <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/testinggorillaillusion/</guid>
+    <guid>http://localhost:1313/testinggorillaillusion/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/gorillaTesting/gorillaTesting.jpg" referrerpolicy="no-referrer">
             </div>Estrategias para evitar visión de túnel en las pruebas]]></description>
-</item>
-<item>
-    <title>Construyendo un equipo de QA desde cero en una consultora</title>
-    <link>http://localhost:37105/equipoqaconsultoria/</link>
-    <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:37105/equipoqaconsultoria/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
-            </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
-<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
-<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
 </item>
 </channel>
 </rss>
