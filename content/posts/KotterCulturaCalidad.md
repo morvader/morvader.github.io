@@ -6,11 +6,11 @@ lastmod: 2025-03-23T15:58:26+08:00
 draft: false
 author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
-description: "Estrategia para el crear cultura de calidad en organizaciones"
+description: "Cómo aplicar el modelo de Kotter para crear una cultura de calidad sostenible en organizaciones de software: pasos prácticos para QA y Quality Engineers"
 license: ""
 images: ["/images/CalidadKotter/resumenReglas.png"]
 
-tags: [Cultura]
+tags: ["Cultura", "Calidad", "Estrategia", "Quality Engineering"]
 categories: []
 
 featuredImage: "/images/CalidadKotter/resumenReglas.png"

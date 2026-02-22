@@ -16,6 +16,9 @@
     <meta name="baidu-site-verification" content="{{ . }}" />
 {{- end -}}
 
+{{- /* Canonical URL - prevents duplicate content issues */ -}}
+<link rel="canonical" href="{{ .Permalink }}" />
+
 {{- /* Open Graph and Twitter Card tags */ -}}
 {{- if .IsPage -}}
     {{- $title := .Title | plainify -}}
@@ -132,6 +135,34 @@
     }
     </script>
 
+    {{- /* Person schema for the author - helps Google understand expertise in testing/QA */ -}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": {{ .Site.Params.Author.name | safeHTML }},
+        "url": "{{ .Site.BaseURL }}",
+        "jobTitle": "Quality Engineer",
+        "knowsAbout": ["Software Testing", "Quality Assurance", "Test Automation", "QA Engineering", "Pruebas de Software", "Automatización de Pruebas", "Testing Exploratorio", "API Testing"],
+        "sameAs": [
+            {{- $socialLinks := slice -}}
+            {{- with .Site.Params.social.GitHub -}}
+                {{- $socialLinks = $socialLinks | append (printf "https://github.com/%s" .) -}}
+            {{- end -}}
+            {{- with .Site.Params.social.Linkedin -}}
+                {{- $socialLinks = $socialLinks | append (printf "https://linkedin.com/in/%s" .) -}}
+            {{- end -}}
+            {{- with .Site.Params.social.X -}}
+                {{- $socialLinks = $socialLinks | append (printf "https://twitter.com/%s" .) -}}
+            {{- end -}}
+            {{- range $i, $link := $socialLinks -}}
+                {{- if gt $i 0 }},{{ end -}}
+                "{{ $link }}"
+            {{- end -}}
+        ]
+    }
+    </script>
+
 {{- /* Page SEO */ -}}
 {{- else if .IsPage -}}
     <script type="application/ld+json">
@@ -182,6 +213,12 @@
         "genre": "{{ .Type }}",
         {{- with .Params.tags -}}
             "keywords": "{{ delimit . ", " }}",
+            "about": [
+                {{- range $i, $tag := . -}}
+                    {{- if gt $i 0 }},{{ end -}}
+                    {"@type": "Thing", "name": "{{ $tag }}"}
+                {{- end -}}
+            ],
         {{- end -}}
         "wordcount": {{ .WordCount }},
         "url": "{{ .Permalink }}",
@@ -218,7 +255,9 @@
         {{- with .Params.author | default .Site.Params.Author.name | default (T "author") -}}
             "author": {
                 "@type": "Person",
-                "name": {{ . | safeHTML }}
+                "name": {{ . | safeHTML }},
+                "url": "{{ $.Site.BaseURL }}",
+                "jobTitle": "Quality Engineer"
             },
         {{- end -}}
         "description": {{ .Description | safeHTML }}

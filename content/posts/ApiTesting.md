@@ -6,11 +6,11 @@ lastmod: 2025-02-11T15:58:26+08:00
 draft: false
 author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
-description: "Un Enfoque Pragmático para Iniciar la Automatización de Pruebas"
+description: "Cómo introducir testing automatizado comenzando por APIs: una ruta alternativa y pragmática para equipos sin experiencia en automatización de pruebas"
 license: ""
 images: ["/images/apiTesting/TestingStrategy.png"]
 
-tags: [Unit testing]
+tags: ["API Testing", "Automatización", "Estrategia"]
 categories: []
 
 featuredImage: "/images/apiTesting/TestingStrategy.png"

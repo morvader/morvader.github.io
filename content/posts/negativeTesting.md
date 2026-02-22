@@ -10,7 +10,7 @@ description: "Las pruebas negativas son necesarias para descubrir comportamiento
 license: ""
 images: ["/images/negativeTestingPost/inicial.png"]
 
-tags: [Quality Assurance]
+tags: ["Quality Assurance", "Estrategia", "Pruebas Negativas", "Testing"]
 categories: []
 
 featuredImage: "/images/negativeTestingPost/inicial.png"

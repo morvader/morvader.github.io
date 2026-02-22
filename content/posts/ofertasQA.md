@@ -10,7 +10,7 @@ description: "Artículo, basado en experiencias reales, hablo de las claves para
 license: ""
 images: ["/images/ofertasQA/techVsNegocio.png"]
 
-tags: [Negocio]
+tags: ["Negocio", "QA", "Estrategia", "Quality Assurance"]
 categories: []
 
 featuredImage: "/images/ofertasQA/techVsNegocio.png"
