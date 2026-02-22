@@ -10,7 +10,7 @@ description: "6 decisiones que parecen correctas pero sabotean tu estrategia de 
 license: ""
 images: ["/images/substack/antipatrones/antipatrones-1.png"]
 
-tags: ["Automatización", "Estrategia"]
+tags: ["Automatización", "Estrategia", "Testing", "Quality Engineering", "Antipatrones"]
 categories: []
 
 featuredImage: "/images/substack/antipatrones/antipatrones-1.png"

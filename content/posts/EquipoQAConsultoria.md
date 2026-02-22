@@ -9,7 +9,7 @@ description: "Experiencia personal de como pasé de ser el único tester de Sngu
 license: ""
 images: ["/images/equipoQaConsultora/equipoQa.png"]
 
-tags: [Cultura]
+tags: ["Cultura", "QA", "Equipos", "Quality Engineering", "Liderazgo"]
 categories: []
 
 featuredImage: "/images/equipoQaConsultora/equipoQa.png"

@@ -10,7 +10,7 @@ description: "La adherencia y reducir fricciones son más importantes que la per
 license: ""
 images: ["/images/substack/dieta-testing/dieta-testing-1.png"]
 
-tags: ["Cultura", "Estrategia"]
+tags: ["Cultura", "Estrategia", "Testing", "Quality Assurance"]
 categories: []
 
 featuredImage: "/images/substack/dieta-testing/dieta-testing-1.png"

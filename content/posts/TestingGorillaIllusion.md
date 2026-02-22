@@ -6,11 +6,11 @@ lastmod: 2025-09-09T15:58:26+08:00
 draft: false
 author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
-description: "Estrategias para evitar visión de túnel en las pruebas"
+description: "La ilusión del gorila y cómo los sesgos cognitivos afectan a las pruebas de software: estrategias prácticas para evitar la visión de túnel en testing exploratorio"
 license: ""
 images: ["/images/gorillaTesting/gorillaTesting.jpg"]
 
-tags: [Cultura]
+tags: ["Cultura", "Testing Exploratorio", "Estrategia", "Sesgos Cognitivos"]
 categories: []
 
 featuredImage: "/images/gorillaTesting/gorillaTesting.jpg"

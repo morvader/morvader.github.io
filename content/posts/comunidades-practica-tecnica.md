@@ -10,7 +10,7 @@ description: "Crear espacios donde compartir conocimiento dentro de las organiza
 license: ""
 images: ["/images/comunidad/comunidad.jpg"]
 
-tags: [Cultura]
+tags: ["Cultura", "Equipos", "Gestión del Conocimiento", "Quality Engineering"]
 categories: []
 
 featuredImage: "/images/comunidad/comunidad.jpg"

@@ -10,7 +10,7 @@ description: "Un nuevo rol para QA de ejecutar pruebas a orquestar sistemas de c
 license: ""
 images: ["/images/substack/futuro-qa-ia/futuro-qa-ia-1.png"]
 
-tags: ["Carrera", "IA"]
+tags: ["Carrera", "IA", "QA", "Testing", "Quality Engineering"]
 categories: []
 
 featuredImage: "/images/substack/futuro-qa-ia/futuro-qa-ia-1.png"

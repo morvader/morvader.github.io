@@ -10,7 +10,7 @@ description: "Vamos a ver cómo utilizar la librería easyRandom para mejorar la
 license: ""
 images: ["/images/easyRandom/easyRandom-1.png"]
 
-tags: [Unit testing]
+tags: ["Unit testing", "Java", "Automatización", "Herramientas"]
 categories: []
 
 featuredImage: "/images/easyRandom/easyRandom-1.png"

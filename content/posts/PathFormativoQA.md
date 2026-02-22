@@ -6,7 +6,7 @@ lastmod: 2025-11-23T10:00:00+01:00
 draft: false
 author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
-description: "Práctica deliberada como hilo conductor"
+description: "Guía de formación para el QA del futuro: habilidades técnicas, soft skills e IA para construir un perfil de Quality Engineer completo y competitivo"
 license: ""
 images: ["/images/substack/path-formativo/path-formativo-1.png"]
 
