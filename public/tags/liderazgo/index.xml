@@ -14,5 +14,17 @@
             </div><p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
 <p>En el día a día de una empresa, esta fábula tiene mucho sentido. Para impulsar un cambio, a menudo debemos jugar ambos papeles. Hay momentos para ser la rana: confiar en el equipo, dejarse llevar por la corriente y avanzar juntos.</p>]]></description>
 </item>
+<item>
+    <title>Construyendo un equipo de QA desde cero en una consultora</title>
+    <link>http://localhost:1313/equipoqaconsultoria/</link>
+    <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/equipoqaconsultoria/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
+            </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
+<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
+<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
+</item>
 </channel>
 </rss>

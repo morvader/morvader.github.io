@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Antipatrones - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/antipatrones/</link>
+        <description>Antipatrones - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/antipatrones/" rel="self" type="application/rss+xml" /><item>
+    <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
+    <link>http://localhost:1313/antipatronesautomatizacion/</link>
+    <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
+            </div><p>📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. <a href="https://www.youtube.com/watch?v=bsdFGKWZHFY" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+<p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
+<h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
+<p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
+</item>
+</channel>
+</rss>

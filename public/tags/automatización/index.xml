@@ -3,7 +3,17 @@
         <title>Automatización - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/automatizaci%C3%B3n/</link>
         <description>Automatización - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/automatizaci%C3%B3n/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/automatizaci%C3%B3n/" rel="self" type="application/rss+xml" /><item>
+    <title>Mi charla con Manfred sobre el futuro del QA: reflexiones después de la conversación</title>
+    <link>http://localhost:1313/charlamanfredqa/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/charlamanfredqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/manfredQA/portada.png" referrerpolicy="no-referrer">
+            </div>Reflexiones tras una conversación con Manfred sobre el estado actual del QA en España: qué buscan las empresas, qué buscan los candidatos y hacia dónde va el rol]]></description>
+</item>
+<item>
     <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
     <link>http://localhost:1313/antipatronesautomatizacion/</link>
     <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
@@ -15,6 +25,26 @@
 <p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
 <h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
 <p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
+</item>
+<item>
+    <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia</title>
+    <link>http://localhost:1313/apitesting/</link>
+    <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/apitesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/apiTesting/TestingStrategy.png" referrerpolicy="no-referrer">
+            </div>Cómo introducir testing automatizado comenzando por APIs: una ruta alternativa y pragmática para equipos sin experiencia en automatización de pruebas]]></description>
+</item>
+<item>
+    <title>Cómo mejorar la mantenibilidad de las pruebas unitarias</title>
+    <link>http://localhost:1313/easyrandom/</link>
+    <pubDate>Tue, 17 Oct 2023 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/easyrandom/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/easyRandom/easyRandom-1.png" referrerpolicy="no-referrer">
+            </div>Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java]]></description>
 </item>
 </channel>
 </rss>

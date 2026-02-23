@@ -2,10 +2,35 @@
     <channel>
         <title>Testing from the trenches</title>
         <link>http://localhost:1313/</link>
-        <description>Blog sobre testing, calidad de software y automatización. Experiencias reales y consejos prácticos de un Quality Engineer</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</lastBuildDate>
+        <description>Blog sobre testing y calidad de software. Estrategias de automatización de pruebas, QA engineering, testing exploratorio, API testing y buenas prácticas de Quality Assurance. Experiencias reales de un Quality Engineer</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Mi charla con Manfred sobre el futuro del QA: reflexiones después de la conversación</title>
+    <link>http://localhost:1313/charlamanfredqa/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/charlamanfredqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/manfredQA/portada.png" referrerpolicy="no-referrer">
+            </div>Reflexiones tras una conversación con Manfred sobre el estado actual del QA en España: qué buscan las empresas, qué buscan los candidatos y hacia dónde va el rol]]></description>
+</item>
+<item>
+    <title>¿Es el rol de QA necesario en los equipos?</title>
+    <link>http://localhost:1313/rolqanecesario/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/rolqanecesario/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/rolQA/cultura-calidad-qa.png" referrerpolicy="no-referrer">
+            </div><h2 id="respuestas-a-la-pregunta">Respuestas a la pregunta</h2>
+<p><strong>Respuesta muy corta:</strong> No</p>
+<p><strong>Respuesta corta:</strong> Depende de la madurez y cultura de calidad del equipo.</p>
+<p><strong>Respuesta larga&hellip;</strong></p>
+<p>En los años que llevo dentro del mundo del QA, esta ha sido una pregunta recurrente y sobre la que siempre surgen debates interesantes.</p>
+<p>Los que me conocéis, sabéis que no suelo ser muy dogmático en mis opiniones ya que, la realidad del día a día es compleja y si hay algo que debe guiar siempre cualquier decisión es <strong>EL CONTEXTO</strong>.</p>]]></description>
+</item>
+<item>
     <title>Retomando un proyecto personal 10 años después</title>
     <link>http://localhost:1313/retomandoproyectopersonal/</link>
     <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
@@ -98,29 +123,6 @@
                 <img src="/images/liderazgo/liderazgo-1.png" referrerpolicy="no-referrer">
             </div><p>Seguro que conoces la fábula del escorpión y la rana. El escorpión pide ayuda a la rana para cruzar el río, prometiendo no hacerle daño. A mitad de camino, sin embargo, la pica, condenándolos a ambos. Su explicación: &ldquo;No he podido evitarlo, es mi naturaleza&rdquo;.</p>
 <p>En el día a día de una empresa, esta fábula tiene mucho sentido. Para impulsar un cambio, a menudo debemos jugar ambos papeles. Hay momentos para ser la rana: confiar en el equipo, dejarse llevar por la corriente y avanzar juntos.</p>]]></description>
-</item>
-<item>
-    <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
-    <link>http://localhost:1313/antipatronesautomatizacion/</link>
-    <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
-            </div><p>📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. <a href="https://www.youtube.com/watch?v=bsdFGKWZHFY" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
-<p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
-<h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
-<p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
-</item>
-<item>
-    <title>Testing y gorilas</title>
-    <link>http://localhost:1313/testinggorillaillusion/</link>
-    <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
-    <author>Francisco Moreno</author>
-    <guid>http://localhost:1313/testinggorillaillusion/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/gorillaTesting/gorillaTesting.jpg" referrerpolicy="no-referrer">
-            </div>Estrategias para evitar visión de túnel en las pruebas]]></description>
 </item>
 </channel>
 </rss>

@@ -3,7 +3,22 @@
         <title>Cultura - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/cultura/</link>
         <description>Cultura - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/cultura/" rel="self" type="application/rss+xml" /><item>
+    <title>¿Es el rol de QA necesario en los equipos?</title>
+    <link>http://localhost:1313/rolqanecesario/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/rolqanecesario/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/rolQA/cultura-calidad-qa.png" referrerpolicy="no-referrer">
+            </div><h2 id="respuestas-a-la-pregunta">Respuestas a la pregunta</h2>
+<p><strong>Respuesta muy corta:</strong> No</p>
+<p><strong>Respuesta corta:</strong> Depende de la madurez y cultura de calidad del equipo.</p>
+<p><strong>Respuesta larga&hellip;</strong></p>
+<p>En los años que llevo dentro del mundo del QA, esta ha sido una pregunta recurrente y sobre la que siempre surgen debates interesantes.</p>
+<p>Los que me conocéis, sabéis que no suelo ser muy dogmático en mis opiniones ya que, la realidad del día a día es compleja y si hay algo que debe guiar siempre cualquier decisión es <strong>EL CONTEXTO</strong>.</p>]]></description>
+</item>
+<item>
     <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
     <link>http://localhost:1313/dietatesting/</link>
     <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
@@ -48,7 +63,7 @@
     <guid>http://localhost:1313/testinggorillaillusion/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/gorillaTesting/gorillaTesting.jpg" referrerpolicy="no-referrer">
-            </div>Estrategias para evitar visión de túnel en las pruebas]]></description>
+            </div>La ilusión del gorila y cómo los sesgos cognitivos afectan a las pruebas de software: estrategias prácticas para evitar la visión de túnel en testing exploratorio]]></description>
 </item>
 <item>
     <title>Construyendo un equipo de QA desde cero en una consultora</title>
@@ -70,7 +85,7 @@
     <guid>http://localhost:1313/modelosmadurez/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
-            </div>Implantación de modelos de madurez para alacanzar la mejora continua y excelencia operacional en organizaciones]]></description>
+            </div>Implantación de modelos de madurez para alcanzar la mejora continua y excelencia operacional en organizaciones]]></description>
 </item>
 <item>
     <title>Creando una cultura de calidad en organizaciones</title>
@@ -80,7 +95,7 @@
     <guid>http://localhost:1313/kotterculturacalidad/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/CalidadKotter/resumenReglas.png" referrerpolicy="no-referrer">
-            </div>Estrategia para el crear cultura de calidad en organizaciones]]></description>
+            </div>Cómo aplicar el modelo de Kotter para crear una cultura de calidad sostenible en organizaciones de software: pasos prácticos para QA y Quality Engineers]]></description>
 </item>
 <item>
     <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
