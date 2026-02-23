@@ -28,5 +28,15 @@
 <h2 id="el-contexto-lo-es-todo">El contexto lo es todo</h2>
 <p>En casi todo lo que hacemos en la vida, el contexto es fundamental. Una misma acción puede tener diferentes efectos en función de las circunstancias en las que se produce. Esto, que parece lógico y de sentido común, no siempre se tiene en cuenta a la hora de hacer testing.</p>]]></description>
 </item>
+<item>
+    <title>Testing y gorilas</title>
+    <link>http://localhost:1313/testinggorillaillusion/</link>
+    <pubDate>Tue, 09 Sep 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/testinggorillaillusion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/gorillaTesting/gorillaTesting.jpg" referrerpolicy="no-referrer">
+            </div>La ilusión del gorila y cómo los sesgos cognitivos afectan a las pruebas de software: estrategias prácticas para evitar la visión de túnel en testing exploratorio]]></description>
+</item>
 </channel>
 </rss>

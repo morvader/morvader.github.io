@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Java - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/java/</link>
+        <description>Java - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 17 Oct 2023 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/java/" rel="self" type="application/rss+xml" /><item>
+    <title>Cómo mejorar la mantenibilidad de las pruebas unitarias</title>
+    <link>http://localhost:1313/easyrandom/</link>
+    <pubDate>Tue, 17 Oct 2023 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/easyrandom/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/easyRandom/easyRandom-1.png" referrerpolicy="no-referrer">
+            </div>Vamos a ver cómo utilizar la librería easyRandom para mejorar la mantenibilidad de las pruebas unitarias en Java]]></description>
+</item>
+</channel>
+</rss>

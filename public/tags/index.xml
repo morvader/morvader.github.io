@@ -3,84 +3,84 @@
         <title>Tags - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Chrome Extension</title>
-    <link>http://localhost:1313/tags/chrome-extension/</link>
-    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Automatización</title>
+    <link>http://localhost:1313/tags/automatizaci%C3%B3n/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/chrome-extension/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>IA</title>
-    <link>http://localhost:1313/tags/ia/</link>
-    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/ia/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Side Project</title>
-    <link>http://localhost:1313/tags/side-project/</link>
-    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/side-project/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Testing Exploratorio</title>
-    <link>http://localhost:1313/tags/testing-exploratorio/</link>
-    <pubDate>Fri, 13 Feb 2026 22:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/testing-exploratorio/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Agentes IA</title>
-    <link>http://localhost:1313/tags/agentes-ia/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/agentes-ia/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Risk-Based Testing</title>
-    <link>http://localhost:1313/tags/risk-based-testing/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/risk-based-testing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Testing</title>
-    <link>http://localhost:1313/tags/testing/</link>
-    <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
-    <author>xxxx</author>
-    <guid>http://localhost:1313/tags/testing/</guid>
+    <guid>http://localhost:1313/tags/automatizaci%C3%B3n/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Carrera</title>
     <link>http://localhost:1313/tags/carrera/</link>
-    <pubDate>Sun, 23 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
     <author>xxxx</author>
     <guid>http://localhost:1313/tags/carrera/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
+    <title>Futuro</title>
+    <link>http://localhost:1313/tags/futuro/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/futuro/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Mercado</title>
+    <link>http://localhost:1313/tags/mercado/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/mercado/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>QA</title>
+    <link>http://localhost:1313/tags/qa/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/qa/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Quality Engineering</title>
+    <link>http://localhost:1313/tags/quality-engineering/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/quality-engineering/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>SDET</title>
+    <link>http://localhost:1313/tags/sdet/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/sdet/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Calidad</title>
+    <link>http://localhost:1313/tags/calidad/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>http://localhost:1313/tags/calidad/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Cultura</title>
     <link>http://localhost:1313/tags/cultura/</link>
-    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
     <author>xxxx</author>
     <guid>http://localhost:1313/tags/cultura/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Estrategia</title>
-    <link>http://localhost:1313/tags/estrategia/</link>
-    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <title>Equipos</title>
+    <link>http://localhost:1313/tags/equipos/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>http://localhost:1313/tags/estrategia/</guid>
+    <guid>http://localhost:1313/tags/equipos/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

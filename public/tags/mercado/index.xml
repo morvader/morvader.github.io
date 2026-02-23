@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Mercado - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/mercado/</link>
+        <description>Mercado - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/mercado/" rel="self" type="application/rss+xml" /><item>
+    <title>Mi charla con Manfred sobre el futuro del QA: reflexiones después de la conversación</title>
+    <link>http://localhost:1313/charlamanfredqa/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/charlamanfredqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/manfredQA/portada.png" referrerpolicy="no-referrer">
+            </div>Reflexiones tras una conversación con Manfred sobre el estado actual del QA en España: qué buscan las empresas, qué buscan los candidatos y hacia dónde va el rol]]></description>
+</item>
+</channel>
+</rss>

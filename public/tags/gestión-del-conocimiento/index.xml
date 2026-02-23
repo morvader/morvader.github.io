@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Gestión Del Conocimiento - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/gesti%C3%B3n-del-conocimiento/</link>
+        <description>Gestión Del Conocimiento - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/gesti%C3%B3n-del-conocimiento/" rel="self" type="application/rss+xml" /><item>
+    <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
+    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
+    <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/comunidad/comunidad.jpg" referrerpolicy="no-referrer">
+            </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>
+</item>
+</channel>
+</rss>

@@ -3,7 +3,22 @@
         <title>Testing - Tag - Testing from the trenches</title>
         <link>http://localhost:1313/tags/testing/</link>
         <description>Testing - Tag - Testing from the trenches</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/testing/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/testing/" rel="self" type="application/rss+xml" /><item>
+    <title>¿Es el rol de QA necesario en los equipos?</title>
+    <link>http://localhost:1313/rolqanecesario/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/rolqanecesario/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/rolQA/cultura-calidad-qa.png" referrerpolicy="no-referrer">
+            </div><h2 id="respuestas-a-la-pregunta">Respuestas a la pregunta</h2>
+<p><strong>Respuesta muy corta:</strong> No</p>
+<p><strong>Respuesta corta:</strong> Depende de la madurez y cultura de calidad del equipo.</p>
+<p><strong>Respuesta larga&hellip;</strong></p>
+<p>En los años que llevo dentro del mundo del QA, esta ha sido una pregunta recurrente y sobre la que siempre surgen debates interesantes.</p>
+<p>Los que me conocéis, sabéis que no suelo ser muy dogmático en mis opiniones ya que, la realidad del día a día es compleja y si hay algo que debe guiar siempre cualquier decisión es <strong>EL CONTEXTO</strong>.</p>]]></description>
+</item>
+<item>
     <title>Augmented Risk-Based Testing</title>
     <link>http://localhost:1313/augmentedriskbasedtesting/</link>
     <pubDate>Tue, 03 Feb 2026 08:00:00 &#43;0100</pubDate>
@@ -14,6 +29,51 @@
             </div><h2 id="introducción-al-risk-based-testing">Introducción al Risk-Based Testing</h2>
 <p>Si llevas un tiempo en esto del testing, seguro que te suena el concepto de <strong>Risk-Based Testing (RBT)</strong>. Básicamente, se trata de optimizar el coste (tiempo) / impacto de las pruebas. Se consigue priorizando la ejecución de aquellos casos que cubran las funcionalidades críticas de la aplicación o con una mayor probabilidad de error. Es definitiva, cubrir antes las zonas de mayor riesgo.</p>
 <p>La teoría es clara, pero. ¿Cómo identificamos <em>realmente</em> las zonas de mayor riesgo en el día a día?</p>]]></description>
+</item>
+<item>
+    <title>My two cents: El futuro del QA en la era de la IA</title>
+    <link>http://localhost:1313/futuroqaeraia/</link>
+    <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/futuroqaeraia/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>
+<p>Esa era la idea principal de mi artículo, pero David me retó a añadir cómo veo el futuro del QA con la evolución de las IAs. Entonces dejé algunas ideas básicas que ahora quiero ampliar.</p>]]></description>
+</item>
+<item>
+    <title>De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad</title>
+    <link>http://localhost:1313/dietatesting/</link>
+    <pubDate>Thu, 30 Oct 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/dietatesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/dieta-testing/dieta-testing-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unos años fui a un nutricionista. No tenía ningún problema con la comida, pero quería verme mejor. Cuando llegué, me preguntó cuál era mi objetivo. &ldquo;Bajar grasa y ganar músculo&rdquo;, le dije. En aquel momento, su respuesta me dejó descolocado: &ldquo;Eso es imposible. No funciona así. Primero tienes que hacer una cosa y luego la otra. Las dos a la vez no pueden ser&rdquo;.</p>
+<p>Trabajando en el mundo de la calidad, me he dado cuenta de que esta conversación resume perfectamente uno de los mayores problemas cuando los equipos intentan mejorar sus prácticas de testing. Se parte de objetivos contradictorios o poco claros.</p>]]></description>
+</item>
+<item>
+    <title>Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos</title>
+    <link>http://localhost:1313/antipatronesautomatizacion/</link>
+    <pubDate>Mon, 15 Sep 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/antipatronesautomatizacion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/antipatrones/antipatrones-1.png" referrerpolicy="no-referrer">
+            </div><p>📺 Este artículo es el resumen de una charla que di en el EDD (Extremadura Digital Day) en 2023. <a href="https://www.youtube.com/watch?v=bsdFGKWZHFY" target="_blank" rel="noopener noreffer ">Aquí tenéis la grabación</a>.</p>
+<p>La automatización de pruebas es una herramienta fundamental para obtener confianza en lo que construimos de manera rápida y eficiente. Sin embargo, a menudo nos encontramos con prácticas que, aunque parecen beneficiosas a corto plazo, generan problemas significativos a largo plazo: los antipatrones.</p>
+<h2 id="qué-es-un-antipatrón">¿Qué es un Antipatrón?</h2>
+<p>Antes de nada, vamos a empezar estableciendo lo que considero un antipatrón ya que no es simplemente una mala práctica obvia. Se caracteriza por:</p>]]></description>
+</item>
+<item>
+    <title>Testing defensivo</title>
+    <link>http://localhost:1313/negativetesting/</link>
+    <pubDate>Mon, 05 Feb 2024 12:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/negativetesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/negativeTestingPost/inicial.png" referrerpolicy="no-referrer">
+            </div>Las pruebas negativas son necesarias para descubrir comportamientos inesperados de nuestro código]]></description>
 </item>
 </channel>
 </rss>

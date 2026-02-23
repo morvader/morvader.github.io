@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: http://www.testingfromthetrenches.com/sitemap.xml
+Sitemap: https://www.testingfromthetrenches.com/sitemap.xml
 
 # Block specific crawlers if needed (uncomment if necessary)
 # User-agent: GPTBot

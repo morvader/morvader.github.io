@@ -1,0 +1,44 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Equipos - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/equipos/</link>
+        <description>Equipos - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/equipos/" rel="self" type="application/rss+xml" /><item>
+    <title>¿Es el rol de QA necesario en los equipos?</title>
+    <link>http://localhost:1313/rolqanecesario/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/rolqanecesario/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/rolQA/cultura-calidad-qa.png" referrerpolicy="no-referrer">
+            </div><h2 id="respuestas-a-la-pregunta">Respuestas a la pregunta</h2>
+<p><strong>Respuesta muy corta:</strong> No</p>
+<p><strong>Respuesta corta:</strong> Depende de la madurez y cultura de calidad del equipo.</p>
+<p><strong>Respuesta larga&hellip;</strong></p>
+<p>En los años que llevo dentro del mundo del QA, esta ha sido una pregunta recurrente y sobre la que siempre surgen debates interesantes.</p>
+<p>Los que me conocéis, sabéis que no suelo ser muy dogmático en mis opiniones ya que, la realidad del día a día es compleja y si hay algo que debe guiar siempre cualquier decisión es <strong>EL CONTEXTO</strong>.</p>]]></description>
+</item>
+<item>
+    <title>Construyendo un equipo de QA desde cero en una consultora</title>
+    <link>http://localhost:1313/equipoqaconsultoria/</link>
+    <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/equipoqaconsultoria/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
+            </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
+<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
+<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
+</item>
+<item>
+    <title>La Importancia de las Comunidades de Práctica en Organizaciones</title>
+    <link>http://localhost:1313/comunidades-practica-tecnica/</link>
+    <pubDate>Wed, 08 Jan 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/comunidades-practica-tecnica/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/comunidad/comunidad.jpg" referrerpolicy="no-referrer">
+            </div>Crear espacios donde compartir conocimiento dentro de las organizaciones es una necesidad estratégica fundamental]]></description>
+</item>
+</channel>
+</rss>

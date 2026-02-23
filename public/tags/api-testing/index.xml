@@ -15,5 +15,15 @@
 <p>Bruno es una herramienta de código abierto para el testeo de APIs que destaca por su sencillez, rendimiento y enfoque git-friendly. A diferencia de otras soluciones, Bruno almacena las colecciones localmente como archivos de texto, facilitando enormemente la colaboración a través del control de versiones y la integración en pipelines CI.</p>
 <p>Otra de las ventajas principales es que se puede trabajar de manera totalmente productiva desde su interfaz gráfica como manipulando directamente los ficheros de texto desde un IDE. Esta característica facilita la curva de aprendizaje de esta herramienta.</p>]]></description>
 </item>
+<item>
+    <title>Estrategia para introducir Testing Automatizado en equipos sin experiencia</title>
+    <link>http://localhost:1313/apitesting/</link>
+    <pubDate>Tue, 11 Feb 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/apitesting/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/apiTesting/TestingStrategy.png" referrerpolicy="no-referrer">
+            </div>Cómo introducir testing automatizado comenzando por APIs: una ruta alternativa y pragmática para equipos sin experiencia en automatización de pruebas]]></description>
+</item>
 </channel>
 </rss>

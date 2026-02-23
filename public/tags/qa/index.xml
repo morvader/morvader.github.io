@@ -1,0 +1,75 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>QA - Tag - Testing from the trenches</title>
+        <link>http://localhost:1313/tags/qa/</link>
+        <description>QA - Tag - Testing from the trenches</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/qa/" rel="self" type="application/rss+xml" /><item>
+    <title>Mi charla con Manfred sobre el futuro del QA: reflexiones después de la conversación</title>
+    <link>http://localhost:1313/charlamanfredqa/</link>
+    <pubDate>Sun, 22 Feb 2026 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/charlamanfredqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/manfredQA/portada.png" referrerpolicy="no-referrer">
+            </div>Reflexiones tras una conversación con Manfred sobre el estado actual del QA en España: qué buscan las empresas, qué buscan los candidatos y hacia dónde va el rol]]></description>
+</item>
+<item>
+    <title>¿Es el rol de QA necesario en los equipos?</title>
+    <link>http://localhost:1313/rolqanecesario/</link>
+    <pubDate>Sat, 14 Feb 2026 15:00:00 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/rolqanecesario/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/rolQA/cultura-calidad-qa.png" referrerpolicy="no-referrer">
+            </div><h2 id="respuestas-a-la-pregunta">Respuestas a la pregunta</h2>
+<p><strong>Respuesta muy corta:</strong> No</p>
+<p><strong>Respuesta corta:</strong> Depende de la madurez y cultura de calidad del equipo.</p>
+<p><strong>Respuesta larga&hellip;</strong></p>
+<p>En los años que llevo dentro del mundo del QA, esta ha sido una pregunta recurrente y sobre la que siempre surgen debates interesantes.</p>
+<p>Los que me conocéis, sabéis que no suelo ser muy dogmático en mis opiniones ya que, la realidad del día a día es compleja y si hay algo que debe guiar siempre cualquier decisión es <strong>EL CONTEXTO</strong>.</p>]]></description>
+</item>
+<item>
+    <title>My two cents: El futuro del QA en la era de la IA</title>
+    <link>http://localhost:1313/futuroqaeraia/</link>
+    <pubDate>Sun, 16 Nov 2025 10:00:00 &#43;0100</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/futuroqaeraia/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/substack/futuro-qa-ia/futuro-qa-ia-1.png" referrerpolicy="no-referrer">
+            </div><p>Hace unas semanas escribí en la Bonilista sobre el aporte de valor del testing en IT. El mensaje que quise transmitir fue claro: el testing no va de &ldquo;hacer pruebas&rdquo;, sino de su impacto en el negocio.</p>
+<p>Esa era la idea principal de mi artículo, pero David me retó a añadir cómo veo el futuro del QA con la evolución de las IAs. Entonces dejé algunas ideas básicas que ahora quiero ampliar.</p>]]></description>
+</item>
+<item>
+    <title>Construyendo un equipo de QA desde cero en una consultora</title>
+    <link>http://localhost:1313/equipoqaconsultoria/</link>
+    <pubDate>Wed, 21 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/equipoqaconsultoria/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/equipoQaConsultora/equipoQa.png" referrerpolicy="no-referrer">
+            </div><h1 id="construyendo-un-equipo-de-qa-desde-cero-en-una-consultora">Construyendo un equipo de QA desde cero en una consultora</h1>
+<p>En este artículo, me gustaría compartir la experiencia de como se formó el equipo de QA en Sngular. Pasando de ser yo, prácticamente el único tester de la compañía a convertirnos en un equipo de 50 personas, repartidas en España, México y USA y llegar a facturar 3 millones de euros al año.</p>
+<p><em><strong>Disclaimer: En los 9 años que pasé en Sngular, la empresa pasó de 400 a 1300 personas. Aunque mi papel haya podido ser importante, es obvio que el crecimiento de QA habría ocurrido de cualquier manera.</strong></em></p>]]></description>
+</item>
+<item>
+    <title>Modelos de madurez y mejora continua en organizaciones</title>
+    <link>http://localhost:1313/modelosmadurez/</link>
+    <pubDate>Mon, 12 May 2025 08:00:00 &#43;0000</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/modelosmadurez/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/CalidadKotter/madurez.png" referrerpolicy="no-referrer">
+            </div>Implantación de modelos de madurez para alcanzar la mejora continua y excelencia operacional en organizaciones]]></description>
+</item>
+<item>
+    <title>Cómo afrontar la venta de proyectos de QA en consultoría</title>
+    <link>http://localhost:1313/ofertasqa/</link>
+    <pubDate>Mon, 17 Feb 2025 15:58:26 &#43;0800</pubDate>
+    <author>Francisco Moreno</author>
+    <guid>http://localhost:1313/ofertasqa/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/ofertasQA/techVsNegocio.png" referrerpolicy="no-referrer">
+            </div>Artículo, basado en experiencias reales, hablo de las claves para presentar QA como una inversión estratégica que mejora el delivery y reduce costes operativos]]></description>
+</item>
+</channel>
+</rss>
