@@ -1,2 +1,8 @@
 .DS_Store
 .claude/settings.local.json
+
+# Games source: dev-only artefacts that must NEVER be published
+games-src/**/node_modules/
+games-src/**/test-results/
+games-src/**/playwright-report/
+games-src/**/.claude/settings.local.json
