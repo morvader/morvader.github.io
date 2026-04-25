@@ -15,7 +15,7 @@ Un juego para aprender las provincias del mapa de España, con un toque inspirad
 en *Brawl Stars*. Tiene modo libre, modo por comunidad autónoma, contrarreloj y
 una "Revancha de Fallos" que repasa solo las provincias que se te resisten.
 
-👉 **[Jugar ahora](/games/provincias-espana/)**
+👉 **[Jugar ahora](/games/provincias-espana/play/)**
 
 ### Modos de juego
 
