@@ -79,6 +79,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Exploratory Testing Extension"
     url = "/exploratory-extension/testingextension"
     title = "Exploratory Testing Chrome Extension"
+     [[menu.main]]
+    weight = 6
+    identifier = "games"
+    pre = "🎮 "
+    post = ""
+    name = "Games"
+    url = "/games/"
+    title = "Pequeños juegos didácticos"
 
 
 [params]
