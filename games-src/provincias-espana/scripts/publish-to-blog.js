@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const DEFAULT_DEST = path.resolve(root, '../../static/games/provincias-espana');
+const DEFAULT_DEST = path.resolve(root, '../../static/games/provincias-espana/play');
 const dest = process.env.BLOG_GAME_DIR || DEFAULT_DEST;
 const items = ['index.html', 'scripts', 'styles', 'vendor'];
 const SELF = path.basename(__filename);
