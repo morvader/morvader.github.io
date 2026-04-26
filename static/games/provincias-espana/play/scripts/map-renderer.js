@@ -1,13 +1,27 @@
 // Builds the Spain SVG map from TopoJSON: mainland + Baleares are projected
 // together; the Canary Islands are projected separately and dropped into an
-// inset box in the bottom-left corner.
+// inset placed in the south-west corner — geographically suggestive (Canarias
+// are SW of the peninsula) and reusing the otherwise-empty Atlantic / Portugal
+// area so the whole composition stays compact on small screens.
 
-const MAINLAND_VIEWBOX = [750, 650];
-const CANARIAS_OFFSET = [15, 548];
-const CANARIAS_BOX = { x: 5, y: 535, w: 165, h: 110 };
+// Mainland is projected into [720, 520]. Canarias is placed in the empty
+// Atlantic gap to the SW of the peninsula (west of Huelva, which starts at
+// roughly x=120 in viewBox coords), so we don't need extra vertical space
+// below mainland — the viewBox stays compact for phones.
+const MAINLAND_VIEWBOX = [730, 525];
+// Canarias inset sits in the SW Atlantic gap. We keep it strictly to the
+// west of x≈110 to leave a safe margin from Huelva, and don't preserve the
+// islands ↔ mainland scale ratio (explicitly accepted by the user).
+const CANARIAS_OFFSET = [8, 470];
+const CANARIAS_BOX = { x: 4, y: 458, w: 100, h: 56 };
+const CANARIAS_FIT = [88, 36];
 
 // State exposed for the game module.
 const provincesData = []; // { id, name, community, center: [x, y] }
+
+// Pan/zoom controller — set by setupPanZoom and consulted from the click
+// handler so a finger-drag/pinch gesture doesn't fire a province click.
+let panZoomController = null;
 
 function buildProjections(mainlandFeatures, canariasFeatures) {
     const mainland = d3.geoConicConformal()
@@ -20,7 +34,7 @@ function buildProjections(mainlandFeatures, canariasFeatures) {
         .center([0, 28.3])
         .rotate([15.6, 0])
         .parallels([27, 29])
-        .fitSize([135, 75], { type: 'FeatureCollection', features: canariasFeatures });
+        .fitSize(CANARIAS_FIT, { type: 'FeatureCollection', features: canariasFeatures });
 
     return { mainland, canarias };
 }
@@ -30,15 +44,16 @@ function drawCanariasInset(svg) {
         x: CANARIAS_BOX.x, y: CANARIAS_BOX.y,
         width: CANARIAS_BOX.w, height: CANARIAS_BOX.h, rx: 6,
         fill: 'rgba(255,255,255,0.02)',
-        stroke: 'rgba(255,255,255,0.12)',
+        stroke: 'rgba(255,255,255,0.18)',
         'stroke-width': 0.8,
         'stroke-dasharray': '3,3',
     }, svg);
     const label = svgEl('text', {
-        x: 87, y: 548,
+        x: CANARIAS_BOX.x + CANARIAS_BOX.w / 2,
+        y: CANARIAS_BOX.y + 8,
         'text-anchor': 'middle',
-        fill: 'rgba(255,255,255,0.25)',
-        'font-size': '7px',
+        fill: 'rgba(255,255,255,0.35)',
+        'font-size': '6px',
         'font-family': 'Bungee, sans-serif',
     }, svg);
     label.textContent = 'CANARIAS';
@@ -70,7 +85,11 @@ function renderProvince(feature, container, pathGen, offset, onClick) {
         'data-idx': idx,
         'data-name': name,
     }, container);
-    path.addEventListener('click', () => onClick(idx));
+    path.addEventListener('click', () => {
+        // Pan/pinch gestures synthesize a click on touchend; ignore those.
+        if (panZoomController && panZoomController.isClickSuppressed()) return;
+        onClick(idx);
+    });
 
     const label = svgEl('text', {
         x: centroid[0],
@@ -123,6 +142,162 @@ function renderMap(topo, onProvinceClick) {
         'stroke-width': 0.3,
         'pointer-events': 'none',
     }, svg);
+
+    const container = document.getElementById('map-container');
+    panZoomController = setupPanZoom(svg, container);
+}
+
+// Pinch-to-zoom + pan + wheel-zoom by mutating the SVG viewBox. Keeps all
+// existing path / label coordinates intact and lets the player zoom into
+// tiny provinces (Madrid, La Rioja, País Vasco) on small screens.
+function setupPanZoom(svg, container) {
+    const baseW = MAINLAND_VIEWBOX[0];
+    const baseH = MAINLAND_VIEWBOX[1];
+    const minW = baseW * 0.18; // up to ~5.5x zoom
+    let vb = { x: 0, y: 0, w: baseW, h: baseH };
+
+    let pinchStart = null;
+    let panStart = null;
+    let suppressClickUntil = 0;
+    let resetBtn = null;
+
+    function applyVB() {
+        svg.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+        if (resetBtn) {
+            resetBtn.classList.toggle('active', vb.w < baseW * 0.995);
+        }
+    }
+
+    function clamp() {
+        if (vb.w > baseW) vb.w = baseW;
+        if (vb.w < minW) vb.w = minW;
+        vb.h = vb.w * (baseH / baseW);
+        if (vb.x < 0) vb.x = 0;
+        if (vb.y < 0) vb.y = 0;
+        if (vb.x + vb.w > baseW) vb.x = baseW - vb.w;
+        if (vb.y + vb.h > baseH) vb.y = baseH - vb.h;
+    }
+
+    function reset() {
+        vb = { x: 0, y: 0, w: baseW, h: baseH };
+        applyVB();
+    }
+
+    function clientToSvg(cx, cy) {
+        const rect = svg.getBoundingClientRect();
+        const sx = (cx - rect.left) / rect.width;
+        const sy = (cy - rect.top) / rect.height;
+        return {
+            x: vb.x + sx * vb.w,
+            y: vb.y + sy * vb.h,
+            sx, sy,
+        };
+    }
+
+    container.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            const [t1, t2] = e.touches;
+            const dist = Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+            const cx = (t1.clientX + t2.clientX) / 2;
+            const cy = (t1.clientY + t2.clientY) / 2;
+            const focus = clientToSvg(cx, cy);
+            pinchStart = { dist: Math.max(1, dist), focus, w: vb.w };
+            panStart = null;
+            suppressClickUntil = Date.now() + 600;
+            e.preventDefault();
+        } else if (e.touches.length === 1) {
+            const t = e.touches[0];
+            panStart = {
+                cx: t.clientX, cy: t.clientY,
+                vbx: vb.x, vby: vb.y,
+                moved: false,
+            };
+            pinchStart = null;
+        }
+    }, { passive: false });
+
+    container.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && pinchStart) {
+            const [t1, t2] = e.touches;
+            const dist = Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+            const cx = (t1.clientX + t2.clientX) / 2;
+            const cy = (t1.clientY + t2.clientY) / 2;
+            const scale = Math.max(0.1, dist / pinchStart.dist);
+            vb.w = pinchStart.w / scale;
+            clamp();
+            const rect = svg.getBoundingClientRect();
+            const sxNow = (cx - rect.left) / rect.width;
+            const syNow = (cy - rect.top) / rect.height;
+            vb.x = pinchStart.focus.x - sxNow * vb.w;
+            vb.y = pinchStart.focus.y - syNow * vb.h;
+            clamp();
+            applyVB();
+            suppressClickUntil = Date.now() + 400;
+            e.preventDefault();
+        } else if (e.touches.length === 1 && panStart) {
+            const t = e.touches[0];
+            const dx = t.clientX - panStart.cx;
+            const dy = t.clientY - panStart.cy;
+            if (!panStart.moved && (Math.abs(dx) > 6 || Math.abs(dy) > 6)) {
+                panStart.moved = true;
+            }
+            if (panStart.moved && vb.w < baseW) {
+                const rect = container.getBoundingClientRect();
+                vb.x = panStart.vbx - (dx / rect.width) * vb.w;
+                vb.y = panStart.vby - (dy / rect.height) * vb.h;
+                clamp();
+                applyVB();
+                suppressClickUntil = Date.now() + 250;
+                e.preventDefault();
+            }
+        }
+    }, { passive: false });
+
+    container.addEventListener('touchend', (e) => {
+        if (pinchStart || (panStart && panStart.moved)) {
+            suppressClickUntil = Date.now() + 250;
+        }
+        if (e.touches.length === 0) {
+            panStart = null;
+            pinchStart = null;
+        } else if (e.touches.length === 1) {
+            // One finger lifted from a pinch — keep the remaining one as a
+            // "moved" pan anchor so the residual motion doesn't fire a click.
+            const t = e.touches[0];
+            panStart = { cx: t.clientX, cy: t.clientY, vbx: vb.x, vby: vb.y, moved: true };
+            pinchStart = null;
+        }
+    });
+
+    container.addEventListener('wheel', (e) => {
+        if (e.deltaY === 0) return;
+        e.preventDefault();
+        const factor = e.deltaY > 0 ? 1.18 : 1 / 1.18;
+        const focus = clientToSvg(e.clientX, e.clientY);
+        vb.w *= factor;
+        clamp();
+        vb.x = focus.x - focus.sx * vb.w;
+        vb.y = focus.y - focus.sy * vb.h;
+        clamp();
+        applyVB();
+    }, { passive: false });
+
+    resetBtn = document.createElement('button');
+    resetBtn.type = 'button';
+    resetBtn.className = 'zoom-reset';
+    resetBtn.setAttribute('aria-label', 'Restablecer zoom');
+    resetBtn.title = 'Restablecer zoom';
+    resetBtn.textContent = '⊖';
+    resetBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        reset();
+    });
+    container.appendChild(resetBtn);
+
+    return {
+        reset,
+        isClickSuppressed: () => Date.now() < suppressClickUntil,
+    };
 }
 
 function showMapError(message) {

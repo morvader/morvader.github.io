@@ -24,7 +24,7 @@ test('clicar rápido durante el feedback no bloquea el juego al completar', asyn
     if (msg.type() === 'error') consoleErrors.push(msg.text());
   });
 
-  await page.goto('/index.html');
+  await page.goto('');
   await page.getByRole('button', { name: /Todas las Provincias/ }).click();
   await expect(page.locator('#game')).toBeVisible();
 

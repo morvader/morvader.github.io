@@ -8,7 +8,7 @@ test('la pantalla de bienvenida carga sin errores', async ({ page }) => {
     if (msg.type() === 'error') consoleErrors.push(msg.text());
   });
 
-  await page.goto('/index.html');
+  await page.goto('');
 
   await expect(page).toHaveTitle(/Brawl Provincias/);
   await expect(page.locator('#welcome')).toBeVisible();
@@ -18,7 +18,7 @@ test('la pantalla de bienvenida carga sin errores', async ({ page }) => {
 });
 
 test('al iniciar partida se muestra el mapa SVG con provincias', async ({ page }) => {
-  await page.goto('/index.html');
+  await page.goto('');
   await page.getByRole('button', { name: /Todas las Provincias/ }).click();
 
   await expect(page.locator('#game')).toBeVisible();

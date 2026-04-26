@@ -10,7 +10,7 @@ test('partida completa: acertar todas las provincias y llegar a la pantalla de r
     if (msg.type() === 'error') consoleErrors.push(msg.text());
   });
 
-  await page.goto('/index.html');
+  await page.goto('');
   await expect(page.locator('#welcome')).toBeVisible();
 
   await page.getByRole('button', { name: /Todas las Provincias/ }).click();

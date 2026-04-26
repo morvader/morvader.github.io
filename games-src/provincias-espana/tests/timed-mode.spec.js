@@ -17,7 +17,7 @@ async function playTimedGame(page, { wrongFirstN = 0 } = {}) {
     if (msg.type() === 'error') consoleErrors.push(msg.text());
   });
 
-  await page.goto('/index.html');
+  await page.goto('');
   await expect(page.locator('#welcome')).toBeVisible();
 
   await page.getByRole('button', { name: /Contrarreloj/ }).click();

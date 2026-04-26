@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Testing from the trenches</title>
+    <link>http://localhost:1313/games/</link>
+    <description>Recent content in Games on Testing from the trenches</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 25 Apr 2026 19:08:36 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Provincias España</title>
+      <link>http://localhost:1313/games/provincias-espana/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/games/provincias-espana/</guid>
+      <description>&lt;h2 id=&#34;-provincias-españa&#34;&gt;🗺️ Provincias España&lt;/h2&gt;&#xA;&lt;p&gt;Un juego para aprender las provincias del mapa de España, con un toque inspirado&#xA;en &lt;em&gt;Brawl Stars&lt;/em&gt;. Tiene modo libre, modo por comunidad autónoma, contrarreloj y&#xA;una &amp;ldquo;Revancha de Fallos&amp;rdquo; que repasa solo las provincias que se te resisten.&lt;/p&gt;&#xA;&lt;p&gt;👉 &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/games/provincias-espana/play/&#34; rel=&#34;&#34;&gt;Jugar ahora&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;modos-de-juego&#34;&gt;Modos de juego&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚔️ &lt;strong&gt;Todas las Provincias&lt;/strong&gt; — recorre las 50 provincias de un tirón.&lt;/li&gt;&#xA;&lt;li&gt;🗺️ &lt;strong&gt;Por Comunidad&lt;/strong&gt; — practica una comunidad concreta.&lt;/li&gt;&#xA;&lt;li&gt;⏱️ &lt;strong&gt;Contrarreloj&lt;/strong&gt; — 30 segundos, los que más aciertes.&lt;/li&gt;&#xA;&lt;li&gt;💀 &lt;strong&gt;Revancha de Fallos&lt;/strong&gt; — vuelve sobre las provincias que más fallas.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
