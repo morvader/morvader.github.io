@@ -25,6 +25,7 @@ function init() {
 
     try {
         renderMap(TOPO_DATA, onProvinceClick);
+        initMapZoom();
         showScreen('welcome');
         updateWelcomeScreen(totalTrophies, mistakeHistory);
     } catch (err) {

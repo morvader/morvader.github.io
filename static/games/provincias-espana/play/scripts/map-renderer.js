@@ -1,10 +1,10 @@
 // Builds the Spain SVG map from TopoJSON: mainland + Baleares are projected
 // together; the Canary Islands are projected separately and dropped into an
-// inset box in the bottom-left corner.
+// inset box overlapping the bottom-left (Atlantic) area of the map.
 
-const MAINLAND_VIEWBOX = [750, 650];
-const CANARIAS_OFFSET = [15, 548];
-const CANARIAS_BOX = { x: 5, y: 535, w: 165, h: 110 };
+const MAINLAND_VIEWBOX = [750, 555];
+const CANARIAS_OFFSET = [15, 443];
+const CANARIAS_BOX = { x: 5, y: 430, w: 165, h: 110 };
 
 // State exposed for the game module.
 const provincesData = []; // { id, name, community, center: [x, y] }
@@ -29,17 +29,19 @@ function drawCanariasInset(svg) {
     svgEl('rect', {
         x: CANARIAS_BOX.x, y: CANARIAS_BOX.y,
         width: CANARIAS_BOX.w, height: CANARIAS_BOX.h, rx: 6,
-        fill: 'rgba(255,255,255,0.02)',
-        stroke: 'rgba(255,255,255,0.12)',
+        fill: 'rgba(8,8,24,0.92)',
+        stroke: 'rgba(255,255,255,0.18)',
         'stroke-width': 0.8,
         'stroke-dasharray': '3,3',
+        'pointer-events': 'none',
     }, svg);
     const label = svgEl('text', {
-        x: 87, y: 548,
+        x: 87, y: 443,
         'text-anchor': 'middle',
-        fill: 'rgba(255,255,255,0.25)',
+        fill: 'rgba(255,255,255,0.35)',
         'font-size': '7px',
         'font-family': 'Bungee, sans-serif',
+        'pointer-events': 'none',
     }, svg);
     label.textContent = 'CANARIAS';
 }
@@ -99,18 +101,13 @@ function renderMap(topo, onProvinceClick) {
     svg.innerHTML = '';
 
     svgEl('rect', { width: MAINLAND_VIEWBOX[0], height: MAINLAND_VIEWBOX[1], fill: '#080818' }, svg);
-    drawCanariasInset(svg);
-
-    const canariasGroup = svgEl('g', {
-        transform: `translate(${CANARIAS_OFFSET[0]},${CANARIAS_OFFSET[1]})`,
-    }, svg);
 
     provincesData.length = 0;
     const mainlandPathGen = d3.geoPath().projection(mainland);
     const canariasPathGen = d3.geoPath().projection(canarias);
 
+    // Mainland rendered first; Canarias inset sits on top in z-order.
     mainlandFeatures.forEach(f => renderProvince(f, svg, mainlandPathGen, null, onProvinceClick));
-    canariasFeatures.forEach(f => renderProvince(f, canariasGroup, canariasPathGen, CANARIAS_OFFSET, onProvinceClick));
 
     // Internal borders for visual separation between provinces.
     const borders = topojson.mesh(topo, topo.objects.provinces, (a, b) =>
@@ -123,6 +120,16 @@ function renderMap(topo, onProvinceClick) {
         'stroke-width': 0.3,
         'pointer-events': 'none',
     }, svg);
+
+    // Canarias inset drawn above mainland; pointer-events:none on the box
+    // lets clicks pass through to any mainland province hidden beneath it.
+    drawCanariasInset(svg);
+
+    const canariasGroup = svgEl('g', {
+        transform: `translate(${CANARIAS_OFFSET[0]},${CANARIAS_OFFSET[1]})`,
+    }, svg);
+
+    canariasFeatures.forEach(f => renderProvince(f, canariasGroup, canariasPathGen, CANARIAS_OFFSET, onProvinceClick));
 }
 
 function showMapError(message) {
@@ -131,4 +138,94 @@ function showMapError(message) {
     titleEl.textContent = message;
     titleEl.style.color = 'var(--red)';
     titleEl.style.fontSize = '16px';
+}
+
+// ---------------------------------------------------------------------------
+// Pinch-to-zoom and pan for mobile
+// ---------------------------------------------------------------------------
+
+function initMapZoom() {
+    const container = document.getElementById('map-container');
+    const svg = document.getElementById('map-svg');
+
+    let scale = 1, tx = 0, ty = 0;
+    const MIN_SCALE = 1, MAX_SCALE = 5;
+    let gesture = null;
+
+    function applyTransform() {
+        svg.style.transformOrigin = '0 0';
+        svg.style.transform = scale <= 1 ? '' : `translate(${tx}px,${ty}px) scale(${scale})`;
+    }
+
+    function clampPan() {
+        if (scale <= 1) { tx = 0; ty = 0; return; }
+        const { width: cw, height: ch } = container.getBoundingClientRect();
+        tx = Math.max(cw * (1 - scale), Math.min(0, tx));
+        ty = Math.max(ch * (1 - scale), Math.min(0, ty));
+    }
+
+    container.addEventListener('touchstart', (e) => {
+        const tl = Array.from(e.touches);
+        if (tl.length === 2) {
+            e.preventDefault();
+            const rect = container.getBoundingClientRect();
+            gesture = {
+                type: 'pinch',
+                startDist: Math.hypot(tl[1].clientX - tl[0].clientX, tl[1].clientY - tl[0].clientY),
+                startMidX: (tl[0].clientX + tl[1].clientX) / 2 - rect.left,
+                startMidY: (tl[0].clientY + tl[1].clientY) / 2 - rect.top,
+                startScale: scale, startTx: tx, startTy: ty,
+            };
+        } else if (tl.length === 1) {
+            gesture = {
+                type: 'pan',
+                startX: tl[0].clientX, startY: tl[0].clientY,
+                startTx: tx, startTy: ty,
+            };
+        }
+    }, { passive: false });
+
+    container.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        if (!gesture) return;
+        const tl = Array.from(e.touches);
+        const rect = container.getBoundingClientRect();
+
+        if (gesture.type === 'pinch' && tl.length >= 2) {
+            const dist = Math.hypot(tl[1].clientX - tl[0].clientX, tl[1].clientY - tl[0].clientY);
+            const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE,
+                gesture.startScale * dist / gesture.startDist));
+            const sf = newScale / gesture.startScale;
+            const midX = (tl[0].clientX + tl[1].clientX) / 2 - rect.left;
+            const midY = (tl[0].clientY + tl[1].clientY) / 2 - rect.top;
+            // Zoom around the initial pinch centre, then apply midpoint translation.
+            tx = gesture.startMidX * (1 - sf) + gesture.startTx * sf + (midX - gesture.startMidX);
+            ty = gesture.startMidY * (1 - sf) + gesture.startTy * sf + (midY - gesture.startMidY);
+            scale = newScale;
+            clampPan();
+            applyTransform();
+        } else if (gesture.type === 'pan' && tl.length === 1 && scale > 1) {
+            tx = gesture.startTx + tl[0].clientX - gesture.startX;
+            ty = gesture.startTy + tl[0].clientY - gesture.startY;
+            clampPan();
+            applyTransform();
+        }
+    }, { passive: false });
+
+    container.addEventListener('touchend', (e) => {
+        const remaining = e.touches.length;
+        if (remaining === 1 && gesture?.type === 'pinch') {
+            const t = e.touches[0];
+            gesture = { type: 'pan', startX: t.clientX, startY: t.clientY, startTx: tx, startTy: ty };
+        } else if (remaining === 0) {
+            gesture = null;
+        }
+        // Snap back when zoomed out below threshold.
+        if (scale < 1.05) { scale = 1; tx = 0; ty = 0; applyTransform(); }
+    }, { passive: false });
+
+    window.resetMapZoom = function () {
+        scale = 1; tx = 0; ty = 0;
+        svg.style.transform = '';
+    };
 }

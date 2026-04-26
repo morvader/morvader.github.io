@@ -80,6 +80,7 @@ function resetMapVisuals() {
 
 function startGame(mode) {
     try { getAudioCtx().resume(); } catch (e) { /* ignored */ }
+    resetMapZoom?.();
     lastMode = mode;
     clearTimer();
 
