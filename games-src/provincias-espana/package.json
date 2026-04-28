@@ -12,6 +12,7 @@
     "test:smoke": "playwright test tests/smoke.spec.js",
     "test:full-game": "playwright test tests/full-game.spec.js",
     "test:timed": "playwright test tests/timed-mode.spec.js --workers=1",
+    "test:blog": "playwright test --config=playwright.config.blog.js",
     "test:report": "playwright show-report",
     "publish:blog": "node scripts/publish-to-blog.js"
   },

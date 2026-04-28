@@ -1,6 +1,11 @@
 // @ts-check
-// Override config: run the same Playwright suite against the live Hugo
-// server (http://localhost:1313). Hugo must already be running.
+// Override config: run the same Playwright suite against the published copy
+// served by Hugo at http://localhost:1313/games/provincias-espana/play/.
+// Hugo must already be running (`hugo server` from repo root). Use:
+//   npm run test:blog
+// Tests use bare `goto('')` so they resolve against this baseURL (with
+// subpath); the same gotos also work against the default http-server config
+// because http-server serves index.html at the root.
 const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
