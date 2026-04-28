@@ -3,7 +3,7 @@ title: "Quality Flow: Agentic Delivery Tool"
 subtitle: "Cuando la calidad deja de ser una sucesión de tareas aisladas"
 date: 2026-04-28T08:00:00+02:00
 lastmod: 2026-04-28T08:00:00+02:00
-draft: true
+draft: false
 author: "Francisco Moreno"
 authorLink: "https://twitter.com/morvader"
 description: "Quality Flow es un plugin de Claude Code que cubre seis operaciones del ciclo de calidad: refinar historias, generar tests, investigar bugs, resolverlos, auditar tests existentes y reportarlos. Todas las piezas comparten contexto con Jira, Grafana, incident.io y Slack."
