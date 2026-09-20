@@ -71,7 +71,7 @@ En definitiva: desconocimiento, miedo, falta de tiempo para experimentar y, sobr
 
 Por eso decidimos organizar dos hackathons: uno centrado en los *managers* de la empresa y otro exclusivamente para el equipo de ingeniería y ciencia.
 
-Como podéis imaginar, tanto el formato como las dinámicas fueron diferentes. El primero estuvo más centrado en crear *awareness* y quitar el miedo inicial; el segundo, en el desarrollo agéntico.
+Como podéis imaginar, tanto el formato como las dinámicas fueron diferentes. El primero estuvo más centrado en crear *awareness* y quitar el miedo inicial. El segundo, en el desarrollo agéntico.
 
 Para este último ya teníamos identificadas las etapas de madurez en el uso de IA, así que se trataba de mover a la gente lo más a la derecha posible. Para nosotros, el éxito del hackathon consistía en que, fuera cual fuese el punto de partida, cada persona terminase al menos en el siguiente nivel.
 
@@ -105,7 +105,7 @@ También habilitamos canales abiertos en Slack para dudas y soporte durante la f
 
 Establecimos unas pocas reglas básicas, pero no eran negociables:
 
-- Todo el código tenía que estar generado al 100 % con IA; no se podía desarrollar de manera manual.
+- Todo el código tenía que estar generado al 100 % con IA. No se podía desarrollar de manera manual.
 - Era obligatorio comenzar con un plan.
 - Se debía entregar algo funcional. El objetivo no era desarrollar *skills* o *prompts* sueltos, sino construir soluciones siguiendo buenas prácticas de ingeniería.
 - Reservamos un día y medio sin interrupciones.
@@ -139,7 +139,7 @@ Para ello hicimos una plantilla en la que puntuamos cada iniciativa según tres 
 - **No todo el mundo es igual de entusiasta con la IA.** Hay gente que la ve como una herramienta más de trabajo, no como algo disruptivo. Y eso está bien: hay que diseñar el evento teniendo esto en cuenta.
 - **Lo más importante pasó antes del primer día.** Dedicad tiempo de calidad a organizar los equipos, los retos y el entorno. Y, sobre todo, comunicad y documentad todo con claridad. Ante la duda, *over-communicate*.
 - **La práctica deliberada con un objetivo concreto es la clave.** Es la mejor manera de llegar a ese momento *ajá* que buscáis.
-- **Hay que dar seguimiento para mantener el impulso.** El hackathon abre la puerta; el seguimiento decide si alguien la cruza de verdad.
+- **Hay que dar seguimiento para mantener el impulso.** El hackathon es el empujón inicial, el seguimiento es lo que mantiene la inercia.
 - **El entorno colaborativo funciona mucho mejor que los talleres y las formaciones.** La gente aprende haciéndolo, no escuchándolo.
 - **Dad libertad de experimentación y fomentad la creatividad.** Los mejores resultados vinieron de equipos que se arriesgaron.
 - **Todo funciona mejor en un ambiente distendido, con comida y bebida.** No es un detalle menor.
