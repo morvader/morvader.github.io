@@ -46,7 +46,7 @@ seo:
   images: ["/images/substack/path-formativo/path-formativo-1.png"]
 ---
 
-Hace años diseñé un [itinerario formativo](https://www.testingfromthetrenches.com/posts/pdp-1/) por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.
+Hace años diseñé un [itinerario formativo](/pdp-1/) por niveles para el equipo de QA de Sngular. Era un path progresivo que llevaba desde el nivel inicial hasta la especialización avanzada.
 
 Creo que está bien estructurado y sigue siendo muy útil. No obstante, el contexto ha cambiado radicalmente y no le vendría mal una actualización.
 

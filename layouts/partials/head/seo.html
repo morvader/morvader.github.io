@@ -16,8 +16,7 @@
     <meta name="baidu-site-verification" content="{{ . }}" />
 {{- end -}}
 
-{{- /* Canonical URL - prevents duplicate content issues */ -}}
-<link rel="canonical" href="{{ .Permalink }}" />
+{{- /* Canonical URL is emitted by the theme (partials/head/link.html); do not duplicate it here */ -}}
 
 {{- /* Open Graph and Twitter Card tags */ -}}
 {{- if .IsPage -}}
