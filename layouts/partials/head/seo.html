@@ -16,6 +16,11 @@
     <meta name="baidu-site-verification" content="{{ . }}" />
 {{- end -}}
 
+{{- /* Taxonomy pages (tags/categories) are thin duplicates of post lists: keep them out of the index but let Google follow links to posts */ -}}
+{{- if in (slice "taxonomy" "term") .Kind -}}
+    <meta name="robots" content="noindex, follow" />
+{{- end -}}
+
 {{- /* Canonical URL is emitted by the theme (partials/head/link.html); do not duplicate it here */ -}}
 
 {{- /* Open Graph and Twitter Card tags */ -}}
