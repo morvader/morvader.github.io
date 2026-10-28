@@ -6,3 +6,6 @@ games-src/**/node_modules/
 games-src/**/test-results/
 games-src/**/playwright-report/
 games-src/**/.claude/settings.local.json
+
+# Hugo build output (generated; stale files here get deployed)
+public/
