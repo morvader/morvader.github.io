@@ -1,5 +1,6 @@
 ---
 title: "Testing y gorilas"
+aliases: ["/posts/testinggorillaillusion/"]
 subtitle: "La Ilusión del Gorila en el Testing: Evitando la visión de túnel"
 date: 2025-09-09T15:58:26+08:00
 lastmod: 2025-09-09T15:58:26+08:00

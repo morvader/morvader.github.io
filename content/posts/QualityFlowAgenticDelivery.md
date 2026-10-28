@@ -1,5 +1,6 @@
 ---
 title: "Quality Flow: Agentic Delivery Tool"
+aliases: ["/posts/qualityflowagenticdelivery/"]
 subtitle: "Cuando la calidad deja de ser una sucesión de tareas aisladas"
 date: 2026-04-28T08:00:00+02:00
 lastmod: 2026-04-28T08:00:00+02:00

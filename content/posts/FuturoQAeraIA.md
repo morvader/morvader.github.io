@@ -1,5 +1,6 @@
 ---
 title: "My two cents: El futuro del QA en la era de la IA"
+aliases: ["/posts/futuroqaeraia/"]
 subtitle: "Un nuevo rol para QA: de ejecutar pruebas a orquestar sistemas de calidad impulsados por IA"
 date: 2025-11-16T10:00:00+01:00
 lastmod: 2025-11-16T10:00:00+01:00

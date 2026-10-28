@@ -1,5 +1,6 @@
 ---
 title: "Cómo mejorar la mantenibilidad de las pruebas unitarias"
+aliases: ["/posts/easyrandom/"]
 subtitle: "Primeros pasos con EasyRandom"
 date: 2023-10-17T15:58:26+08:00
 lastmod: 2023-10-17T15:58:26+08:00

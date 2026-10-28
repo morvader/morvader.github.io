@@ -1,5 +1,6 @@
 ---
 title: "Creando una cultura de calidad en organizaciones"
+aliases: ["/posts/kotterculturacalidad/"]
 subtitle: "Utilizando las reglas de Kotter para impulsar el cambio cultural"
 date: 2025-03-23T15:58:26+08:00
 lastmod: 2025-03-23T15:58:26+08:00

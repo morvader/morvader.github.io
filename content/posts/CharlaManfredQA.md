@@ -1,5 +1,6 @@
 ---
 title: "Mi charla con Manfred sobre el futuro del QA: reflexiones después de la conversación"
+aliases: ["/posts/charlamanfredqa/"]
 subtitle: "Del ejecutor de pruebas al arquitecto de ecosistemas de calidad"
 date: 2026-02-22T15:58:26+08:00
 lastmod: 2026-02-22T15:58:26+08:00

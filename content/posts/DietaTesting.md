@@ -1,5 +1,6 @@
 ---
 title: "De la dieta al Testing: Por qué fallan nuestras buenas intenciones con la calidad"
+aliases: ["/posts/dietatesting/"]
 subtitle: "La adherencia y reducir fricciones son más importantes que la perfección"
 date: 2025-10-30T10:00:00+01:00
 lastmod: 2025-10-30T10:00:00+01:00

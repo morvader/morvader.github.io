@@ -1,5 +1,6 @@
 ---
 title: "Contexto vs. Sesgo: Por qué tu opinión personal no debería guiar tu testing"
+aliases: ["/posts/contextovssesgo/"]
 subtitle: "Ante una misma situación, el contexto marca la diferencia entre bug o detalle menor"
 date: 2025-10-06T10:00:00+01:00
 lastmod: 2025-10-06T10:00:00+01:00

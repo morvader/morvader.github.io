@@ -1,5 +1,6 @@
 ---
 title: "¿La IA ha eliminado demasiada fricción?"
+aliases: ["/posts/la-ia-ha-eliminado-demasiada-friccion/"]
 subtitle: "La IA está haciendo que construir sea barato. El riesgo es que pensar empiece a parecernos caro."
 date: 2026-10-06T05:48:22.094Z
 lastmod: 2026-10-06T05:48:22.542Z

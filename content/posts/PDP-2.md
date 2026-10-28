@@ -1,5 +1,6 @@
 ---
 title: "Definiendo un plan de carrera - Parte II"
+aliases: ["/posts/pdp-2/"]
 subtitle: "Poniendo en práctica un plan de carrera"
 date: 2024-06-03T15:58:26+08:00
 lastmod: 2024-06-03        T15:58:26+08:00

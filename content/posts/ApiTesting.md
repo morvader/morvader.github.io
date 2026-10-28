@@ -1,5 +1,6 @@
 ---
 title: "Estrategia para introducir Testing Automatizado en equipos sin experiencia"
+aliases: ["/posts/apitesting/"]
 subtitle: "De APIs a Unitarios: Una Ruta Alternativa para Adoptar Testing Automatizado"
 date: 2025-02-11T15:58:26+08:00
 lastmod: 2025-02-11T15:58:26+08:00

@@ -21,6 +21,11 @@
     <meta name="robots" content="noindex, follow" />
 {{- end -}}
 
+{{- /* Paginated list pages (/page/N/) duplicate post listings: noindex, keep following links */ -}}
+{{- if and (in (slice "home" "section") .Kind) .Paginator (gt .Paginator.PageNumber 1) -}}
+    <meta name="robots" content="noindex, follow" />
+{{- end -}}
+
 {{- /* Canonical URL is emitted by the theme (partials/head/link.html); do not duplicate it here */ -}}
 
 {{- /* Open Graph and Twitter Card tags */ -}}

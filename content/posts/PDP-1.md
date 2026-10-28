@@ -1,5 +1,6 @@
 ---
 title: "Definiendo un plan de carrera - Parte I"
+aliases: ["/posts/pdp-1/"]
 subtitle: "Factores clave en el crecimiento profesional"
 date: 2024-05-08T15:58:26+08:00
 lastmod: 2024-05-08        T15:58:26+08:00

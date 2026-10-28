@@ -1,5 +1,6 @@
 ---
 title: "Retomando un proyecto personal 10 años después"
+aliases: ["/posts/retomandoproyectopersonal/"]
 subtitle: "Reviviendo el desarrollo de la extensión de Chrome para testing exploratorio"
 date: 2026-02-13T22:00:00+01:00
 lastmod: 2026-02-13T22:00:00+01:00

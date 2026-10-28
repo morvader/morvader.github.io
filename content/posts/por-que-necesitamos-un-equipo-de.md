@@ -1,5 +1,6 @@
 ---
 title: "Por qué necesitamos un equipo de AI Platform"
+aliases: ["/posts/por-que-necesitamos-un-equipo-de/"]
 subtitle: "La IA avanza demasiado rápido para gestionarla a ratos, necesitamos una plataforma común que ponga orden en los costes, la seguridad, el conocimiento y la adopción."
 date: 2026-09-29T17:06:01+02:00
 lastmod: 2026-09-29T17:06:01+02:00

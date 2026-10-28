@@ -1,5 +1,6 @@
 ---
 title: "¿Es el rol de QA necesario en los equipos?"
+aliases: ["/posts/rolqanecesario/"]
 subtitle: "Depende de la madurez y cultura de calidad del equipo"
 date: 2026-02-14T15:00:00+08:00
 lastmod: 2026-02-14T15:00:00+08:00

@@ -1,5 +1,6 @@
 ---
 title: "Construyendo un equipo de QA desde cero en una consultora"
+aliases: ["/posts/equipoqaconsultoria/"]
 subtitle: "Estrategia y aprendizajes en Sngular"
 date: 2025-05-21T8:00:00
 draft: false

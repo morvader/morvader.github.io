@@ -1,5 +1,6 @@
 ---
 title: "Cómo afrontar la venta de proyectos de QA en consultoría"
+aliases: ["/posts/ofertasqa/"]
 subtitle: "Consejos para pasar de un centro de coste a aporte de valor del testing"
 date: 2025-02-17T15:58:26+08:00
 lastmod: 2025-02-17T15:58:26+08:00

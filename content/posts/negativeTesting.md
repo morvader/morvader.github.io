@@ -1,5 +1,6 @@
 ---
 title: "Testing defensivo"
+aliases: ["/posts/negativetesting/"]
 subtitle: "La importancia del testing negativo"
 date: 2024-02-05T12:00:00+08:00
 lastmod: 2024-02-05T12:00:00+08:00

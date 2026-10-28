@@ -1,5 +1,6 @@
 ---
 title: "Cómo organizar un hackathon de IA que tenga impacto"
+aliases: ["/posts/hackathoniaimpacto/"]
 subtitle: "Los aprendizajes de reunir a 120 personas para convertir la IA en una forma distinta de trabajar"
 date: 2026-09-19T10:00:00+02:00
 lastmod: 2026-09-19T10:00:00+02:00

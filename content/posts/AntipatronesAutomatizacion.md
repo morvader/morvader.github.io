@@ -1,5 +1,6 @@
 ---
 title: "Antipatrones en la Automatización de Pruebas: Errores Comunes y Cómo Evitarlos"
+aliases: ["/posts/antipatronesautomatizacion/"]
 subtitle: "6 decisiones que parecen correctas pero sabotean tu estrategia de testing a largo plazo"
 date: 2025-09-15T10:00:00+01:00
 lastmod: 2025-09-15T10:00:00+01:00

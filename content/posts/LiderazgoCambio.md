@@ -1,5 +1,6 @@
 ---
 title: "Liderazgo y Cambio: Cuándo ser Rana, cuándo ser Escorpión"
+aliases: ["/posts/liderazgocambio/"]
 subtitle: "El Escorpión, la Rana y la Estrategia del Cambio: Guía para Líderes"
 date: 2025-09-22T10:00:00+01:00
 lastmod: 2025-09-22T10:00:00+01:00

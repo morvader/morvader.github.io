@@ -1,5 +1,6 @@
 ---
 title: "Framework para entrevistas técnicas"
+aliases: ["/posts/entrevistas/"]
 subtitle: "Consejos para preparar y hacer entrevistas técnicas"
 date: 2024-11-21T15:58:26+08:00
 lastmod: 2024-11-21T15:58:26+08:00

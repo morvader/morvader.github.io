@@ -1,5 +1,6 @@
 ---
 title: "Augmented Risk-Based Testing"
+aliases: ["/posts/augmentedriskbasedtesting/"]
 subtitle: "Cómo usar IA para evitar el Efecto Pesticida"
 date: 2026-02-03T08:00:00+01:00
 lastmod: 2026-02-03T08:00:00+01:00

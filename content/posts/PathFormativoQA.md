@@ -1,5 +1,6 @@
 ---
 title: "Path formativo para el QA del futuro"
+aliases: ["/posts/pathformativoqa/"]
 subtitle: "Práctica deliberada como hilo conductor"
 date: 2025-11-23T10:00:00+01:00
 lastmod: 2025-11-23T10:00:00+01:00

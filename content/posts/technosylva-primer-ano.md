@@ -1,5 +1,6 @@
 ---
 title: "Mi primer año en Technosylva"
+aliases: ["/posts/technosylva-primer-ano/"]
 subtitle: "Spoiler: la automatización fue lo último que tocamos"
 date: 2026-04-06T08:00:00+02:00
 lastmod: 2026-04-06T08:00:00+02:00

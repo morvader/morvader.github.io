@@ -1,5 +1,6 @@
 ---
 title: "Bruno: Guía práctica para pruebas de API"
+aliases: ["/posts/brunoapitesting/"]
 subtitle: "Facilitando la curva de entrada al API Testing con Bruno"
 date: 2025-10-27T10:00:00+01:00
 lastmod: 2025-10-27T10:00:00+01:00

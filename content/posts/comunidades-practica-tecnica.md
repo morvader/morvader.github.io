@@ -1,5 +1,6 @@
 ---
 title: "La Importancia de las Comunidades de Práctica en Organizaciones"
+aliases: ["/posts/comunidades-practica-tecnica/"]
 subtitle: "Las Comunidades de Práctica en Empresas: Catalizadores del Aprendizaje Organizacional"
 date: 2025-01-08T15:58:26+08:00
 lastmod: 2025-01-08T15:58:26+08:00

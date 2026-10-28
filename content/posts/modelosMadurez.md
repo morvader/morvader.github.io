@@ -1,5 +1,6 @@
 ---
 title: "Modelos de madurez y mejora continua en organizaciones"
+aliases: ["/posts/modelosmadurez/"]
 subtitle: "Consejos prácticos para implantar modelos de madurez en organizaciones"
 date: 2025-05-12T8:00:00
 draft: false
